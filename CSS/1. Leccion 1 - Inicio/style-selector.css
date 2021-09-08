@@ -1,0 +1,45 @@
+/*TIPOS DE SELECTORES*/
+
+/*Selector Universal, aplica propiedades a todos los elementos del documento*/
+* {
+    color: red;
+}
+
+/*Selector por etiqueta o elemento, aplica propieades al elemento indicado*/
+h2 {
+    color: blue;
+}
+
+/*Selector por clase, aplica propiedades a los elementos que contengan el nombre de la clase*/
+.selector-class{
+    color: green
+}
+
+/*Selector por id, aplica unicamente y solo a un elemento que posea dicho id*/
+#selector-id{
+    color: orange;
+}
+
+/*Selector por atributo, aplica a todos los elementos que contengas dicho atributo con el mismo valor, cabe destacar que el atributo
+puede ser cualquier nombre que se le quiera dar, al igual que el valor asignado*/
+[atributo-cualquiera="atributo"] {
+    color: pink;
+}
+
+/*Selector de descendencia, este selector se usa para aplicar propiedades a etiquetas que estan dentro de otras etiquetas sin afectar las primeras,
+es decir, se afectan las etiquetas que tengan la estructura definida, por ejemplo h2 p {}, se le aplicara las propiedades solo a p que esten dentro de un h2*/
+h4 b {
+    color: blueviolet;
+}
+p b {
+    color: aquamarine;
+}
+p span {
+    color: brown;
+}
+h4 p{
+    color: red;
+}
+h4 p span{
+    color: blue;
+}

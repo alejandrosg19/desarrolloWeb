@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 23 - Display Flex</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Display_Flex.css">
+</head>
+<body>
+    <h1>Lección 23 - Display Flex</h1>
+    <p><b>Definición</b> cuando aplicamos flex a un div o elemento, los elementos dentro de este se posicionan uno al lado 
+        del otro, con un tamaño en base a su contenido. Pero ese tamaño es solo afectado en el ancho, el largo de los elementos va a hacer el
+        mismo, independientemente de si uno tiene mas contenido que el otro. Tambien cabe destacar que el flex-container solo influye en 
+        los elemenos hijos directamente, no en los elementos que estan dentro de los elementos que son sus hijos.
+        <b>Ejemplo:</b>
+    </p>
+    <div class="Ejemplo flex-container">
+        <div class="Ejemplo__display-block">
+            <h3>Container con display: block</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto suscipit voluptatem id ab ea esse vero. 
+                Repellat a repellendus ab dolorem ratione natus. Excepturi, laboriosam? Asperiores rem incidunt eum reiciendis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto suscipit voluptatem id ab ea esse vero. 
+                Repellat a repellendus ab dolorem ratione natus. Excepturi, laboriosam? Asperiores rem incidunt eum reiciendis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto suscipit voluptatem id ab ea esse vero. 
+                Repellat a repellendus ab dolorem ratione natus. Excepturi, laboriosam? Asperiores rem incidunt eum reiciendis.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto suscipit voluptatem id ab ea esse vero. 
+                Repellat a repellendus ab dolorem ratione natus. Excepturi, laboriosam? Asperiores rem incidunt eum reiciendis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto suscipit voluptatem id ab ea esse vero. 
+                Repellat a repellendus ab dolorem ratione natus. Excepturi, laboriosam? Asperiores rem incidunt eum reiciendis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto suscipit voluptatem id ab ea esse vero. 
+                Repellat a repellendus ab dolorem ratione natus. Excepturi, laboriosam? Asperiores rem incidunt eum reiciendis.
+            </p>
+        </div>
+        <div class="Ejemplo__display-flex flex-container">
+            <h3 class="flex-item">Container con display: flex</h3>
+            <p class="flex-item">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto suscipit voluptatem id ab ea esse vero. 
+                Repellat a repellendus ab dolorem ratione natus. Excepturi, laboriosam? Asperiores rem incidunt eum reiciendis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto suscipit voluptatem id ab ea esse vero. 
+                Repellat a repellendus ab dolorem ratione natus. Excepturi, laboriosam? Asperiores rem incidunt eum reiciendis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto suscipit voluptatem id ab ea esse vero. 
+                Repellat a repellendus ab dolorem ratione natus. Excepturi, laboriosam? Asperiores rem incidunt eum reiciendis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto suscipit voluptatem id ab ea esse vero. 
+                Repellat a repellendus ab dolorem ratione natus. Excepturi, laboriosam? Asperiores rem incidunt eum reiciendis.
+            </p>
+            <p class="flex-item">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto suscipit voluptatem id ab ea esse vero. 
+                Repellat a repellendus ab dolorem ratione natus. Excepturi, laboriosam? Asperiores rem incidunt eum reiciendis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto suscipit voluptatem id ab ea esse vero. 
+                Repellat a repellendus ab dolorem ratione natus. Excepturi, laboriosam? Asperiores rem incidunt eum reiciendis.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+*{
+    font-family: 'Times New Roman';
+    font-weight: 100;
+    font-size: 4rm;
+}
+
+h3{
+    display: inline; /*Define el comportamiento de las cajas inline-> no se le puede aplicar width ni heigth, a la propiedad block si*/
+}

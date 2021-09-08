@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 46 - Auto Fit y Auto Fill</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Auto_Fit-Auto_Fill.css">
+</head>
+<body>
+    <h1>Lección 46 - Auto Fit y Auto Fill</h1>
+    <p>
+        <b>Definición: </b> Con la función de minmax() en el template podemos asignar un tamaño minimo y maximo a las celdas, haciendo que cuando
+        la ventana se haga mas chica o mas grande se respete el tamaño de las celdas, el problema con esto es que no permite que la grilla sea 
+        completamente dinamica, es decir, si estamos en un dipositivo movil que posee una ventana mas pequeña, y las celdas de la grilla
+        tienen un minmax() las celdas respetaran su tamaño y no se veran algunas celdas, la experiencia de usuraio sera mala. Para eso existen
+        las propiedades auto-fit y auto-fill
+    </p>
+    <p>
+        <b>auto-fill</b> Esta propiedad permite que cuando la ventana se haga mas cicha los elementos o celdas dela grilla vayan bajando y organizandose
+        para que tengan un aspecto visual mas adecuado, ahora bien si la ventana se vuelve mas ancha que el tamaño maximo de los elementos, se va a 
+        respetar el tamaño maximo de las celdas y va a empezar a agregar mas columnas en la grilla, que no estan ocupadas por elementos, idependientemente
+        de que hayamos dado un 1fr en el ancho de los elementos. auto-fill va a rellenar toda la fila con todas las columnas que pueda poner dentro y va
+        a crear columnas implicitas en caso de que quepan.
+    </p>
+    <p>
+        <b>auto-fit</b> Esta propiedad funciona de la misma manera que auto-fill, la unida gran diferencia es que cuando la ventana es mas grande que 
+        el tamaño de los elementos, estos van a tomar dicho espacio, va a funcionar correctamente el ancho de 1fr.
+    </p>
+    <p>Ejemplo:</p>
+    <ul>
+        <li>grid-template-columns: repeat(auto-fit, 1fr)</li>
+        <li>grid-template-columns: repeat(auto-fill, 1fr)</li>
+    </ul>
+    <h2>Ejemplos</h2>
+    <p>Para evidenciar las diferencias por favor haga responsive y la ventana, asi podra identificiar como a ambos grid-container se les deje
+        un ancho minimo que es respetado pero que al mismo tiempo se adapta a la ventana, sin embargo la diferencia de ambos se ve es cuando la ventana
+        es mas ancha, como podemos ver el auto-fill se crean nuevas 
+    </p>
+    <div class="grid-container main-grid">
+        <div class="grid-container grid-area">
+            <p>auto-fill</p>
+            <div class="grid-container grid-auto-fill">
+                <div class="grid-item">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+            </div>
+        </div>
+        <div class="grid-container grid-area">
+            <p>auto-fit</p>
+            <div class="grid-container grid-auto-fit">
+                <div class="grid-item">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

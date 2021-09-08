@@ -1,0 +1,15 @@
+.div-content__p {
+    color: red;
+}
+
+.div-content2__p{
+    color: blue;
+}
+
+.div-content2__p:first-child {
+    color: green;
+}
+
+.div-content3__p--selected {
+    color: darkmagenta;
+}

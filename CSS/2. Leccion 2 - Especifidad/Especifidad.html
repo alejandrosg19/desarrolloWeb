@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leccion Especifidad</title>
+    <link rel="stylesheet" type="text/CSS" href="style-especifidad.css">
+</head>
+<body>
+    <h1>Leccion de Especifidad</h1>
+    <h2>Evaluando la especifidad en este elemento</h2>
+    <p>El nivel de especifidad en primer lugar se rige por la <b>Norma de la Cascada</b> la cual indica si ejectuamos un cambio de color a un 
+        elemento b y luego volvemos a cambiar el color de este mismo elemento, el color que quedara sera siempre el ultimo aplicado, es decir, 
+        las ultimas propiedades aplicadas a un elemento seran las que se mostraran en el navegador
+    </p>
+
+    <h3>Jerarquia de especifidad, desde la mas importante a la menos</h3>
+    <img src="jerarquia.png" alt="Especifidad" height="300px">
+
+    <h4 class="color-blue">Ejemplo de especifidad poniendo a prueba la jerarquia, esto es un h4 con una clase color-blue</h4>
+
+    <h5 class="important">!important</h5>
+</body>
+</html>

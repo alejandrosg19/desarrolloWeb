@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 28 -  Align Items - Align Content</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Align_Items.css">
+</head>
+<body>
+    <h1>Lección 28 -  Align Items - Align Content</h1>
+    <p>
+        <b>Defnición:</b> Estas dos propiedades permiten alineas los elementos contenidos dentro de un flex-container o los flex-items 
+        sobre el eje cross-axis <br>
+        <b>align-item: </b> Esta propiedad se usa solo cuando hay una sola linea de elementos o de flex-items <br>
+        <b>align-content: </b> Esta propiedad se usa cuando hay mas de una linea de elementos o de flex-items <br>
+        Cabe destacar que ambos poseen los mismos tipos de propiedades.
+    </p>
+    <h2>Tipos de align-content y align-item</h2>
+    <p>
+        <b>align-item: stretch</b> Esta propiedad se encarga de alinear en la parte superior los elementos en el eje cross-axis o eje y, 
+        cabe destacar que si los elementos no posee un largo, con esta propiedad los elementos van a tomar el largo del contenedor.
+    </p>
+    <div class="flex-container ai-stretch">
+        <div class="ai-strech__flex-item">Caja flexible</div>
+        <div class="ai-strech__flex-item">Caja flexible</div>
+        <div class="ai-strech__flex-item">Caja flexible</div>
+        <div class="ai-strech__flex-item">Caja flexible</div>
+        <div class="ai-strech__flex-item">Caja flexible</div>
+    </div>
+    <p>
+        <b>align-item: flex-start</b> Esta propiedad al igual que la stretch tambien se encarga de alinear los elementos en la parte superior
+        del eje cross-axis o eje y, la diferencia es que si los elementos no poseen un alto, con esta propiedad el alto se adaptara al tamaño 
+        del contenido.
+    </p>
+    <div class="flex-container ai-flex-start">
+        <div class="ai-flex-start__flex-item">Caja flexible</div>
+        <div class="ai-flex-start__flex-item">Caja flexible</div>
+        <div class="ai-flex-start__flex-item">Caja flexible</div>
+        <div class="ai-flex-start__flex-item">Caja flexible</div>
+        <div class="ai-flex-start__flex-item">Caja flexible</div>
+    </div>
+    <p><b>align-item: center:</b> Propiedad que alinea los elementos en el centro del eje cross-axis, eje y.</p>
+    <div class="flex-container ai-center">
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+    </div>
+    <p><b>align-item: flex-end:</b> Propiedad que alinea los elementos al final del eje cross-axis. eje y</p>
+    <div class="flex-container ai-flex-end">
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+    </div>
+    <p>
+        <b>align-item: baseline:</b> Esta propiedad hace la misma función de alinear los elementos al final del eje de cross-axis. 
+        la diferencia con el flex-end radica en el wrap, si el flex-wrap es wrap-reverse, en el flex-end los elementos se van a posicionar
+        en la parte superior del eje de cross-axis, pero si esta usando la propiedad align-item: baseline los elementos se van a ubicar
+        en la parte inferior del cros-axis.
+    </p>
+    <div class="two-ai">
+        <p>align-items: flex-end; flex-wrap: wrap-reverse;</p>
+        <div class="flex-container ai-flex-end">
+            <div class="flex-item">Caja flexible</div>
+            <div class="flex-item">Caja flexible</div>
+            <div class="flex-item">Caja flexible</div>
+            <div class="flex-item">Caja flexible</div>
+            <div class="flex-item">Caja flexible</div>
+        </div>
+        <p>align-items: baseline; flex-wrap: wrap-reverse;</p>
+        <div class="flex-container ai-baseline">
+            <div class="flex-item">Caja flexible</div>
+            <div class="flex-item">Caja flexible</div>
+            <div class="flex-item">Caja flexible</div>
+            <div class="flex-item">Caja flexible</div>
+            <div class="flex-item">Caja flexible</div>
+        </div>
+    </div>
+</body>
+</html>

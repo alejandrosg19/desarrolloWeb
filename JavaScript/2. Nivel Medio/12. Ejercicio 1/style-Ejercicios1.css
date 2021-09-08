@@ -1,0 +1,38 @@
+*{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background: radial-gradient(circle, #fff, #999);
+}
+h1{
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+    background-color: #09f;
+    border: 10px solid #06f;
+    box-shadow: 0px 0px 10px #000;
+    position: sticky;
+    top: 10px;
+}
+
+.materias{
+    width: 90%;
+    background-color: #ccc;
+    padding: 2px;
+}
+.materia{
+    background-color: #efefef;
+    display: flex;
+}
+.materia div{
+    padding: 20px;
+}
+.materia .nota{
+    flex-basis: 20px;
+    background-color: #ddd;
+    font-weight: 700;
+}
+.materia .nombre {
+    flex-grow: 1;
+}

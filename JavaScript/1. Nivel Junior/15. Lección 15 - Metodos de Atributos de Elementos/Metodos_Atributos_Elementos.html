@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 15 - Metodos de Atributos de Elementos</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Metodos_Atributos_Elementos.css">
+</head>
+<body>
+    <h1>Lección 15 - Metodos de Atributos de Elementos</h1>
+    <p>
+        <b>Definición: </b> Son metodos que permitien modificar, obtener y eliminar el contenido de los elementos del DOM <br>
+        <b>Metodos:</b>
+    </p>
+    <ul>
+        <li>
+            <b>setAttribute(): </b>Modifica el valor del elemento. Recibe dos parametros, el primero responde al tipo de atributo que queremos 
+            cambiar del elemento y el segundo resṕonde al nuevo valor que queremos asignarle.
+        </li>
+        <li>
+            <b>getAttribute(): </b>Obtiene el valor del elemento. Recibe un unico parametro que corresponde al tipo de valor 
+            que queremos obtener del elemento.
+        </li>
+        <li>
+            <b>removeAttribute(): </b>Remueve el atributo del elemento. Recibe un unico parametro que corresponde al atributo que se quiere eliminar
+            del elemento.
+        </li>
+    </ul>
+    <div class="Ejemplo">
+        <label for="Input">get</label>
+        <input type="text" class="Elemento">
+        <label for="Input">set</label>
+        <input type="text" class="Elemento" id="input2">
+        <label for="Input">remove</label>
+        <input type="text" class="Elemento" id="input3">
+    </div>
+    <div class="img">
+        <img src="1.png" alt="">
+    </div>
+
+    <script src="script-Metodos_Atributos_Elementos.js"></script>
+</body>
+</html>

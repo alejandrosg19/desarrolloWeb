@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 27 - justify-content</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Alineacion_Flex.css">
+</head>
+<body>
+    <h1>Lección 27 - justify-content</h1>
+    <p><b>Definición: </b> Es una propiedad que permite centrar los elementos dentro de un flex-container, los centra a nivel del main-axis</p>
+    <h2>Tipos de justify-content</h2>
+    <p><b>juntify-conteiner: center;</b> Centra los elementos, los ubica en la mitad de la ventana</p>
+    <div class="flex-container jc-center">
+        <div class="flex-item orange">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item green">Caja flexible</div>
+    </div>
+    <p><b>juntify-conteiner: space-around;</b> Da un espacio entre los elementos</p>
+    <div class="flex-container jc-space-around">
+        <div class="flex-item orange">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item green">Caja flexible</div>
+    </div>
+    <p>
+        <b>juntify-conteiner: space-between;</b> Funciona similar al space-around solo que quita los espacios laterales de las dos cajas de cada
+        lado
+    </p>
+    <div class="flex-container jc-space-between">
+        <div class="flex-item orange">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item green">Caja flexible</div>
+    </div>
+    <p>
+        <b>juntify-conteiner: space-evenly;</b> Este parametro tambien es similar al space-around, la diferencia es que el anterior, da un margin
+        igual a todos los elementos y por eso que es los elementos de cada lado quedan con es pacio mas pequeño que los otro elementos, en cambio
+        space-evenly, deja el mismo espacio entre elementos.
+    </p>
+    <div class="flex-container jc-space-evenly">
+        <div class="flex-item orange">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item green">Caja flexible</div>
+    </div>
+</body>
+</html>

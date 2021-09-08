@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 52 - Grid Area</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Grid_Area.css">
+</head>
+<body>
+    <h1>Lección 52 - Grid Area</h1>
+    <p>
+        <b>Definición: </b>Grid Area se le dice a un conjunto de grid-celdas seleccionadas consecutivamente de la grilla, deben ser mas de 2. <br>
+        <b>grid-template-area: </b>Esta propiedad se usa para definir las areas de las grilla. se usa con nombres en de las celdas, por ejemplo. <br>
+        grid-template-area:  <br>
+        "header header header" <br>
+        aside main main" <br>
+        aside main main" <br>
+        footer footer footer". <br>
+        <b>Esto da como resultado:</b> <br>
+    </p>
+    <img src="1.png">
+    <p>Ahora bien para poder asignar los divs que son grid-items a cada de una de las areas, se hace por medio de grid-area: "nombre del area", ejemplo
+        grid-area: header;
+    </p>
+    <div class="grid-container">
+        <div class="grid-item grid-header">Header enlace enlace</div>
+        <div class="grid-item grid-main">Main Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident atque dolorem quae quas laudantium 
+            tenetur nam ut quasi cumque laboriosam, odit, voluptates repudiandae nihil magni saepe et. Facilis, iste provident!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident atque dolorem quae quas laudantium 
+            tenetur nam ut quasi cumque laboriosam, odit, voluptates repudiandae nihil magni saepe et. Facilis, iste provident!
+        </div>
+        <div class="grid-item grid-aside">Aside: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident atque dolorem quae quas laudantium 
+            tenetur nam ut quasi cumque laboriosam, odit, voluptates repudiandae nihil magni saepe et. Facilis, iste provident!
+        </div>
+        <div class="grid-item grid-footer">Footer</div>
+    </div>
+</body>
+</html>

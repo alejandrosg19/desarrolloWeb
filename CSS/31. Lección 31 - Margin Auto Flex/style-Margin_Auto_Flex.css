@@ -1,0 +1,44 @@
+*{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1{
+    box-sizing: border-box;
+    font-size: 2em;
+    text-align: center;
+    background-color: aqua;
+    border: 10px solid #00F;
+    box-shadow: 0px 10px 10px 0px #000;
+    position: sticky;
+    top: 5px;
+}
+
+.flex-container{
+    display: flex;
+    height: 40vh;
+    border: 5px solid #000;
+}
+.flex-item{
+    width: 128px;
+    height: 128px;
+    margin: 10px;
+    background-color: #00f;
+    text-align: center;
+}
+
+.margin-left{
+    margin-left: auto;
+}
+.margin-rigth{
+    margin-right: auto;
+}
+.margin-top{
+    margin-top: auto;
+}
+.margin-bottom{
+    margin-bottom: auto;
+}
+.margin{
+    margin: auto;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 54 - Responsive Design</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Responsive_Design.css">
+</head>
+<body>
+    <h1>Lección 54 - Responsive Design</h1>
+    <p>
+        <b>Definición: </b>Es un concepto que se usa para hacer que una pagina web pueda ser vista adecuadamente en diferentes tamaños de dispositivos.
+        Dentro del Responsive Design en CSS se hace uso de @media <br>
+        <b>@media </b> Significa media query y se usa en consultas de medios para aplicar diferentes estilos para diferentes tipos de dispositivos.
+        Basicamente es un conjunto de condicionales que nos permite determinar el cambio de diseño de una pagina y alicarle propiedades a dicho cambio
+        de diseño. El media query nos permite validar:<br>
+        <ul>
+            <li>Ancho y alto de la ventana grafica</li>
+            <li>ancho y alto del dispositivos</li>
+            <li>Orientación (tablet -> Modo horizontal - Telefono -> Modo Vertical)</li>
+            <li>Resolución</li>
+        </ul>
+        <b>Tipos de media query</b>
+        <ul>
+            <li><b>all</b> Apto para todos los dispositivos</li>
+            <li><b>print</b> Destinado a material impreso y visualización de documentos en una pantalla en el modo de vista previa de impresión</li>
+            <li><b>screen</b> Destinado principalmente a las pantallas</li>
+            <li><b>speech</b> Destinado principalmente a sitetizadores de voz</li>
+        </ul>
+        <b>Operadores</b>
+        <ul>
+            <li>AND</li>
+            <li>OR</li>
+        </ul>
+        <b>Vamos a ver el funcionamiento de screen, ejemplo</b> <br>
+        @media screen and (min-width: 500px) and (max-width: 800px){ <br>
+            div{ <br>
+                background-color: red; <br>
+            } <br>
+        } <br>
+        El anterior media screen valida si la ventana se enceuntra en un tamaño entre 500px y 800px,  de ser asi aplicara las propiedades designadas,
+        es decir cambiara el color de fondo de todos los divs a rojo. <br>
+        <b>Ejemplo, para visuaizar los cambios, por favor juegue con el tamaño de la ventana.</b>
+    </p>
+
+    <div class="div-responsive">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis velit explicabo ea earum! Sit nulla aspernatur deserunt ullam nam. 
+        Recusandae atque exercitationem corporis harum pariatur cumque qui saepe incidunt accusantium?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis velit explicabo ea earum! Sit nulla aspernatur deserunt ullam nam. 
+        Recusandae atque exercitationem corporis harum pariatur cumque qui saepe incidunt accusantium?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis velit explicabo ea earum! Sit nulla aspernatur deserunt ullam nam. 
+        Recusandae atque exercitationem corporis harum pariatur cumque qui saepe incidunt accusantium?
+    </div>
+</body>
+</html>

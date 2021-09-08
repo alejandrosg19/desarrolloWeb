@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 20 - Obtención y Modificación de Elementos</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Obtención_Modificación_Elementos.css">
+</head>
+<body>
+    <h1>Lección 20 - Obtención y Modificación de Elementos</h1>
+    <p>
+        <b>Definición: </b> Permite obtener y modificar elementos en HTML <br>
+        <b>Propiedades:</b>
+    </p>
+    <ul>
+        <li>
+            <b>textContent: </b>Devuelve el contenido del nodo, pero no devuelve HTML, es decir si aplicamos un textContent() a un p que tiene un 
+            b dentro, nos devolvera solo texto sin la modificación del elemento b que le realiza al texto. Tampoco nos devolvera efecto CSS que contenga
+            el elemento.
+        </li>
+        <li>
+            <b>innerHTML: </b>Devuelve el contenido del elemento junto con los elementos HTML
+        </li>
+        <li>
+            <b>outerHTML: </b>Devuelve el elemento HTML completo.
+        </li>
+    </ul>
+    <p class="prueba">Elemento de ejemplo <b>prueba</b></p>
+    <script src="script-Obtención_Modificación_Elementos.js"></script>
+    <br><br>
+    <h3>Codigo:</h3>
+    <div class="img">
+        <img src="1.png" alt="">
+        <img src="2.png" alt="">
+    </div>
+</body>
+</html>

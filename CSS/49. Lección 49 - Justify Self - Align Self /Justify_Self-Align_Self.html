@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 49 - Justify Self - Align Self</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Justify_Self-Align_Self.css">
+</head>
+<body>
+    <h1>Lección 49 - Justify Self - Align Self</h1>
+    <p>
+        <b>Definiciónn</b> Propiedades que permiten dar posición a los grid-items de manera especifica en el eje x o en el eje y. <br>
+        <b>justify-self: </b> Permite mover un grid-item especifico en el eje x. <br>
+        <b>align-self: </b> Permite mover un grid-item especifico en el eje y. <br>
+        <b>Es necesario decir que para observar las propiedades en los items, el grid-container debe tener un justify-items: center y un align-items:center</b>
+    </p>
+    <p><b>Cabe destacar que estas propiedades son aplicadas solo a los grid-items</b></p>
+    <h2>Ejemplo</h2>
+    <div class="grid-container grid-main">
+        <div class="grid-container grid-main__div">
+            <h3>justify-self: Alineación Horizontal</h3>
+            <div class="grid-container grid-main__div-container">
+                <div class="grid-container grid-area">
+                    <p>justify-self: stretch: Valor por defecto</p>
+                    <div class="grid-container grid-area__container js-stretch">
+                        <div class="grid-item">1</div>
+                        <div class="grid-item">2</div>
+                        <div class="grid-item">3</div>
+                        <div class="grid-item">4</div>
+                        <div class="grid-item">5</div>
+                        <div class="grid-item">6</div>
+                    </div>
+                </div>
+                <div class="grid-container grid-area js-start">
+                    <p>justify-self: flex-start</p>
+                    <div class="grid-container grid-area__container js-start">
+                        <div class="grid-item">1</div>
+                        <div class="grid-item">2</div>
+                        <div class="grid-item">3</div>
+                        <div class="grid-item">4</div>
+                        <div class="grid-item">5</div>
+                        <div class="grid-item">6</div>
+                    </div>
+                </div>
+                <div class="grid-container grid-area">
+                    <p>justify-self: center</p>
+                    <div class="grid-container grid-area__container js-center">
+                        <div class="grid-item">1</div>
+                        <div class="grid-item">2</div>
+                        <div class="grid-item">3</div>
+                        <div class="grid-item">4</div>
+                        <div class="grid-item">5</div>
+                        <div class="grid-item">6</div>
+                    </div>
+                </div>
+                <div class="grid-container grid-area">
+                    <p>justify-self: flex-end</p>
+                    <div class="grid-container grid-area__container js-end">
+                        <div class="grid-item">1</div>
+                        <div class="grid-item">2</div>
+                        <div class="grid-item">3</div>
+                        <div class="grid-item">4</div>
+                        <div class="grid-item">5</div>
+                        <div class="grid-item">6</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-container grid-main__div">
+            <h3>align-self: Alineación Vertical</h3>
+            <div class="grid-container grid-main__div-container">
+                <div class="grid-container grid-area">
+                    <p>justify-self: strecth: Valor por defecto</p>
+                    <div class="grid-container grid-area__container as-strecth">
+                        <div class="grid-item">1</div>
+                        <div class="grid-item">2</div>
+                        <div class="grid-item">3</div>
+                        <div class="grid-item">4</div>
+                        <div class="grid-item">5</div>
+                        <div class="grid-item">6</div>
+                    </div>
+                </div>
+                <div class="grid-container grid-area">
+                    <p>justify-self: flex-start</p>
+                    <div class="grid-container grid-area__container as-start">
+                        <div class="grid-item">1</div>
+                        <div class="grid-item">2</div>
+                        <div class="grid-item">3</div>
+                        <div class="grid-item">4</div>
+                        <div class="grid-item">5</div>
+                        <div class="grid-item">6</div>
+                    </div>
+                </div>
+                <div class="grid-container grid-area">
+                    <p>justify-self: center</p>
+                    <div class="grid-container grid-area__container as-center">
+                        <div class="grid-item">1</div>
+                        <div class="grid-item">2</div>
+                        <div class="grid-item">3</div>
+                        <div class="grid-item">4</div>
+                        <div class="grid-item">5</div>
+                        <div class="grid-item">6</div>
+                    </div>
+                </div>
+                <div class="grid-container grid-area">
+                    <p>justify-self: flex-end</p>
+                    <div class="grid-container grid-area__container as-end">
+                        <div class="grid-item">1</div>
+                        <div class="grid-item">2</div>
+                        <div class="grid-item">3</div>
+                        <div class="grid-item">4</div>
+                        <div class="grid-item">5</div>
+                        <div class="grid-item">6</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-container grid-area">
+            <h3>Combinación de jutify-self y align-self</h3>
+            <div class="grid-container grid-area__ejemplo">
+                <div class="grid-item yellow">1</div>
+                <div class="grid-item blue">2</div>
+                <div class="grid-item yellow">3</div>
+                <div class="grid-item blue">4</div>
+                <div class="grid-item red">5</div>
+                <div class="grid-item blue">6</div>
+                <div class="grid-item yellow">7</div>
+                <div class="grid-item blue">8</div>
+                <div class="grid-item yellow">9</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

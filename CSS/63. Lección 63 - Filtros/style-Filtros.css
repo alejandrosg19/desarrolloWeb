@@ -1,0 +1,153 @@
+*{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background: radial-gradient(circle, #fff, #aaa);
+    position: relative;
+    z-index: 2;
+}
+h1{
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 2em;
+    color: #fff;
+    background-color: #08f;
+    border: 10px solid #06f;
+    box-shadow: 0px 10px 10px 0px #000;
+    position: sticky;
+    top: 5px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-template-rows: repeat(6, 1fr) 600px;
+    grid-gap: 10px;
+
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.grid-container__item{
+    height: 300px;
+    background-color: cyan;
+    border: 5px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.grid-container__item p {
+    text-align: center;
+    width: 100%;
+}
+.img{
+    background-image: url(https://imagenpng.com/wp-content/uploads/2015/09/despicable-me-575065-1680x1050-0.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80%;
+    display: inline-block;
+    width: 400px;
+}
+.grid-container__item:first-child{
+    grid-column: 1 / span 2;
+}
+.grid-container__item:last-child{
+    grid-column: 1 / span 2;
+    height: 100%;
+}
+
+
+.grid-container__item:first-child > .img{
+    filter: none;
+}
+.grid-container__item:nth-child(2) > .img{
+    filter: blur(5px);
+}
+.grid-container__item:nth-child(3) > .img{
+    filter: brightness(0.5);
+}
+.grid-container__item:nth-child(4) > .img{
+    filter: contrast(2);
+}
+.grid-container__item:nth-child(5) > .img{
+    filter: drop-shadow(15px 15px 10px #000)
+}
+.grid-container__item:nth-child(6) > .img{
+    filter: grayscale(80%);
+}
+.grid-container__item:nth-child(7) > .img{
+    filter: hue-rotate(100deg)
+}
+.grid-container__item:nth-child(8) > .img{
+    filter: invert(100%);
+}
+.grid-container__item:nth-child(9) > .img{
+    filter: opacity(0.7);
+}
+.grid-container__item:nth-child(10) > .img{
+    filter: saturate(400%);
+}
+.grid-container__item:nth-child(11) > .img{
+    filter: sepia(80%);
+}
+
+.grid-container__item:last-child{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 200px 200px;
+    grid-gap: 10px;
+}
+.grid-container__item:last-child > .img{
+    height: 200px;
+    animation: translate 8s alternate infinite ease-in-out;
+}
+.prueba{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    filter: contrast(20);
+    background-color: #fff;
+}
+.gota{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin: 10px;
+
+    border-radius: 50%;
+    filter: blur(10px);
+    position: relative;
+    z-index: 1;
+}
+.gota:first-child{
+    animation: translate-gota 3s alternate infinite ease-in-out;
+}
+
+@media screen and (max-width: 1250px){
+    .grid-container{
+        grid-template-rows: repeat(11, 1fr) 500px;
+    }
+    .grid-container__item{
+        grid-column: 1 / span 2;
+    }
+}
+
+@keyframes translate{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(1100px);
+    }
+}
+@keyframes translate-gota{
+    0%{
+        transform: translateX(0);
+    }
+    0%{
+        transform: translateX(800px);
+    }
+}

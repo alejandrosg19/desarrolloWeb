@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 45 - minmax()</title>
+    <link rel="stylesheet" type="text/css" href="style-Minmax.css">
+</head>
+<body>
+    <h1>Lección 45 - minmax()</h1>
+    <p>
+        <b>Definición: </b>minmax() es una función que tambien hace parte del grid-template, en donde podemos asignar el tamaño minimo y maximo que
+        podria tener una fila o columna o toda la grilla. Esto tiene como funcion definir un tamaño especifico para que cuando la ventana se 
+        haga mas pequeña las celdas no sigan esta orientación y se vuelvan cada vez mas pequeñas sino que haya un valor minimo o maximo que se respete
+        ejemplos.
+    </p>
+    <ul>
+        <li>
+            <b>grid-template-columns: repeat(3, minmax(100px, 300px)</b> <br> Con lo siguiente hemos asignado tres columnas iguales en la grilla
+            en donde su valor minimo de ancho va a hacer 100px y el valor maximo que tendran sera 300px
+        </li>
+        <li>
+            <b>grid-template-columns: repeat(3, minmax(min-content, max-content)</b> <br> Con lo siguiente hemos asignado tres columnas iguales en la grilla
+            en donde su valor minimo de ancho va a hacer el ancho minimo del contenido de las celdas y el ancho maximo que tendran sera el valor maximo
+            del contenido de las celdas.
+        </li>
+        <li>
+            Funciona igual para las filas: <br>
+            <b>grid-template-rows: repeat(3, minmax(100px, 300px))</b> <br>
+            <b>grid-template-rows: repeat(3, minmax(min-content, max-content))</b>
+        </li>
+    </ul>
+    <p><b>Como la función es usada en el grid-template, es una función que se usa en grid-container</b></p>
+    <h2>Ejemplo</h2>
+    <div class="grid-container main">
+        <div class="grid-container container-div">
+            <p>grid-template-columns: repeat(3, minmax(100px, 300px)) <br> grid-container-rows: repeat(3, minmax(50px, 150px))</p>
+            <div class="grid-container container-div__1">
+                <div class="grid-item">hola</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+                <div class="grid-item">7</div>
+                <div class="grid-item">8</div>
+                <div class="grid-item">9</div>
+            </div>
+        </div>
+        <div class="grid-container container-div">
+            <p>grid-template-columns: repeat(3, minmax(min-content, max-content)) <br> grid-container-rows: repeat(3, minmax(min-content, max-content))</p>
+            <div class="grid-container container-div__2">
+                <div class="grid-item">hola</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+                <div class="grid-item">7</div>
+                <div class="grid-item">8</div>
+                <div class="grid-item">9</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

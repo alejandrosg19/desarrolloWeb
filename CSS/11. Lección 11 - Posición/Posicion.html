@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 11 - Posicion</title>
+    <link rel="stylesheet" type="text/CSS" href="style-posicion.css">
+</head>
+<body>
+    <h1>Lección 11 - Posicion</h1>
+    <p>Con esta propiedad, podemos cambiar el flujo de como HTML esta leyendo los elementos, un elemento esta posicionado si afecta el flujo HTML</p>
+
+    <h2>Tipos de Posicion</h2>
+    <div class="Static">
+        <p><b>Static:</b> Es la propiedad por defecto de los navegadores, esto no posiciona a los elementos <br> Ejemplo:</p>
+        <div class="Static__caja1">Caja 1</div>
+        <div class="Static__caja2">Caja 2</div>
+        <div class="Static__caja3">Caja 3</div>
+        <div class="Static__caja4">Caja 4</div>
+    </div>
+    <div class="Relative">
+        <p><b>Relative:</b> Es una propiedad que permite mover el elemento a otras partes del DOM desde una posición fija, esta posición fija corresponde
+            a la posición que se le dio en un principio al elemento en HTML, por ejemplo a continuación veremos como la posición de la Caja 2 se sigue
+            guardando en el DOM, en ningún momento la Caja 3 sube y toma la posición de la Caja 2, simplemente la Caja2 se esta moviendo a partir 
+            de dicha posición conservada o guardada en el DOM. Ademas esta propiedad contiene 4 nuevas propiedades que pueden ser aplicadas<br> 
+        </p>
+        <ul>
+            <li><b>top:</b> Mueve el elemento hacia abajo, es como si se le diera la cantidad px especificada de espacio 
+                en la parte superior del espacio guardado por el DOM, ejemplo top: 50px</li>
+            <li><b>righ:</b> Mueve el elemento a la derecha, da los espacios en la derecha de la caja ejemplo righ: 50px</li>
+            <li><b>left:</b> Mueve el elemento a la izquierda, da los espacios en la izquierda de la caja ejemplo left: 50px</li>
+            <li><b>bottom:</b> Mueve el elemento hacia arriba, es como si se le diera la cantidad px especificada de espacio 
+                en la parte inferior del espacio guardado por el DOM, ejemplo bottom: 50px</li>
+            <li><b>z-index:</b> Cunado existen dos elementos con positio: relative, una elemento se vaa posicionar por enciama del otro
+            pero si queremos que el elemento que esta debajo quede arriba, simplemente le damos la propiedad z-index: 1; o cualquier valor 
+            esto posicionara al elemento por encima del otro.
+            </li>
+        </ul>
+        <p>Ejemplo:</p>
+        <div class="Relative__caja1">Caja 1</div>
+        <div class="Relative__caja2">Caja 2</div>
+        <div class="Relative__caja3">Caja 3</div>
+        <div class="Relative__caja4">Caja 4</div>
+    </div>
+    <div class="Absolute">
+        <p><b>Absolute:</b> Funciona igual que el <b>Relative</b>, solo que posee tres diferencias<br> 
+        </p>
+        <ul>
+            <li>
+                <b>Diferencia 1:</b> En el relative se observaba como al aplicar la propiedad en un elemento, los demas respetaban la posicion
+                inicial de dicho elemento, es decir, en el DOM seguia todo intacto solo se aplicaba los movimientos que se le daban al elemento, en absolute
+                no sucede asi, si no que ahora esa aposicion ya no esta mas reservada y los otros elementos pueden tomar dicha posición
+            </li>
+            <li>
+                <b>Diferencia 2:</b> La posición de referencia que tenia el elemento para moverse hacia los diferentes lados, ya no va a hacer 
+                el espacio reservado que tenia si no que ahora va a hacer el viewport, que corresponde a toda la ventana del navegador, sin importar
+                que el elemento este dentro otro es decir, un div hijo que esta dentro de un div padre. En este ultimo caso, el elmento hijo puede tomar 
+                de referencia al elemento padre, solo si este tiene un <b>posicion: relative;</b> olvidandose del viewport
+            </li>
+            <li>
+                <b>Diferencia 3:</b> Si elemento no posee ningun ancho ni alto, los los elementos que eran en bloque y conservaban todo el ancho de la 
+                ventana, ahora este ancho quedara igual al tamaño del elemento, es decir se convierte a un inline-block
+            </li>
+        </ul>
+        <p>Ejemplo:</p>
+        <div class="Absolute__contenedor">
+            <div class="Absolute__contenedor-caja1">Caja 1</div>
+            <div class="Absolute__contenedor-caja2">Caja 2</div>
+            <div class="Absolute__contenedor-caja3">Caja 3</div>
+            <div class="Absolute__contenedor-caja4">Caja 4</div>
+            <div class="Absolute__contenedor-caja5">Caja 5</div>
+        </div>
+    </div>
+    <div class="Fixed">
+        <p>
+            <b>Fixed:</b> Funciona igual que el <b>Absolute</b>, solo que posee una una diferencia de que queda fijado en la ventana en el viewport
+            es decir, que aunque demos scroll el elemento se mantiene<br> 
+        </p>
+        <div class="Fixed__contenedor">
+            <p>Ejemplo <b>posicion: fixed;</b> -> Explicación mas abajo</p>
+        </div>
+    </div>
+    <div class="Sticky">
+        <p>
+            <b>Sticky:</b> Este tipo de posicion es una combinación del relative y el fixed, es decir tabien se queda fijado pero a diferencia 
+            del fixed este si guarda su posición y no es necesario realizar trucos dandole padding al body para que no se tapen las letras
+            si no que este ya respeta y guarda la posición. Hay que tener muy en cuenta si el div o el elemento que contiene la propiedad de 
+            sticky se en cuentra dentro de otro div, porque entonces el div hijo que es el que contiene la propiedad solo se quedara fijado
+            dentro del rango del div o caja padre.<br> 
+        </p>
+    </div>
+    <div class="Sticky__contenedor">
+        <p>Ejemplo <b>posicion: Sticky;</b></p>
+    </div>
+    <div class="div-lorem">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est aliquam et illum eveniet commodi fuga consectetur voluptates consequatur, 
+            rerum illo saepe minima qui ea eius facere tempore dignissimos laborum adipisci!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est aliquam et illum eveniet commodi fuga consectetur voluptates consequatur, 
+            rerum illo saepe minima qui ea eius facere tempore dignissimos laborum adipisci!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est aliquam et illum eveniet commodi fuga consectetur voluptates consequatur, 
+            rerum illo saepe minima qui ea eius facere tempore dignissimos laborum adipisci!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est aliquam et illum eveniet commodi fuga consectetur voluptates consequatur, 
+            rerum illo saepe minima qui ea eius facere tempore dignissimos laborum adipisci!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est aliquam et illum eveniet commodi fuga consectetur voluptates consequatur, 
+            rerum illo saepe minima qui ea eius facere tempore dignissimos laborum adipisci!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est aliquam et illum eveniet commodi fuga consectetur voluptates consequatur, 
+            rerum illo saepe minima qui ea eius facere tempore dignissimos laborum adipisci!</p>
+    </div>
+</body>
+</html>

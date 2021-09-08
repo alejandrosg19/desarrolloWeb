@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 4 - Event Flow</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Event_Flow.css">
+    
+</head>
+<body>
+    <h1>Lección 4 - Event Flow</h1>
+    <p>
+        <b>Definición:</b> Se refeire al orden en que se van a ejecutar los eventos. Existen dos tipos de orden. <br>
+        Por ejemplo, si tenemos un caso en el que tenemos un div, al que le asignamos un evento cuando se clique en el, pero ademas de esto
+        dentro del div tenemos un button y este tambien posee un evento, si cliqueamos en el boton que se ejecutara primero? el evento del 
+        contenedor porque contiene el boton o el evento del boton?
+    </p>
+    <ul>
+        <li>
+            <b>Event Bubbling: </b>Hace que se ejecute primero los eventos de los elementos mas especificos y luego elementos menos especificos,
+            es decir, primero se ejecutan los eventos de los elementos hijos del contenedor y luego los eventos del contenedor. Cabe destacar
+            que esta es la propiedad por defecto que posee el navegador. <b>ejemplo</b>
+        </li>
+        <div class="contenedor1">
+            <button class="button1">click aqui</button>
+        </div>
+        <li>
+            <b>Event Capturing: </b>Es lo contrario de Event Bubbling, se ejecutan primero los elementos menos especificos y luego los elementos
+            mas especificos, es decir, primero se ejecutan los eventos del contenedor y luego se ejecutan los eventos de los elementos hijos del 
+            contenedor. Para activar esta propiedad simplemente le agregamos un tercer parametro al 
+            addEventListener("evento", "funcion", "True para cambiar el event flow a event Capturing");
+            Cabe resaltar que si existen elemento dentro de elemento dentro de elemento, si queremos que todos al dar click al primero elemento,
+            se lleve a cabo el evento del contenedor mayor, luego del medio y luego del primer elemento, ha todos los elementos contenedores, 
+            debemos activar la propiedad de Event Capturing. <b>ejemplo</b>
+        </li>
+        <div class="contenedor2">
+            <div class="contenedor3">
+                <button class="button2">click aqui</button>
+            </div>
+        </div>
+    </ul>
+    <script src="script-Event_Flow.js"></script>
+</body>
+</html>

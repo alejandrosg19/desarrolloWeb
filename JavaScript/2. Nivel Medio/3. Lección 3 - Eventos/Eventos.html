@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 3 - Eventos</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Eventos.css">
+    
+</head>
+<body>
+    <h1>Lección 3 - Eventos</h1>
+    <p>
+        <b>Definición: </b>Los eventos son cualquier cambio que ocurre en la pagina, eventos desde que carga la pagina hasta eventos de toque de 
+        teclado y mouse. Tambien hay eventos respecto a cualquier cosa que suceda en la pagina.
+    </p>
+    <ul>
+        <li>
+            <b>Handler: </b>Manejador de eventos que son usados por medio de onevent, por ejemplo, onclick <br>
+            <button class="button1">Probar Handler</button>
+        </li>
+        <li>
+            <b>Listener: </b>Son eventos de escucha, mantiene escuhando el evento que indiquemos y lleva a cabo la acción cuando se ejecuta el evento.
+            Cabe destacar que si le pasamos el nombre de una función a la acción que se llevar a acabo, la funcion debe ser de tipo normal, no puede
+            ser ni funcion variable ni funcion, ni funcion flecha. O si no llevar a cabo la funcion flecha directamente en el los parentesis () del 
+            evento. <br> <b>Eventos:</b>
+            <ul>
+                <li><b>elemento.addEventListener("nombre de evento", "nombre de funcion que se ejecutara o funcion flecha"): </b>
+                    crea un escuchador del evento que queramos</li> 
+                <li><b>elemento.removeEventListener("nombre de evento","nombre de funcion"): </b>
+                    remueve el evento que pasemos del elemento seleccionado</li>
+            </ul>
+            <button class="button2">Probar EventListener</button>
+        </li>
+        <li>
+            <b>Objeto event: </b> El objeto event es el unico parametro que puede ser pasado por un addEventListener con función flecha y en las
+            otra funciones tambien puede ser pasado, este objeto tiene diversas funciones pero una de ella es devolver cual fue el elemento que activo 
+            el evento. <br>
+            <button class="button3">Mostrar elemento que activo el evento.</button>
+        </li>
+    </ul>
+    <h3>Propiedades de objeto event:</h3>
+    <img src="1.png" alt="">
+    <script src="script-Eventos.js"></script>
+
+    <h3>Codigo:</h3>
+    <img src="2.png" alt="">
+</body>
+</html>

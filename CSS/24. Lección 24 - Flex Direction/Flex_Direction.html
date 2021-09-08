@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 24 - Flex Direction</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Flex_Direction.css">
+</head>
+<body>
+    <h1>Lección 24 - Flex Direction</h1>
+    <p>
+        <b>Definición:</b>  Permite cambiar la dirección de alguno de los axis, es decir podemos cambiar la dirección del main-axis o del 
+        cross-axis, cabe resaltar que si cambia alguno de los dos, el otro tambien cambia, entonces, si el main-axis es el eje X, podemos
+        cambiarlo al eje Y, y por consiguiente el cross-axis que en el eje Y cambiaria al eje X.
+    </p>
+    <h2>Tipos de propiedades:</h2>
+    <div class="propiedades">
+        <div class="propiedades__row border">
+            <h3>row:</h3>
+            <p>Es el valor por defecto por el que viene el contenedor con la propiedad flex. Ejemplo</p>
+            <div class="flex-container row">
+                <div class="flex-item orange"></div>
+                <div class="flex-item"></div>
+                <div class="flex-item"></div>
+                <div class="flex-item"></div>
+                <div class="flex-item"></div>
+                <div class="flex-item"></div>
+            </div>
+        </div>
+        <div class="propiedades__row-reverse border">
+            <h3>row-reverse:</h3>
+            <p>Cambia la dirección del main-axis de manera horizontal, es como si fuese el espejo del row. Ejemplo</p>
+            <div class="flex-container row-reverse">
+                <div class="flex-item orange"></div>
+                <div class="flex-item"></div>
+                <div class="flex-item"></div>
+                <div class="flex-item"></div>
+                <div class="flex-item"></div>
+                <div class="flex-item"></div>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="propiedades__column border">
+                <h3>column:</h3>
+                <p>Permite cambiar el main-axis a vertical</p>
+                <div class="flex-container column">
+                    <div class="flex-item orange"></div>
+                    <div class="flex-item"></div>
+                    <div class="flex-item"></div> 
+                </div>
+            </div>
+            <div class="propiedades__column-reverse border">
+                <h3>column-reverse:</h3>
+                <p>Cambia la dirección del cross-axis si con la propierad columna, los elementos se ordenand de arriba hacia abajo con columns-reverse
+                    se ordenaran de abajo hacia arriba
+                </p>
+                <div class="flex-container column-reverse">
+                    <div class="flex-item orange"></div>
+                    <div class="flex-item"></div>
+                    <div class="flex-item"></div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

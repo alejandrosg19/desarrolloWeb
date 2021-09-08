@@ -1,0 +1,8 @@
+* {
+    font-family: 'Times New Roman';
+    font-weight: 400;
+    
+    box-sizing: border-box; /*El tamaño de la caja que contiene el elemento incluira el padding y el margin CAJA = WIDTH - PADDING - BORDER*/
+    padding: 0; /*Establece un espacio entre el borde del contenedor del elemento y el elemento*/
+    margin: 0; /*Establece el margen del contenedor del elemento*/
+}

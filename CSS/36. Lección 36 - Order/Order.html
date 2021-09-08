@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 36 - Order</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Order.css">
+</head>
+<body>
+    <h1>Lección 36 - Order</h1>
+    <p>
+        <b>Definición: </b>Esta propiedad es como la propiedad z-index pero en el main-axis, es decir, asi como en z-index el elemento que tenga
+        el mayor valor se pone por encima a de los demas, el elemento con un propiedad order mas alta que los demas va a ubicarse primero
+        en la dirección en la queencuentre en el main-axis, por defecto de izquierda a derecha, por lo que el elemento con valor mas alto en esta 
+        propiedad se ubicara de primeras en la parte izquierda del flex-container
+    </p>
+    <p>Orden Normal</p>
+    <div class="flex-container div1">
+        <div class="flex-item orange">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item green">Caja flexible</div>
+    </div>
+    <p>Caja orange con order: 4</p>
+    <div class="flex-container div2">
+        <div class="flex-item orange">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item green">Caja flexible</div>
+    </div>
+    <p>Caja orange con order: 4; y caja yellow con order: 2;</p>
+    <div class="flex-container div3">
+        <div class="flex-item orange">Caja flexible</div>
+        <div class="flex-item yellow">Caja flexible</div>
+        <div class="flex-item green">Caja flexible</div>
+    </div>
+</body>
+</html>

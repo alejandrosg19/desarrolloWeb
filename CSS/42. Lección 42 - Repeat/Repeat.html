@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 42 - Repeat</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Repeat.css">
+</head>
+<body>
+    <h1>Lección 42 - Repeat</h1>
+    <p>
+        <b>Definición: </b> Es una funcion que se puede adaptar a la propiedad de grid-template, que nos servira para reducir codigo y para repetir
+        valores en los tamaños de las columnas o filas de las celdas, es decir, si en un principio tenemos una grilla de 3x3 y queremos que todas
+        las columnas tengan un tamaño especifico y las filas tambien, hariamos lo siguiente, grid-tamplete-rows: 150px 150px 150x y
+        grid-template-columns: 150px 150px 150px, ahora bien con la función repeat() podemos reducir el codigo a lo siguiente:
+        grid-template-rows: repeat(3, 150px) grid-template-columns: repeat(3, 150px), de esta manera obtenemos el mismo reesultado.
+        Lo que estamos haciendo basicamente es darle en el primer argumento de la función la cantidad de veces que queremos que se repitan
+        las dimensiones que vamos a darle y en el segundo argumento simplemente damos los valores que queremos que se repitan. Realizando otro
+        ejemplo tambien podemos hacer lo siguiente: grid-tamplete-rows: repeat(2, 150px 1fr) que seria equivalente a grid-tamplete-rows: 150px 1fr 150px 1fr
+        le estamod diciendo que los parametros 150px y 1 fr se repitan dos veces.
+    </p>
+    <p><b>Esta funcion como va adaptada a la propiedad de grid-template se debe aplicar en el grid-container</b></p>
+    <div class="flex-container">
+        <div class="grid-container sin-repeat">
+            <p><b>grid-container-columns: 1fr 1fr 1fr grid-container-rows: 80px 150px 150px 150px</b></p>
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+            <div class="grid-item">7</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">9</div>
+        </div>
+        <div class="grid-container repeat">
+            <p><b>grid-container-columns: repeat(3, 1fr) grid-container-rows: 80px repeat(3, 150px)</b></p>
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+            <div class="grid-item">7</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">9</div>
+        </div>
+    </div>
+</body>
+</html>

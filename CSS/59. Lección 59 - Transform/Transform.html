@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 59 - Transform</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Transform.css">
+</head>
+<body>
+    <h1>Lección 59 - Transform</h1>
+    <p>
+        <b>Definición: </b>Es una propiedad que nos permite transformar el objeto, esta propiedad funcióna con valores que son funciones <br>
+        <b>Funciones:</b>
+    </p>
+    <ul>
+        <li>
+            <b>translate(50px, -50px):</b> Esta función resume las dos funciones anteriores recibe dos parametros, con el primer valor se le asigna 
+            la cantidad que quermeos que se mueva el objeto en el eje X, y el segundo valor corresponde a la cantidad del movimiento del eje Y. tambien
+            funciona con porcentajes.
+            <ul>
+                <li>
+                    <b>translateX(50px):</b> Esta funcion mueve el elemento en el eje x la cantidad de px que se le den, tambien podemos darle valores
+                    en %, ejemplo translateX(100%) esto indica que el elemento se movera 100% del valor de su tamaño en el eje x. Cabe destacar que tambien
+                    se le pueden dar valores negativos.
+                </li>
+                <li>
+                    <b>translateY(50px):</b> Esta función mueve el elemento en el eje y la cantidad de px que se le den, tambien funciona con % como el valor
+                    anterior
+                </li>
+            </ul>
+        </li>
+        <li>
+            <b>scale(2):</b> Esta función hace que el elemento sea mas grande o sea mas pequeño, recibe un parametro que determina la escala
+            del tamaño del elemento, es decir, con un valor 2 le estamos diciendo que va hacer un esacala de 2 veces el tamaño asignado en un 
+            principio.
+            <ul>
+                <li>
+                    <b>scaleX(2):</b> Cambia la escala de tamaño del elemento pero solo en el eje x
+                </li>
+                <li>
+                    <b>scaleY(2):</b> Cambia la escala de tamaño del elemento pero solo en el eje y
+                </li>
+            </ul>
+        </li>
+        <li>
+            <b>skew(30deg):</b> Esta función mueve el elemento 30 grados a la izquierda, esta función trabaja como si fuera un circulo,
+            de acuerdo al valor que le demos mueve el elemento.
+        </li>
+    </ul>
+    <h2>Ejemplo:</h2>
+    <div class="grid-container">
+        <div class="grid-container__item">
+            <h3>Translate</h3>
+            <div class="grid-item">
+                <h4>translateX(100px) o translateX(100%)</h4>
+                <div class="grid-item__caja translateX"><p>HOLA</p></div>
+            </div>
+            <div class="grid-item">
+                <h4>translateY(-50px) o translateY(-50%)</h4>
+                <div class="grid-item__caja translateY"><p>HOLA</p></div>
+            </div>
+            <div class="grid-item">
+                <h4>translateY(100, 50px) o translateY(100%, 50%)</h4>
+                <div class="grid-item__caja translate"><p>HOLA</p></div>
+            </div>
+        </div>
+        <div class="grid-container__item">
+            <h3>Scale</h3>
+            <div class="grid-item">
+                <h4>scale(2)</h4>
+                <div class="grid-item__caja scale"><p>HOLA</p></div>
+            </div>
+            <div class="grid-item">
+                <h4>scaleX(2)</h4>
+                <div class="grid-item__caja scaleX"><p>HOLA</p></div>
+            </div>
+            <div class="grid-item">
+                <h4>scaleY(2)</h4>
+                <div class="grid-item__caja scaleY"><p>HOLA</p></div>
+            </div>
+        </div>
+        <div class="grid-container__item">
+            <h3>Skew</h3>
+            <div class="grid-item">
+                <h4>skew(30deg)</h4>
+                <div class="grid-item__caja skew30"><p>HOLA</p></div>
+            </div>
+            <div class="grid-item">
+                <h4>skew(-30deg)</h4>
+                <div class="grid-item__caja skew-30"><p>HOLA</p></div>
+            </div>
+            <div class="grid-item">
+                <h4>skew(30deg) y el parrafo -> skew(-30deg)</h4>
+                <div class="grid-item__caja skewp"><p>HOLA</p></div>
+            </div>
+        </div>
+        <div class="Ejemplo">
+            <div class="caja"><p>HOLA</p></div>
+        </div>
+    </div>
+</body>
+</html>

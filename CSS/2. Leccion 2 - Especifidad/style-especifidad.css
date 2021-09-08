@@ -1,0 +1,30 @@
+/*Especifidad Ejemplo, en este ejemplo el color que tomaran las etiquetas h2, seran red*/
+h2 {
+    color: blue;
+}
+h2 {
+    color: red
+}
+
+/*Evaluando la especifidad segun la jerarquia, vamos a observar que el ultimo cambio que se le da el elemento h4 es un color:red, sin embargo
+va a tomar la primera propiedad aplicada debido a que se esta llamando el elemento desde su clase, y la clase es unidentificador que tiene
+mayor jerarquia en la especidad que el llamado del elemento en si*/
+
+.color-blue {
+    color: blue;
+}
+
+h4{
+    color: red;
+}
+
+/*El atibuto !important es la especifidad principal en la jerarquia, es decir, que cualquier elemento que contenta este atributo, sin 
+importar la norma de cascada o la jerarquia, va a tomar siempre en cuenta la propiedad que contenga el !important: Ejemplo:*/
+
+.important {
+    color: green;
+}
+
+.important{
+    color: gray !important; 
+}

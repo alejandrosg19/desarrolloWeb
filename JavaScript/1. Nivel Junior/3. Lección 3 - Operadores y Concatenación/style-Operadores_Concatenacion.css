@@ -1,0 +1,19 @@
+*{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background: radial-gradient(circle, #fff, #999);
+}
+h1{
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+    background-color: #08f;
+    border: 10px solid #06f;
+    position: sticky;
+    top: 5px;
+}
+img{
+    width: 600px;
+}

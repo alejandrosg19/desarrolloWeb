@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodologia BEM</title>
+    <link rel="stylesheet" type="text/CSS" href="style-BEM.css">
+</head>
+<body>
+    <h1>Lección de Metodologia BEM</h1>
+    <p>La metodologia BEM define una estructura que podemos llevar a cabo para que la especifidad delos elementos que se estan trabaando
+        no se ve afectada por la cantidad de identificadores, clases, elementos o atributos que estemos utilizando para llamar un elemento
+        en el CSS y aplicarle una propiedad, por lo que dicha Metologia lo que indica es tratar de trabar con clases, y cuando
+        haya un elemento contenido en otro al elemento que esta contenido agregar la class del contenedor luego de dos guiones bajos y 
+        el un nombre. Ejemplo:
+    </p>
+
+    <h2>Seleccionando un p dentro de un div</h2>
+    <div class="div-content">
+        <p class="div-content__p">p dentro del div</p>
+    </div>
+
+    <h2>Seleccionando el primer p, de varios p dentro de un div</h2>
+    <div class="div-content2">
+        <p class="div-content2__p"> varios p dentro del div</p>
+        <p class="div-content2__p"> varios p dentro del div</p>
+        <p class="div-content2__p"> varios p dentro del div</p>
+    </div>
+
+    <h2>Seleccionando un p en especifico, dentro de un div</h2>
+    <div class="div-content3">
+        <p class="div-content3__p--selected"> varios p dentro del div</p>
+        <p class="div-content3__p"> varios p dentro del div</p>
+        <p class="div-content3__p"> varios p dentro del div</p>
+    </div>
+</body>
+</html>

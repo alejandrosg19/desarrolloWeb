@@ -1,0 +1,69 @@
+*{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background: radial-gradient(circle, #fff, #999);
+}
+h1{
+    box-sizing: border-box;
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+    background: #08f;
+    border: 10px solid #03f;
+    box-shadow: 0px 10px 10px 0px #000;
+    position: sticky;
+    top: 5px;
+}
+
+.img{
+    display: flex;
+    justify-content:  center;
+}
+.img2{
+    height: 500px;
+}
+img{
+    margin: 20px;
+    border: 5px solid #000;
+    object-fit: cover;
+}
+
+.p-ejemplo{
+    text-align: center;
+}
+.container{
+    background: #A5D52F;
+    height: 200px;
+    width: 100%;
+}
+.caja{
+    background: #F3ED43;
+    height: 100px;
+    width: 100px;
+    margin: 50px;
+    display: inline-block;
+
+    position: absolute;
+    animation-name: animacion;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-timing-function: cubic-bezier(.17,.67,1,.06);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animacion{
+    0%{
+        left: 0;
+        background: #35AC25;
+    }
+    50%{
+        background: #56CEC5;
+    }
+    100%{
+        left: 80%;
+        background: #AC56CE;
+    }
+}

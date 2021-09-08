@@ -1,0 +1,32 @@
+*{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background: radial-gradient(circle, #fff, #999);
+}
+h1{
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+    background: #09f;
+    border: 10px solid #06f;
+    box-shadow: 0px 0px 10px #000;
+    position: sticky;
+    top: 10px;
+}
+.contenedor{
+    background: yellow;
+    padding: 30px;
+}
+label{
+    text-align: center;
+    display: block;
+}
+input{
+    padding: 20px;
+    border-radius: 20%;
+    display: block;
+    margin: auto;
+    outline: none;
+}

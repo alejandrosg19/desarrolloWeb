@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 62 - Variables CSS</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Variables_CSS.css">
+</head>
+<body>
+    <h1>Lección 62 - Variables CSS</h1>
+    <p>
+        <b>Definición: </b>Las variables son espacios que se almacenan en memoria. Existen dos tipos de variables:
+        <ul>
+            <li>
+                <b>Variables Globales: </b>Son creadas por fuera de cualquier elemento y pueden ser usadas por cualquier elemento. <br>
+                Para crear una variable global es necesario usar :root{} dentro de este definiremos la variable de la siguiente manera: --name-var,
+                dos guiones medios -- y el nombre que queramos ponerle a la variable.
+            </li>
+            <li><b>Variable Local: </b>Son creadas dentro de los elementos y solo pueden ser usadas por denro de dichos elementos que las crearon</li>
+        </ul>
+        Ahora bien para asignar una variable a alguna propiedad de un elemento debemos hacer uso de la función var("--nombre de variable") y dentro de ella
+        colocamos los dos guiones medios y el nombre de la variable. Por ejemplo:
+    </p>
+    <img src="1.png" alt="">
+    <img src="2.png" alt="">
+    <div class="grid-container">
+        <div class="grid-container__item"></div>
+        <div class="grid-container__item"></div>
+        <div class="grid-container__item">
+            <div class="caja"></div>
+        </div>
+    </div>
+    
+</body>
+</html>

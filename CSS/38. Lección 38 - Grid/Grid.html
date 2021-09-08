@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 38 - Grid</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Grid.css">
+</head>
+<body>
+    <h1>Lección 38 - Grid</h1>
+    <p>
+        <b>Definición: </b>Grid es un tipo de layaout, es decir es una propiedad de display, display:grid; y traduce a una grilla. Este tipo de layaout
+        maneja ciertos conceptos, que son necesarios explicar.
+    </p>
+    <h2>Conceptos</h2>
+    <div class="gird-container">
+        <p><b>Grid Container: </b> Hace referencia al contenedor, al elemento que contiene todos los demas, es lo mismo que el flex-container</p>
+        <p>
+            <b>Grid Item:</b> Hace referencia a cada uno de los elementos que hace parte del contenedor o del grid-container. Cabe destacar que 
+            independientemente de la cantidad de casillas que contenga la grilla, por ejemplo 15, los grid-items no corresponden exactamente a 
+            esa misma cantidad, cuando hablamos de grid-item, se hace referencia a todos los elementos, puede ser un p o una b o un h1, por lo que 
+            generalmente los grid-item son mas que las casillas que contiene el grid-container. Ahora bien hay que aclarar que los grid-item son
+            solo lo elementos que son hijos directos del grid-container, es decir, que si tengo un b dentro de un p, el p es un grid-item pero 
+            el b no, ya que este se encuentra dentro del p.
+        </p>
+        <p>
+            <b>Grid Cell: </b> Hace referencia a las divisones que se le dan a la grilla, podemos definir una grilla o un grid-container de 
+            2x2 -> 2 filas, 2 columnas, por lo que seria 4 los grid-cell
+        </p>
+        <p>
+            <b>Grid Tracks: </b> Estos son las filas y columnas de la grilla, si tenemos una grilla de 3x4, 3 filas y 4 columnas, diremos que 
+            en esta grilla hay 7 grid-tracks, ya que para sacar los grid-tracks de una grilla simplemente se suma la cantidad de filas con la 
+            cantidad de columnas, ahora bien estos grid-tracks a su vez se divide en.
+            <ul>
+                <li><b>Column: </b> Columnas de la grilla</li>
+                <li><b>Row: </b> Filas de la grilla</li>
+            </ul>
+        </p>
+        <p>
+            <b>Grid Area: </b> Estos no estan definidos concretamente, si no que son definidos por el desarrollador, es decir, si se tiene 
+            una grilla de 3x4, el desarollador puede definir que una columna o una fila de esa grilla sea un grid-area o 2 filas y 2 columnas
+            o 2 filas y 3 columnas, en fin, el grid-area es una espacio cualquiera dentro del grid-container que es definido por el desarollador.
+        </p>
+        <p>
+            <b>Grid Line</b> Hace referencia a todas lineas que se crean en un grilla, no slo las lineas divisoras si no tambien las lineas 
+            que forman el grid-container. Estas tambien se dividen en dos tipos:
+            <ul>
+                <li><p>Column line:</p> Lineas de las columnas de la grilla</li>
+                <li><p>Row line:</p> Lineas de las filas de la grilla</li>
+            </ul>
+        </p>
+        <img src="1.png" alt="grid-line" title="grid-line">
+    </div>
+</body>
+</html>

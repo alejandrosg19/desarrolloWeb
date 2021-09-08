@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 17 - Atributos de Inputs</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Atributos_Inputs.css">
+</head>
+<body>
+    <h1>Lección 17 - Atributos de Inputs</h1>
+    <p>
+        <b>Definición: </b>Son todos los atributos que poseen los inputs y los cuales pueden ser modificados desde Javascript. Cabe destacar que estos
+        atributos tiene una diferencia de los globales y es que para acceder al contenido de estos y para modificarlos no es necesario el Metodos de 
+        setAttribute, si no que podemos acceder directamente. <br>
+        <b>Metodos:</b>
+    </p>
+    <ul>
+        <li><b>class: </b>Clase del input</li>
+        <li><b>value: </b>Valor pre definido que se asigna al input</li>
+        <li><b>type: </b>Tipo del input</li>
+        <li><b>accept: </b>Permite definir que tipo de archivos se pueden seleccionar en un input file</li>
+        <li>
+            <b>form: </b>Esta valor sirve para cuando tenemos un submit por fuera del formulari y queremos que dicho submit envie los datos al servidor
+            de ese formulario, colocamos en el submit form="id del formulario."
+        </li>
+        <li><b>minlength: </b>Cantidad minima de caracteres</li>
+        <li><b>placeholder: </b>Valor informativo en los inputs</li>
+        <li><b>required: </b>Es obligatorio o no el campo</li>
+    </ul>
+    <div class="container">
+        <input type="text" class="class">
+        <input type="text" class="value">
+        <input type="text" class="type">
+        <input type="file" class="accept">
+        <form id="form-prueba">
+            <input type="text">
+            <input type="text">
+        </form>
+        <input type="submit" form="form-prueba">
+        <br> <br>
+        <p><b>Para probar estos inputs es necesario darle en el boton</b></p>
+        <form action="">
+            <input type="text" class="minlength">
+            <input type="text" class="placeholder">
+            <input type="text" class="required">
+            <input type="submit">
+        </form>
+    </div>
+    <script src="script-Atributos_Inputs.js"></script>
+    <h3>Codigo:</h3>
+    <img src="1.png" alt="">
+</body>
+</html>

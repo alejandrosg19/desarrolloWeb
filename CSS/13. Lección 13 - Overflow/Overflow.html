@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 13 - Overflow</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Overflow.css">
+</head>
+<body>
+    <h1>Lección 13 - Overflow</h1>
+    <p><b>Definción: </b>Es una propiedad que permite realizar acciones sobre texto o información que sobre salen de las dimensiones de la caja 
+    que lo contiene</p>
+    <h2>Valores para la propiedad overflow</h2>
+    <div class="Overflow">
+
+        <h3>overflow: visible;</h3>
+        <p>Permite que el contenido de la caja se salga del tamaño de la caja si esta es mas pequeña que el contenido. Ejemplo</p>
+        <div class="Overflow__visible">
+            <p>Ejemplo de caja con overflow visible</p>
+        </div>
+
+        <h3 class="Overflow__h3-hidden">overflow: hidden;</h3>
+        <p>A diferencia del overflow: visible el hidden no permite que el texto o el contenido de la caja salga, si no que solo muestra
+            el contenido que cabe dentro de la caja, sin importa si se recorta. Ejemplo</p>
+        <div class="Overflow__hidden">
+            <p>Ejemplo de caja con overflow hidden</p>
+        </div>
+
+        <h3>overflow: auto;</h3>
+        <p>Cuando la caja detecta que el contenido dentro de ella es mas grande que el tamaño de la caja misma aplicandole el valor de <b>auto</b>
+            permite que se pueda escrollear la información dentro de la caja sin necesidad de que esta se salga del tamaño de la caja. Cabe 
+            destacar que coloca el scroll solo si es necesario. Ejemplo</p>
+        <div class="Overflow__auto">
+            <p>Ejemplo de caja con overflow auto</p>
+        </div>
+
+        <h3>overflow: scroll;</h3>
+        <p>Coloca un scroll dentro de la caja haya o no haya necesidad de colocarlo, es decir, sin importar si el texto o el contenido de la caja
+            supera o no el tamaño de la caja, coloca un scroll Ejemplo</p>
+        <div class="Overflow__scroll1">
+            <p>Ejemplo 1 de caja con overflow scroll</p>
+        </div>
+        <div class="Overflow__scroll2">
+            <p>Ejemplo 2 de caja con overflow scroll, sin necesidad coloca el scroll</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 39 - Grid Template</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Grid_Template.css">
+</head>
+<body>
+    <h1>Lección 39 - Grid Template</h1>
+    <p>
+        <b>Definición: </b> Antes de definir esta propiedad es necesario decir que cuando asignamos la propiedad display: grid a un elemento grid-container
+        la grilla que sea es siempre con una unica columna, por lo que es necesario aplicar las propiedades de grid-template, el cual permite asignar
+        la cantidad de filas y columnas que tendra la grilla, mediante grid-template-rows y grid-template-columns, cabe destacar que para definir 
+        las columnas y filas con estas propiedades se hace asignando a la vez la cantidad de espacio que tendra cada fila o columna, por Ejemplo
+        grid-template-rows: 150px 150px 150px grid-template-columns: 150px 150px 150px, de esta manera asignamos una grilla de 3x3, en donde cada 
+        grid-cell, tiene un tamaño de 150px x 150px. ahora bien el problema con esto es que la grilla va a hacer estatica por lo que siempre se va a 
+        mantener con el mismo tamaño, independiente del tamaño de la ventana, para corregir esto, en ves de darle un tamaño a la grilla en px, es
+        necesario darselo en la unidad fr, que funciona similar al flex-grow en flex, va a tomar el espacio de sobrante en el ancho de la ventana 
+        y se lo aplicara a los grid-cell del grid-container. Ejemplo: grid-template-columns: 150fr, 150fr, 150fr 
+    </p>
+    <ul>
+        <li><p>grid-template-rows: </p>Corresponde a la cantidad de filas que tendra la grilla</li>
+        <li><p>grid-template-columns: </p>Corresponde a la cantidad de columnas que tendra la grilla</li>
+    </ul>
+    <p><b>Esta propiedad se aplica al grid-container</b></p>
+    <h2>Ejemplo: A la izquierda un grid-container con grid-template-columns en px y a la derecha otro grid-container con grid-template-columns en fr.</h2>
+    <div class="grid-container">
+        <div class="grid-container__1">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+            <div class="grid-item">7</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">9</div> 
+        </div>
+        <div class="grid-container__2">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+            <div class="grid-item">7</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">9</div> 
+        </div>
+    </div>
+</body>
+</html>

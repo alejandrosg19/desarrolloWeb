@@ -1,0 +1,50 @@
+*{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background: radial-gradient(circle, #bbb, #fff);
+}
+h1{
+    box-sizing: border-box;
+    font-size: 2em;
+    text-align: center;
+    background-color: #07e;
+    border: 10px solid #00f;
+    box-shadow: 0px 10px 10px 0px #000;
+    position: sticky;
+    top: 5px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-gap: 10px;
+    padding: 10px;
+    border: 5px solid #000;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    background-color: #333;
+}
+.grid-item{
+    text-align: center;
+    font-size: 2em;
+    border: 5px solid #000;
+    padding: 30px 50px;
+    background: #aaa;
+}
+
+.red{
+    background-color: #f00;
+    order: 3;
+}
+.green{
+    background: #0f0;
+    order: 2;
+}
+.yellow{
+    background-color: #ff0;
+    order: -2;
+}

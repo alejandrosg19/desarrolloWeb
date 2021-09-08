@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 17 - Object Fit</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Object-Fit.css">
+</head>
+<body>
+    <h1>Lección 17 - Object Fit y Object Posicion</h1>
+    <p>
+        <b>Definición: </b> Object Fit son propiedades que se aplican a las imagenes para mejorar el tamaño de estas dentro de una caja. Cabe destacar
+        que para aplicar dichas propiedades es necesario agregar las siguiente propiedades en la img width: 100%; height: 100%;
+    </p>
+    <h2>Tipos de Object Fit</h2>
+    <div class="Contain">
+        <p>
+            <b>contain:</b> Es la propiedas por defecto con la que se encuentran las imagenes que estan dentro de cajas o elementos, esta propiedad hacen 
+                que si el tamaño del contenedor es mas grande que la imagen, la imagen va a seguir con su resolución pero no va a tomar todo el tamaño
+                del contenedor. Ejemplo
+        </p>
+        <div class="Contain__div">  
+            <img src="1.jpg" alt="Nietzsche" title="Nietzsche">
+        </div>
+    </div>
+    <div class="Cover">
+        <p>
+            <b>cover:</b> Esta propiedad permite que la imagen se adapte al tamaño del contenedor y si es necesario recorta la imagen en sus bordes
+            para que quede al tamaño indicado del contenedor. Ejemplo
+        </p>
+        <div class="Cover__div">  
+            <img src="1.jpg" alt="Nietzsche" title="Nietzsche">
+        </div>
+    </div>
+    <div class="None">
+        <p>
+            <b>none:</b> Esta propiedad toma la resolución de la imagen y sin importar el tamaño del contenedor siempre deja el tamaño de la imagen. Ejemplo
+        </p>
+        <div class="None__div">  
+            <img src="1.jpg" alt="Nietzsche" title="Nietzsche">
+        </div>
+    </div> 
+    <div class="Scale-down">
+        <p>
+            <b>scale-down:</b> Esta propiedad toma la resolución mas baja dependiendo del tamaño del contenedor entre contain y none, es decir,
+            compara que resolución toma imagen en estas dos propiedades y se queda con las resolución mas pequeña. Ejemplo
+        </p>
+        <div class="Scale-down__div">  
+            <img src="1.jpg" alt="Nietzsche" title="Nietzsche">
+        </div>
+    </div>
+
+    <h2>object-position</h2>
+    <p>
+        <b>Definición: </b> object-position es una propiedad que se le aplica a las imagenes luego de aplicar alguna de las propiedaes de object-fit
+        ya que sta nos permite mover la imagen dentro del contenedor, por ejemplo podemos decirle que el enfoque de la imagen sea la parte izquierda y
+        no la central o la parte derecha o arriba o abajo(object-position: left;), incluso podemos mover la imagen con valores, por ejemplo
+        object-position: 4em; se mueve hacia la derecha la imagen dejando un espacio, o object-position: -4em, moviendose a la derecha -4em.
+        Ejemplo.
+    </p>
+    <div class="object-position">
+        <div class="object-position__img1">
+            <p>object-position: left;</p>
+            <img src="1.jpg" alt="Nietzsche" title="Nietzsche">
+        </div>
+        <div class="object-position__img2">
+            <p>object-position: right;</p>
+            <img src="1.jpg" alt="Nietzsche" title="Nietzsche">
+        </div>
+        <div class="object-position__img3">
+            <p>object-position: -4em;</p>
+            <img src="1.jpg" alt="Nietzsche" title="Nietzsche">
+        </div>
+        <div class="object-position__img4">
+            <p>object-position: 4em;</p>
+            <img src="1.jpg" alt="Nietzsche" title="Nietzsche">
+        </div>
+    </div>
+</body>
+</html>

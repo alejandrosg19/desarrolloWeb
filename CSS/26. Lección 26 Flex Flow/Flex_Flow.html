@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 26 - flex-flow</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Flex_Flow.css">
+</head>
+<body>
+    <h1>Lección 26 - Flex Flow</h1>
+    <p>
+        <b>Definición:</b> Esta propiedad es simplemente una unión de las propiedades flex-direction y flex-wrap, flex-flow: column row
+        en el primer campo se coloca el tipode propiedad de flex-direction que se quiere aplicar y en el segundo campo se coloca el 
+        tipo de propiedad de fle-flow que tambien se quiere aplicar. Esto cuando queremos aplicar las dos propiedades a un flex-container
+        y queremos ahorrar codigo.
+    </p>
+    <h2>Ejemplo:</h2>
+    <p>flex-container con propiedades separadas usando flex-direction y flex-wrap</p>
+    <div class="flex-container-sin-flex-flow">
+        <div class="flex-item orange">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item green">Caja flexible</div>
+    </div>
+    <p>flex-container usando flex-flow</p>
+    <div class="flex-container-flex-flow">
+        <div class="flex-item orange">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item green">Caja flexible</div>
+    </div>
+</body>
+</html>

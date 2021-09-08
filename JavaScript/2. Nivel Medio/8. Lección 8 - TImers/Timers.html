@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 8 - Timers</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Timers.css">
+    
+</head>
+<body>
+    <h1>Lección 8 - Timers</h1>
+    <p>
+        <b>Definición: </b> Son funciones que nos permiten hacer trabajos con el Tiempo.
+        <b>funciones:</b>
+    </p>
+    <ul>
+        <li>
+            <b>setTimeout(()=>{codigo}, tiempo en milisegundos): </b> Es una función que lleva a cabo una porción de codigo, luego de que 
+            pasa el tiempo que le indiquemos.
+        </li>
+        <li>
+            <b>clearTimeout('nombre de la variable que contiene la función setTimeout'): </b> Esta función recibe una variable que tienga asignada
+            una función de setTimeout, esto cumple el objetivo de no ejecutar el codigo de setTimeout()
+        </li>
+        <li>
+            <b>setInterval(()=>{codigo}, cada cuando queremos que se ejecute): </b> Esta función tiene el mismo objetivo que setTimeout, la unica
+            diferencia es que el primero se ejcuta una sola vez luego del tiempo es especificado, en cambio, setInterval(), repite el codigo
+            infinitamente, cada cierto tiempo, dicho tiempo fue el que le indicamos.    
+        </li>
+        <li>
+            <b>clearInterval(): </b> Al igual que clearTimeout(), borra la funcionalidad pero de la funcion setInterval().
+        </li>
+    </ul>
+    <div class="contenedor"></div>
+    <script src="script-Timers.js"></script>
+    <h3>Codigo:</h3>
+    <img src="1.png" alt="">
+</body>
+</html>

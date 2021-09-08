@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 57 - Animation</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Animation.css">
+</head>
+<body>
+    <h1>Lección 57 - Animation</h1>
+    <p>
+        <b>Definición:</b> Las propiedades de animaciones son basicamente movimientos dinamicos de los elementos en la pagina web cuando esta se carga. 
+        Para llevar a cabo las animaciones es necesario hacer uso de la regla @keyframes y el nombre de la animacion, este nombre se lo podemos dar nosotros
+        Ejemplo: @keyframes desplazarse{}. <br>
+        <b>Estructura de  @keyframes: </b> <br>
+        Estructura 1: <br>
+        <img src="1.png" alt="">
+        <ul>
+            <li><b>froms </b>Van las propiedades iniciales del elemento</li>
+            <li><b>to </b></li> Propiedades finales que queremos que tenga el elemento
+        </ul>
+        Estructura 2: La diferencia con la anterior estrctura es que con esta podemos aplicar propiedades intermedias de la animación <br>
+        <img src="2.png" alt="">
+        <ul>
+            <li><b>0%</b> Propiedades iniciales con las que empezara el elemento</li>
+            <li><b>50%</b> Propiedades que se aplicaran al elemento en la mitad de la animación</li>
+            <li><b>100%</b> Propiedades finales que se aplicaran al elemento</li>
+        </ul>
+        Ahora bien al igual que las transiciones, las animaciones poseen unas propiedades:
+        <ul>
+            <li>
+                <b>animation-name:</b> Es una propiedad que debe ir obligatoriamente en el elemento al que quermeos darle la animación, debe ir con
+                el nombre de la animación que dimos en @keyframes "nombre_de_animación". <b>(VALOR OBLIGARIO PARA QUE FUNCIONE)</b>
+            </li>
+            <li>
+                <b>animation-duration: </b>Esta propiedad define el tiempo que durara la animación. <b>(VALOR OBLIGARIO PARA QUE FUNCIONE)</b>
+            </li>
+            <li>
+                <ul><b>animation-delay: </b>Tiempo de espera antes de empezar la animación</ul>
+            </li>
+            <li>
+                <b>animation-timing-function:</b> Esta propiedad es igual a la propiedad de transition-timing-function, la cual posee varios
+                valores que determinan la aceleración de la animación.
+                <ul>
+                    <li>ease</li>
+                    <li>ease-in</li>
+                    <li>ease-out</li>
+                    <li>ease-in-out</li>
+                </ul>
+            </li>
+            <li>
+                <b>animation-iteration-count:</b> Esta propiedad determina la cantidad de veces que queremos que se repita la animación, cabe
+                destacar que a esa propiedad le podemos asignar un valor de infinite, para que la animación se repita infinitamente.
+            </li>
+            <li>
+                <b>animation-direction: </b> Esta propiedad se establece para definir en que dirección queremos que se lleve a cabo la animación,
+                posee valores de:
+                <ul>
+                    <li><b>normal </b>que sera la animación normal</li>
+                    <li><b>reverse </b>que revertira la animación</li>
+                    <li><b>alternate </b>alternara la anmación de normal a reverse</li>
+                    <li><b>alternate-reverse</b> que vendria siendo el mismo alternate soo que iniciando desde la finalización de la animación</li>
+                </ul> 
+            </li>
+            <li>
+                <b>animation-fill-mode: </b>Esta propiedad define como queremos que termine la animación si queremos que termine con las propiedades
+                iniciales o las propiedades finales.
+                <ul>
+                    <li><b>none:</b> El elemento terminara con las propiedades definidias normalmente al final de la animación</li>
+                    <li>
+                        <b>blackwards:</b> El elemento obtendra los valores de estilo establecidos por el primer fotograma clave (depende de la 
+                        dirección de la animación) y lo conservara durante el periodo de retraso de la animación
+                    </li>
+                    <li><b>forwards:</b> El elemento se queda con las ultimas propiedades</li>
+                </ul>
+            </li>
+        </ul>
+    </p>
+    <p>
+        <b>Ejemplo:</b> Propiedades de animation definidias:<br>
+        animation-name: desplazarse; <br>
+        animation-duration: 3s; <br>
+        animation-delay: 1s; <br>
+        animation-iteration-count: infinite;
+    </p>
+    <div class="grid-container">
+        <div class="grid-container-item div-1">
+            <p>animation-timing-function</p>
+            <div class="grid-item">ease</div>
+            <div class="grid-item">ease-in</div>
+            <div class="grid-item">ease-out</div>
+            <div class="grid-item">ease-in-out</div>
+        </div>
+        <div class="grid-container-item div-2">
+            <p>animation-direction</p>
+            <div class="grid-item">normal</div>
+            <div class="grid-item">reverse</div>
+            <div class="grid-item">alternate</div>
+            <div class="grid-item">alternate-reverse</div>
+        </div>
+        <div class="grid-container-item div-3">
+            <p>animation-fill-mode</p>
+            <div class="grid-item">none</div>
+            <div class="grid-item">backwards</div>
+            <div class="grid-item">forwards</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 29 - Align Content</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Align_Content.css">
+</head>
+<body>
+    <h1>Lección 29 - Align Content</h1>
+    <p>
+        <b>Definición:</b> Esta propiedad funciona al igual que align-items, la unica diferencia es que align-content aplica propiedes a 
+        mas de una linea de elementos, align-items solo se las aplica a la primera linea. En el siguiente ejemplo hemos aplicado la 
+        propiedad de flex-wrap: wrap, la propiedad align-item: flex-start para el primer flex-container y align-content: flex-start para el segundo
+        flex-container, como se puede observar la segunda linea del primer flex-container se ubica en la mitad del contenedor, por lo que no esta 
+        aplicando la propiedad flex-start a todas las lineas o elementos. Pero en el segundo flex-container, observamos que efectivamente
+        a todos los elementos se les esta aplicando la propiedad de flex-start. COn eso podemos ver como el align-content aplica las propiedades
+        a todos los elementos del flex-container
+    </p>
+    <h2>Ejemplo:</h2>
+    <p>flex container con align-content: flex-start</p>
+    <div clasS="flex-container align-items">
+        <div class="flex-item">Caja Flexible</div>
+        <div class="flex-item">Caja Flexible</div>
+        <div class="flex-item">Caja Flexible</div>
+        <div class="flex-item">Caja Flexible</div>
+        <div class="flex-item">Caja Flexible</div>
+        <div class="flex-item">Caja Flexible</div>
+    </div>
+    <p>flex container con align-content: flex-start</p>
+    <div clasS="flex-container align-content">
+        <div class="flex-item">Caja Flexible</div>
+        <div class="flex-item">Caja Flexible</div>
+        <div class="flex-item">Caja Flexible</div>
+        <div class="flex-item">Caja Flexible</div>
+        <div class="flex-item">Caja Flexible</div>
+        <div class="flex-item">Caja Flexible</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 1 - Window</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Window.css">
+</head>
+<body>
+    <h1>Lección 1 - Window</h1>
+    <p>
+        <b>Definición: </b>Es un objeto de JavaScript, el mas grande en la jerarquia. Window posee una cantidad enorme de metodos entre ellos
+        document. Window hace referencia a una ventana del navegador. <br>
+        <b>Algunos Metodos:</b>
+    </p>
+    <ul>
+        <li><b>open(): </b>Abre una ventana nueva.</li>
+        <li><b>close(): </b>Cierra la ventana actual o la ventana en la que se llamo el metodo</li>
+        <li><b>closed: </b>Devuelve true si la ventana que llamo el metodo esta cerrada, devuelve false si la ventana esta abierta</li>
+        <li><b>stop(): </b>Cuando una ventana esta cargando, hace que esta se detenga.</li>
+        <li><b>alert(): </b>Arroja un alerta en la ventana.</li>
+        <li><b>print(): </b>Abre las opciones de impresion del navegador</li>
+        <li><b>prompt(): </b>Pide un dato y devuelve un string</li>
+        <li>
+            <b>confirm(): </b>Imprime un texto con dos opciones aceptar y cancelar, devuelve true si aceptar es presionado
+            devuelve false si cancelar es presionado
+        </li>
+    </ul>
+    <p><b>Metodos de Screen y Scroll: </b></p>
+    <ul>
+        <li>
+            <b>screen: </b>es un objeto de JavaScript que posee varias propiedades de la ventana y pueden se llamadas con . object_screen = window.screen.availLeft <br>
+            <img src="1.png" alt="">
+        </li>
+        <li><b>screenLeft: </b> Devuelve la distancia en pxque existe entre el borde izquierdo del navegador y el borde izquierdo de la pantalla.</li>
+        <li><b>screenTop: </b> Devuelve la distancia en px que existe entre el borde superios del navegador y el borde superior de la pantalla.</li>
+        <li><b>scrollX: </b> Devuelve la cantidad de px que hemos hecho scroll en el eje x</li>
+        <li><b>scrollY: </b>Devuelve la cantidad de px que hemos hecho scroll</li>
+        <li>
+            <b>scroll(cordX, cordY) - scrollTo(cordX, cordY): </b> Recibe dos parametros, el scrool que se quiere hacer en X y
+            el scroll que se quiere hacer en Y. Esto nos rehubicara en la pantalla
+        </li>
+    </ul>
+    <img src="s" alt="">
+    <script src="script-Window.js"></script>
+</body> 
+</html>

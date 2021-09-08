@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 14 - Metodos Selección de Elementos.</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Metodos_Seleccion_Elementos.css">
+</head>
+<body>
+    <h1>Lección 14 - Metodos Selección de Elementos.</h1>
+    <p>
+        <b>Definición: </b> Existen diversos metodos que permiten tomar el valor de un elemento del DOM. <br>
+        <b>Metodos:</b>
+    </p>
+    <ul>
+        <li><b>document.getElementById(): </b>Selecciona un elemento por ID</li>
+        <li><b>document.getElementsByTagName(): </b>Selecciona todos los elementos que coincidan con el nombre de la etiqueta especificada.</li>
+        <li>
+            <b>document.querySelector(): </b>Devuelve el primer elemento que coincida con el grupo especifiado de selectores. Es decir podemos
+            decirle que nos seleccione elementos por clase o por id como se selecciona en CSS document.querySelector("#parrafo") document.querySelector(".parrafo")
+        </li>
+        <li><b>document,querySelectorAll(): </b>Devuelve todos los elementos que coincidan con el grupo especificado de selectores. </li>
+    </ul>
+    <div class="prueba">
+        <p id="parrafo1" class="parrafo">Parrafo 1</p>
+        <p id="parrafo2" class="parrafo">Parrafo 2</p>
+        <p id="parrafo3" class="parrafo">Parrafo 3</p>
+    </div>
+    <div class="imgs">
+        <img src="1.png" alt="">
+        <img src="2.png" alt="">
+    </div>
+    <script src="script-Metodos_Seleccion_Elementos.js"></script>
+</body>
+</html>

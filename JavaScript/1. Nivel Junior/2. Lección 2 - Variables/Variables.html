@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 2 - Variables</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Variables.css">
+    <script src="script-Variables.js"></script>
+</head>
+<body>
+    <h1>Lección 2 - Variables</h1>
+    <p><b>Definición: </b> Es una espacio que se guarda en memoria <br> Para definiri una vaiable simplement colocamos el nombre de la Variable
+    seguido de = y seguido del contenido de la variable, por ejemplo: <br> nombre = "Santiago"; <br> nombre = "Alejandro";</p>
+    <b>Existe tres maneras de declarar una variable:</b>
+    <ul>
+        <li><b>var: </b>Es una variable global que puede ser usada desde cualquier condicional o metodo</li>
+        <li>
+            <b>let: </b>Es una variable que solo puede ser usada dentro del contenedor donde fue declarada, es decir, si dentro de un if yo declare
+            mi variable let, solo puedo hacer uso de dicha variable dentro de ese if, dentro de ese bloque de codigo, por fuera no.
+        </li>
+        <li>
+            <b>constat: </b>Hace referencia a una variable constate, significa que una vez declarada, la variable siempre va a tomar ese valor, 
+            no se lo podremos cambiar. Si itentamos cambiar una variable const, nos va a arrojar error. Cabe descatar que con const es obligatorio
+            inicializarla en el mismo instante en que la declaramos.
+        </li>
+    </ul>
+    <p><b>Proceso de declaración, inicialización y modificación</b></p>
+    <ul>
+        <li><b>Declaración: </b>let numero;</li>
+        <li><b>Inicialización: </b>numero = 19;</li>
+        <li><b>modificación: </b>let numero = 19; <br> numero = 20;</li>
+    </ul>
+    <p>
+        <b>Inicialización multiple de variables</b>
+        <ul>
+            <li>let variable1, variable2, variable3</li>
+            <li>let variable1 = 1, variable2 = 2, variable3 = 3</li>
+        </ul>
+    </p>
+    <b><b>Tipos de datos:</b></b>
+    <ul>
+        <li><b>string: </b> Cadena de texto Ejemplo: string = "Cadena de texto"</li>
+        <li><b>number: </b>Numero 2 Ejemplo number = 19</li>
+        <li><b>booleanos: </b> True o False bool = true </li>
+        <li>
+            <b>Casos especiales de datos: </b> Estos tipos de variables nos habla de que la variable no esta definida o hay un error
+            <ul>
+                <li><b>undefined: </b>Es una variable que ha sido declarada pero no definidia o inicializada, es decir, que no tiene valor.</li>
+                <li>
+                    <b>null: </b>Variable que no tiene nada, a diferencia del undefined es que la variable es declarada pero tambien es 
+                    inicializada con un valor nulo
+                </li>
+                <li>
+                    <b>nan: </b>Significa: No es un numero, esto resulta cuando intentamos realiar una operación entre dos variables es la al menos una
+                    no es un numero.
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <p>
+        <b>Scope: </b>Cuando hablamos de scope hablamos del alcance que tiene el tipo de variable en el bloque de codigo, por eso hacemos referencia
+        a que el tipo de variable let, tiene un alcance local, dentro del bloque de codigo en que se declaro. <br>
+        <b>alert(): </b>alert es una función que nos arroja un pop up en pantalla con cualquier valor que nosotros queremos mostrar. <br>
+        <b>prompt(): </b>Tiene la misma funcionalidad que alert solo que ademas de mostrar tambien tiene un recuadro en el que el usuario puede
+        ingresar valores, basicamente podemos campturar valores. Por ejempo: <br> var nombre = prompt("Dame tu nombre"); con la siguiente instrucción
+        estamos mostrando un mensaje "Dame tu nombre" y ademas almacenando el valor que el usuario envie en la variable nombre.
+    </p>
+</body>
+</html>

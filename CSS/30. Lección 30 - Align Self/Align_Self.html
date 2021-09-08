@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 30 align-self</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Align_Self.css">
+</head>
+<body>
+    <h1>Lección 30 align-self</h1>
+    <p>
+        <b>Definición:</b> Esta propiedad se aplica a un solo elemento que esta contenido dentro de un flex-container, basicamente
+        tiene las mismas propiedades que el align-item y align-content pero aplicados a un solo elementos, permite mover una sola caja
+    </p>
+    <p>align-self: stretch</p>
+    <div class="flex-container">
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+    </div>
+    <p>align-self: center</p>
+    <div class="flex-container">
+        <div class="flex-item align-self-center">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+    </div>
+    <p>align-self: stretch</p>
+    <div class="flex-container">
+        <div class="flex-item align-self-flex-end">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+    </div>
+</body>
+</html>

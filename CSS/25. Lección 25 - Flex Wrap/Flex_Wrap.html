@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 25 - Flex Wrap</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Flex_Wrap.css">
+</head>
+<body>
+    <h1>Lección 25 - Flex Wrap</h1>
+    <p>
+        <b>Definición:</b> Es una propiedad que respeta el ancho de los elementos dentro del flex-container o los flex-items, es deir, en vez
+        de que los elementos se angosten a medida que la ventana se hace mas angosta, los elementos se van poniendo uno encima de otro
+        respetando el ancho de estos.
+    </p>
+    <h2>Tipos de flex-wrap</h2>
+    <p><b>Sin wrap:</b> Propiedad por defecto en donde los elementos se van angostando según el ancho de la ventana</p>
+    <div class="flex-container">
+        <div class="flex-item orange">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item green">Caja flexible</div>
+    </div>
+    <p><b>flex: wrap;</b> Se respeta el ancho de las cajas, moviendolas una encima de otra de acuerdo al tamaño de estas y de la ventana</p>
+    <div class="flex-container wrap">
+        <div class="flex-item orange">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item green">Caja flexible</div>
+    </div>
+    <p>
+        <b>flex: wrap-reverse;</b> Funciona similar al wrap, respeta el ancho de los elementos, la diferencia es que los elementos no se van 
+        para abajo, si no para arriba
+    </p>
+    <div class="flex-container wrap-reverse">
+        <div class="flex-item orange">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item green">Caja flexible</div>
+    </div>
+</body>
+</html>

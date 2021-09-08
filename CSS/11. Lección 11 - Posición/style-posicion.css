@@ -1,0 +1,114 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+div div{
+    width: 120px;
+    height: 120px;
+    text-align: center;
+}
+
+/*Static*/
+.Static__caja1{
+    background-color: orange;
+    opacity: 0.5; /*Opaca el color del elemento*/
+}
+.Static__caja2{
+    background-color: green;
+}
+.Static__caja3{
+    background-color: lightblue;
+}
+.Static__caja4{
+    background-color: yellow;
+}
+
+/*Relative*/
+.Relative__caja1{
+    background-color: orange;
+}
+.Relative__caja2{
+    background-color: green;
+    position: relative;
+    top: 180px;
+    z-index: 1;
+}
+.Relative__caja3{
+    background-color: lightblue;
+    position: relative;
+}
+.Relative__caja4{
+    background-color: yellow;
+}
+
+/*Absolute*/
+.Absolute__contenedor {
+    position: relative;
+    border: 4px double blue;
+    margin: 5px auto;
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    text-align: center;
+}
+
+.Absolute__contenedor div{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: yellow;
+}
+
+.Absolute__contenedor-caja1{
+    top: 0;
+}
+
+.Absolute__contenedor-caja2{
+    right: 0;
+}
+
+.Absolute__contenedor-caja3{
+    bottom: 0;
+}
+
+.Absolute__contenedor-caja4 {
+    right: 0;
+    bottom: 0;
+}
+
+.Absolute__contenedor-caja5{ /*Centrando la caja en el contendor*/
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/*Fixed*/
+body{
+    padding-top: 100px;/*Damos un padding al body para que el div de posicion fixed no nos tape información de arriba*/
+}
+.Fixed__contenedor{
+    font-size: 2em;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    background-color: teal; 
+    top: 10px;
+    opacity: 0.9;
+}
+
+/*Sticky*/
+.Sticky__contenedor{
+    font-size: 2em;
+    width: 100%;
+    height: 100px;
+    position: sticky;
+    top: 100px;
+    background-color: darksalmon;
+    opacity: 0.8;
+    text-align: center;
+}
+.div-lorem{
+    font-size: 6em;
+}

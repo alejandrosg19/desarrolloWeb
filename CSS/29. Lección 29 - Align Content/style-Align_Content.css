@@ -1,0 +1,36 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+h1{
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 2em;
+    background-color: aquamarine;
+    border: 5px solid #00f;
+    box-shadow: 0px 10px 10px 0px #000;
+    position: sticky;
+    top: 0px;
+}
+
+.flex-container{
+    display: flex;
+    border: 10px solid #000;
+    height: 50vh;
+    flex-wrap: wrap;
+}
+.flex-item{
+    text-align: center;
+    width: 320px;
+    height: 128px;
+    margin: 10px;
+    background-color: aqua;
+}
+
+.align-items{
+    align-items: flex-start;
+}
+.align-content{
+    align-content: flex-start;
+}

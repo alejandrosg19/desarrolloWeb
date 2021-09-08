@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 16 - Pseudo Clases</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Pseudo-Clases.css">
+</head>
+<body>
+    <h1>Lección 16 - Pseudo Clases</h1>
+    <p><b>Definición: </b> Las Pseudo-Clases escuchan eventos y cuando dicho evento se activa, se llevan a cabo los efectos aplicados a dicho evento</p>
+    <h2>Tipos de Pseudo-Clases</h2>
+    <div class="hover">
+        <p>
+            <b>:hover </b> Es una propiedad que permite aplicarle un cambio de efecto a un elemento cuando el mouse pase por encima de este. Cabe destacar 
+            que con hover se agregan otras fucionalidades como la del transition, en la que podemos especificar que tan rapido queremos que 
+            se den esos cambios en el hover para cada uno de las propiedaes que queramos. Ejemplo:
+        </p>
+        <div class="hover__div">
+            <p>Ejemplo de hover, pasa el cursor por encima</p>
+        </div>
+    </div>
+    <div class="link">
+        <p>
+            <b>:link </b> Es una Pseudo-Clase que le da propiedades a un link que aun no es visitado o clickeado por el usuario. 
+            Va a mantener unas propiedades definidias siempre y cuando el link al qe hace referencia el a no se haya visitado, si ha visitado
+            al menos una vez, el elemento a pierde las propiedades aplicadas con :link Ejemplo:
+        </p>
+        <a class="link__a" href="https://www.youtube.com/" target="_blank">Si no me cliqueas soy de un color, pero cuando me cliquees cambio de color</a>
+    </div>
+    <div class="visited">
+        <p>
+            <b>:visited </b> Es una Pseudo-Clase similar a la anterior, la diferencia es que esta permite aplicarle propiedades al elemento a 
+            osea a un link que ya fue visitado. Ejemplo:
+        </p>
+        <a class="visited__a" href="https://www.twitter.com/" target="_blank">Soy un link con las dos propiedades de link y visited</a>
+    </div>
+    <div class="active">
+        <p>
+            <b>:active </b> Es una Pseudo-Clase que aplica propiedades a un elemento si este es presionado con con cursor, es decir
+            las propiedades se aplican al elemento solo si se el elemento se mantiene presionado. Ejemplo:
+        </p>
+        <div class="active__div">
+            <p>Presioname para ver las propiedades aplicadas con active</p>
+        </div>
+    </div>
+    <div class="focus">
+        <p>
+            <b>:focus </b> Es una Pseudo-Clase que aplica propiedades al enfocar en un campo de input, basicamente al seleccionar un campo 
+            de un input. Ejemplo:
+        </p>
+        <input class="focus__input" type="text" placeholder="Escriba su nombre">
+    </div>
+    <div class="lang">
+        <p>
+            <b>:lang() </b> Es una Pseudo-Clase que aplica propiedades a un texto de un lenguaje en especifico, es decir podemos decirle que aplique
+            certas propiedades a un texto si este se encuentra en ingles, pero para eso, es necesesario darle en el HTML al texto, el lenguaje al que 
+            corresponde, por medio de la etiqueta lang="es" -> para español o lang="en" -> para ingles. Cabe destacar que en e CSS lang es una funcion
+            por lo que es necesario pasarle el parametro del lenguaje que va a identificar para aplicarle las propiedades. Ejemplo:
+        </p>
+        <div class="lang__div">
+            <b lang="es">¿Hola como estas?</b>
+            <b lang="en">¿How are you?</b>
+        </div>
+    </div>
+</body>
+</html>

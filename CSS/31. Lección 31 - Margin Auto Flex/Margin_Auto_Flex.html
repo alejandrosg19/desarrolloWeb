@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 31 - Margin Auto en Flex</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Margin_Auto_Flex.css">
+</head>
+<body>
+    <h1>Lección 31 - Margin Auto en Flex</h1>
+    <p>
+        <b>Definición: </b>La propiedad de margin:auto; en flex tiene ciertas particularidades, ya que dependiendo del tipo de margen, mueve la caja
+        hacia un lado especifico, por ejemplo si aplicamos margin-left: auto; la caja se va a mover hacia la derecha de la pantalla y si aplicamos
+        margin-right: auto; la caja se movera a toda la derecha de la ventana. Cabe destacar que dischas propiedades de margin, deben ser
+        aplicadas a los flex-item Ejemplo:
+    </p>
+    <p><b>margin-left: auto;</b> Da un margin completo hacia la izquierdad moviendo la caja hacia la derecha de la ventana</p>
+    <div class="flex-container">
+        <div class="flex-item margin-left">Caja flexible</div>
+    </div>
+    <p><b>margin-rigth: auto;</b> Da un margin completo hacia la derecha moviendo la caja hacia la izquierda de la ventana</p>
+    <div class="flex-container">
+        <div class="flex-item margin-rigth">Caja flexible</div>
+    </div>
+    <p><b>margin-top: auto;</b> Da un margin completo hacia arriba moviendo la caja hacia la abajo de la ventana</p>
+    <div class="flex-container">
+        <div class="flex-item margin-top">Caja flexible</div>
+    </div>
+    <p><b>margin-bottom: auto;</b> Da un margin completo hacia abajo moviendo la caja hacia arriba de la ventana</p>
+    <div class="flex-container">
+        <div class="flex-item margin-bottom">Caja flexible</div>
+    </div>
+    <p><b>margin: auto;</b> Da un margin completo hacia a todos los lados moviendo la caja hacia al centro de la ventana</p>
+    <div class="flex-container">
+        <div class="flex-item margin">Caja flexible</div>
+    </div>
+</body>
+</html>

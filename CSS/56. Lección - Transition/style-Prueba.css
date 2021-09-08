@@ -1,0 +1,18 @@
+.container{
+    background: #86f;
+    margin: 20px;
+    height: 300px;
+}
+.caja{
+    background: #025;
+    height: 100px;
+    width: 100px;
+    left: 0;
+    transition-property: left;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    position: relative;
+}
+.container:hover > .caja{
+    left: 80%;
+}

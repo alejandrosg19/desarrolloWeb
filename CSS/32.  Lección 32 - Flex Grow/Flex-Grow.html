@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 32 - Flex Grow</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Flex-Grow.css">
+</head>
+<body>
+    <h1>Lección 30 - Flex Grow</h1>
+    <p>
+        <b>Definición: </b> Es una propiedad que coge el espacio que sobra entre el flex-container y los flex-item para aumentar el ancho de los 
+        flex-item de acuerdo a la cantidad de proporciones que se le asignen para dividir dicho espacio, es decir, si por ejemplo a un flex-item
+        le asignamos la propiedad flex-grow: 2; y a otro flex-item le asignamos flex-grow: 1; lo que estamos haciendo es, cogiendo el espacio
+        sobrante entre el flex-container y los flex-items, diviendolo entre 3 porque en un flex-item dimos 2 y en el otro 1 y luego distribuimos 
+        esas partes entre los flex-items, 2 partes para un flex-item y 1 para el otro. Cabe destacar que no se empieza a repartir el espacio
+        sobrante cuando las cajas alcancen el espacio de su ancho asignado.
+    </p>Ejemplo
+    </p>
+    <p>Para observar la funcionalidad del flex-grow, por favor haga juegue con el tamaño de la ventana</p>
+    <p><b>flex-grow: 1; para todos los flex-item:</b> a cada caja se le asigna un tamaño igual del sobrante</p>
+    <div class="flex-container fg-1">
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+    </div>
+    <p>
+        <b>flex-grow: 2; para una caja y flex-grow: 1; para otra caja: </b> A una caja le estamos asignando 2 espacios del sobrante y 
+        a otra un solo espacio del sobrante.
+    </p>
+    <div class="flex-container fg-2">
+        <div class="flex-item div1">Caja flexible</div>
+        <div class="flex-item div2">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+    </div>
+    <p>
+        <b>flex-grow: 1; para una unica caja: </b> A una sola caja le estamos danto todo el campo sobrante.
+    </p>
+    <div class="flex-container fg-3">
+        <div class="flex-item div1">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+        <div class="flex-item">Caja flexible</div>
+    </div>
+</body>
+</html>

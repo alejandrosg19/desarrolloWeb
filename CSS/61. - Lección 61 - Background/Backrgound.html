@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 61 - Background</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Background.css">
+</head>
+<body>
+    <h1>Lección 61 - Background</h1>
+    <p>
+        <b>Definición: </b>Es una propiedad que se puede aplicar a todos los elementos, en donde permite cambiar el color del fondo del elemento, como 
+        tambien dejar una imagen de fondo. <br>
+        <b>Propiedades de background</b>
+        <ul>
+            <li><b>background-color: #fff | black </b>Es una propiedad con la que podemos asignar el color de fondo de un elemento</li>
+            <li><b>background-img: url() </b>Es una propiedad con la que podemos asignar una imagen de fondo de un elemento, solo con la url de la img</li>
+            <li>
+                <b>background-size: 100% | 100% 360px | cover </b>Esta propiedad permite ajustar la imagen asignada al fondo del elemento, para que se vea mejor
+                por ejemplo, si colocamos 30px 50px, le estamos dando las dimensiones de la imagen para que se ajuste al fondo, tambien le podemos dar
+                100% 100%, para que tome el 100% del width del tamaño del elemento y el 100% del heigth del tamaño del elemento, o tambien podemos 
+                usar valores de la propiedad object-fit las cuales son: cover, contain, etc.
+            </li>
+            <li>
+                <b>background-repeat: repeat | no-repeat </b>Esta propiedad sirve para cuando el fondo del elemento que es una imagen se esta repitiendo
+                y no queremos que se repita, por lo que podemos darl background-repear: no-repeat. Cabe destacar que la imagen como no cubre el 100%
+                del tamaño del elemento, pues va a quear un pedaso con la imagen y otro con el color del fondo del elemento que hayamos asignado.
+            </li>
+            <li>
+                <p>background-clip: border-box | padding-box | content-box </p> Esta propiedad corta la imagen de fondo dependiendo de los difererentes  espacios
+                del elemento, es decir, si la imagen ocupa todo el tamaño del elemento y nosotros asignamos un background-clip: content-box, la imagen se va 
+                a recortar hasta el tamaño del contenido del elemento, pero si le damos un padding-box, la imagen se recortara hasta el padding del elemento.
+            </li>
+            <li>
+                <b>background-origin: border-box | padding-box | content-box </b> Esta propiedad a diferencia de la anterior no recorta la imagen
+                si no que la crea a partir del espacio del elemento que le asingemos, es decir, si asignamos la propiedad content-box, la imagen no 
+                se va recorta si no que se crea a partir del espacio contenido del elemento.
+            </li>
+            <li>
+                <b>background-position: left top | rigth bottom | center center </b> Esta propiedad permite ubicar la imagen en el elemento solo si
+                existe un espacio entre la imagen de fondo y el tamaño del elemento, cabe destacar que se deben asignar dos valores, el primero 
+                corresponde a la posición en el eje x y el segundo a la posición en el eje y.
+            </li>
+            <li>
+                <b>background-attachment: scroll | fixed | inherit </b> Esta popiedad sirve para fijar o escrolear el fondo de un elemento.
+            </li>
+        </ul>
+    </p>
+    <div class="grid-container">
+        <div class="grid-container__item">
+            <p>background-color: #09f;</p>
+        </div>
+        <div class="grid-container__item">
+            <p>background-color: url();</p>
+        </div>
+        <div class="grid-container__item">
+            <p>background-size: cover;</p>
+        </div>
+        <div class="grid-container__item">
+            <p>background-repeat: no-repeat</p>
+        </div>
+        <div class="grid-container__item">
+            <p>background-clip:</p>
+            <div class="grid-item clip">
+                <div class="grid-item__caja"><p>border-box</p></div>
+                <div class="grid-item__caja"><p>padding-box</p></div>
+                <div class="grid-item__caja"><p>content-box</p></div>
+            </div>
+        </div>
+        <div class="grid-container__item">
+            <p>background-origin:</p>
+            <div class="grid-item origin">
+                <div class="grid-item__caja"><p>border-box</p></div>
+                <div class="grid-item__caja"><p>padding-box</p></div>
+                <div class="grid-item__caja"><p>content-box</p></div>
+            </div>
+        </div>
+        <div class="grid-container__item">
+            <p>background-position:</p>
+            <div class="grid-item direction">
+                <div class="grid-item__caja"><p>left bottom</p></div>
+                <div class="grid-item__caja"><p>center bottom</p></div>
+                <div class="grid-item__caja"><p>right bottom</p></div>
+            </div>
+        </div>
+        <div class="grid-container__item">
+            <p>background-attachment: fixed;</p>
+        </div>
+    </div>
+</body>
+</html>

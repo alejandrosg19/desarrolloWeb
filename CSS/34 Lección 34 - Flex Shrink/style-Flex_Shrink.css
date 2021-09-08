@@ -1,0 +1,35 @@
+*{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1{
+    box-sizing: border-box;
+    font-size: 2em;
+    text-align: center;
+    background-color: aqua;
+    border: 10px solid #00F;
+    box-shadow: 0px 10px 10px 0px #000;
+    position: sticky;
+    top: 5px;
+}
+
+.flex-container{
+    display: flex;
+    height: 30vh;
+    border: 5px solid #000;
+}
+
+.flex-item{
+    box-sizing: border-box;
+    width: 550px;
+    height: 100px;
+    margin: 10px;
+    background-color: #FF0;
+    text-align: center;
+    border: 5px solid #000;
+}
+
+.div1{
+    flex-shrink: 3;
+}

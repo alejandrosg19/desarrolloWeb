@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 44 - Mincontent - Maxcontent</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Mincontent_Maxcontent.css">
+</head>
+<body>
+    <h1>Lección 44 - min-content y max-content</h1>
+    <p>
+        <b>Definición: </b>min-content y max-content son valores que podemos asignar en el grid-template-row y grid-template-content, haciendo uso
+        del repeat si queremos o no. Basicamente lo que hace el min-content es tomar el tamaño minimo del contenido de la celda, que puede ser un parrafo
+        o un imagen y asignarle ese mismo tamaño a la columna o fila de la grilla, según queramos. Del mismo modo funciona el max-content pero con el
+        tamaño maximo del contenido de la celda. Podemos asignarle ese mismo tamaño a una fila o columna de la grilla.
+    </p>
+    <p><b>Como es una propiedad que hace parte del grid-template, debe ir en el grid-container</b></p>
+    <h2>Ejemplo:</h2>
+    <div class="grid-container">
+        <div class="grid-container__div">
+            <p>
+                grid-template-columns: max-content 1fr 1fr; <br> grid-template-rows: min-content, 1fr 1fr <br>
+                De esta manera asignamos el ancho de la primera columna igual al ancho del contenido maximo de las celdas y el largo de la primera
+                fila le asignamos el valor minimo del alto del contenido de la celda.
+            </p>
+            <div class="grid-container__div-1">
+                <div class="grid-item yellow">Lorem ipsum dolor sit amet</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+                <div class="grid-item">7</div>
+                <div class="grid-item">8</div>
+                <div class="grid-item">9</div>
+            </div>
+        </div>
+        <div class="grid-container__div">
+            <p>
+                grid-template-columns: repeat(3, max-content)<br> grid-template-rows: repeat(3, min-content) <br>
+                De esta manaera estamos creado tres columnas con el mismo ancho al ancho maximo del contenido de la celdas y estamos creando tres filas
+                iguales con un mismo alto igual al alto minimo del contenido de las celdas.
+            </p>
+            <div class="grid-container__div-2">
+                <div class="grid-item yellow">Lorem ipsum dolor sit amet</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+                <div class="grid-item">7</div>
+                <div class="grid-item">8</div>
+                <div class="grid-item">9</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

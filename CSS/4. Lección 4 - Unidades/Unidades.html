@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades</title>
+    <link rel="stylesheet" text="text/CSS" href="style-unidades.css">
+</head>
+<body>
+    <h1>Lección 4 - Unidades</h1>
+    <p>Exiten dos tipos de unidades, unidades relativas y unidades absolutas</p>
+
+    <h2>Unidades relativas</h2>
+    <p>Son unidades que permiten que los elementos se adapten al tamaño de la ventana, es decir, que los elementos se vean bien
+        en una pc, o una tablet o un celular, basicamente seran responsive
+    </p>
+    <img src="1.png" alt="responsive" title="responive" height="100">
+    <h2>Tipos de unidades relativas</h2>
+
+    <ul>
+        <li><b>%:</b> porcentaje</li>
+        <li><b>em:</b> altura de la fuente</li>
+        <li><b>rem:</b> Root-em</li>
+        <li><b>vh:</b> viewport height</li>
+        <li><b>vw:</b> viewport width</li>
+    </ul>
+    
+    <h3>em</h3>
+    <p>1 em -> 16px por defecto</p><br>
+    <p>Ahora bien, si por ejemplo tenemos un un div y dentro de este tenemos un p, y al div le colocamos un font-size de 25px o de 1px,
+        pues ahora todos los elementos que esten dentro del div si les asignamos propiedades de font-size con em, el valor del em tomara
+        el valor en px que asignamos en el div. (aplica para cualquier propiedad en la que se pueda asignar tamaños)
+    </p>
+    <div class="div-em">
+        <p class="div-em__p">Ejemplo de em (ver el CSS)</p>
+    </div>
+
+    <h3>vw</h3>
+    <p>Esta unidad de medida relativa traduce,<b>viewport width</b>, es una unidad que se basa en el tamaño de la pantalla, es decir que si a un elemento
+        le doy 100vw va a tomar el 100 del ancho de la pantalla
+    </p>
+    <h3>vh</h3>
+    <p>Esta unidad de medida relativa traduce,<b>viewport height</b>, es una unidad que se basa en el tamaño de la pantalla, es decir que si a un elemento
+        le doy 100vh va a tomar el 100 del alto de la pantalla
+    </p>
+    <div class="div-vh-vw">
+        <p class="div-vh-vw__p">Ejemplo de vw(viewport width) - vh(viewport height) (ver el CSS)</p>
+    </div>
+    
+
+
+    <h2>Unidades absolutas</h2>
+    <p>Son unidades que permiten que los elemetos <b>NO</b> se adapten al tamaño de la venta, es decir, no sera responsive</p>
+    <img src="2.png" alt="noresponsive" title="no responsive" height="100">
+    <h2>Tipos de unidades absolutas</h2>
+    <ul>
+        <li><b>px:</b> pixeles</li>
+        <li><b>in:</b> pulgadas</li>
+        <li><b>pt:</b> puntos</li>
+        <li><b>cm:</b> centimetros</li>
+        <li><b>mm:</b> milimetros</li>
+        <li><b>pc:</b> picas</li>
+    </ul>
+</body>
+</html>

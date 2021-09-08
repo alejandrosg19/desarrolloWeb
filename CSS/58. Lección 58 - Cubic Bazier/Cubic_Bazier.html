@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 58 - Cubic Bazier</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Cubic_Bazier.css">
+</head>
+<body>
+    <h1>Lección 58 - Cubic Bazier</h1>
+    <p>
+        <b>Definición: </b> Cubic Bazier es una funcion de valor que se le da a la propiedad animation-timing-function. Este valor trabaja con curvas de Bazier.
+        estas curvas defininen la aceleración de cuando empieza, termina o esta en proceso la animación. <br>
+        cuando trabajamos con Cubic Bazier tenemos 4 medidas para darle. cubic-bezier(0.04, 1.08, 0,76, 1.11), los puntos que estan dentro de la función 
+        son los puntos que vamos a tener que ir modificando, los dos primeros valores perteneces a las coordenadas del primer punto y los ultimos dos valor 
+        pertenecen a las coordenadas del segundo punto. <br>
+        Ahora bien cabe destacar que tenemos algunos generadores de curvas de bazier que nos ayudaran a determinar las valores de las coordenadas de la animación
+        que queremos darle a nuestro elemento.
+        <ul>
+            <li>El primer generador de curvas de bazier lo encontramos en google chrome, inspecciónnando el codigo</li>
+            <li>Y el segundo generador de curvas lo encontramos en la pagina oficial de Cuvic bazier 
+                <a href="https://cubic-bezier.com/#.17,.67,.83,.67" target="_BLANK"> Clic aqui</a>
+            </li>
+        </ul>
+    </p>
+    <div class="img img2">
+        <img src="5.png" alt="">
+        <img src="6.png" alt="">
+    </div>
+    <div class="img">
+        <img src="1.png" alt="">
+        <img src="2.png" alt="">
+        <img src="3.png" alt="">
+        <img src="4.png" alt="">
+    </div>
+    <p class="p-ejemplo">
+        Ejemplo
+    </p>
+    <div class="container">
+        <div class="caja"></div>
+    </div>
+    
+</body>
+</html>

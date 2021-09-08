@@ -1,0 +1,71 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+h1{
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 2em;
+    background-color: aquamarine;
+    border: 5px solid #00f;
+    box-shadow: 0px 10px 10px 0px #000;
+    position: sticky;
+    top: 0px;
+}
+
+.flex-container{
+    display: flex;
+    border: 10px solid #000;
+    justify-content: space-evenly;
+    height: 40vh;
+}
+.flex-item{
+    width: 128px;
+    height: 128px;
+    text-align: center;
+    margin: 10px;
+    background-color: aqua;
+}
+
+
+.ai-strech__flex-item{
+    width: 128px;
+    text-align: center;
+    margin: 10px;
+    background-color: aqua;
+}
+.ai-stretch{
+    align-items: stretch;
+}
+.ai-flex-start__flex-item{
+    width: 128px;
+    text-align: center;
+    margin: 10px;
+    background-color: aqua;
+}
+.ai-flex-start{
+    align-items: flex-start;
+}
+
+.ai-center{
+    align-items: center;
+}
+.ai-flex-end{
+    align-items: flex-end;
+}
+
+.two-ai{
+    height: 80vh;
+}
+.two-ai p{
+    text-align: center;
+}
+.two-ai > .ai-flex-end{
+    align-items: flex-end;
+    flex-wrap: wrap-reverse;
+}
+.two-ai > .ai-baseline{
+    align-items: baseline;
+    flex-wrap: wrap-reverse;
+}

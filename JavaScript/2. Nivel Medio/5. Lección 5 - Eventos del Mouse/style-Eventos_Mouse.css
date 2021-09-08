@@ -1,0 +1,35 @@
+*{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background: radial-gradient(circle, #fff, #999);
+}
+h1{
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+    background: #09f;
+    border: 10px solid #06f;
+    box-shadow: 0px 0px 10px #000;
+    position: sticky;
+    top: 10px;
+}
+.contenedor1, .contenedor2, .contenedor3, .contenedor5{
+    padding: 30px;
+    background: red;
+}
+.contenedor2, .contenedor5{
+    background: blue;
+    display:  flex;
+    justify-content: space-around;
+}
+.contenedor6{
+    background: yellow;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+button{
+    padding: 10px;
+}

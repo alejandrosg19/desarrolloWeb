@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 63 - Filtros</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Filtros.css">
+</head>
+<body>
+    <h1>Lección 63 - Filtros</h1>
+    <p>
+        <b>Definición: </b>Los filtros basicamente son propiedades que podemos aplicarle a las imagenes las cuales van a hacer modificadas visualmente. <br>
+        Existen diferentes valores para esta propiedad:
+    </p>
+    <ul>
+        <li><b>none </b>Este valor es el valor prederminado y basicamente no aplica ninguna propiedad</li>
+        <li><b>blur(px | rem) </b>Esta propiedad desenfoca la imagen, podemos darle valores en px o en rem</li>
+        <li>
+            <b>brightness(0 | 1 | 0.5 | 2) </b> Esta propiedad indica la cantidad de brillo que asignaremos a una imagen, podemos darle cualquier valor
+            0, 0.5, 1, 1.5, 2
+        </li>
+        <li>
+            <b>contrast(number or %) </b> Esta propiedad indica la cantidad de contraste que asignaremos a una imagen, podemos darle cualquier valor
+            0, 0.5, 1, 1.5, 2
+        </li>
+        <li>
+            <b>drop-shadow(10px 10px 10px 0px #000) </b> Esta propiedad funciona igual que box-shadow, la diferencia es que el drop-shadow aplica sombra
+            a la imagen en si, asi que cuando tenemos una imagen transparente va aplicar la sombra a cada detalle de la imagen, en cambio con box-shadow 
+            aplica la sombra al borde de la caja que contiene la imagen como tal.
+        </li>
+        <li>
+            <b>grayscale(%) </b> Esta propiedad permite aplicar un filtro en escala de grises a la imagen, se aplica en % de la cantidad de espaca de gris 
+            que queremos aplicar.
+        </li>
+        <li>
+            <b>hue-rotate(deg)</b> Esta propiedad rota la gama de colores de la imagen, Esto se maneja con grados, radianes.
+        </li>
+        <li>
+            <b>invert(%) </b> Esta propiedad invierte los colores de la imagen, trabaja con porcentajes si le damos un 100% cambiara el 100% de los
+            colores de la imagen.
+        </li>
+        <li>
+            <b>opacity(0 - 1)</b> Esta propiedad aplica un filtro de opacidad a la imagen, trabaja con valores de 0 - 1.
+        </li>
+        <li>
+            <b>saturate(%) </b> Esta propiedad lo que hace es llevar los colores de la imagen a su gama mas fuerte.
+        </li>
+        <li>
+            <b>Sepia(%) </b> Aplica a la imagen un color sepia.
+        </li>
+    </ul>
+    <div class="grid-container">
+        <div class="grid-container__item">
+            <p><b>none</b></p>
+            <div class="img"></div>
+        </div>
+        <div class="grid-container__item">
+            <p><b>blur(px | rem)</b></p>
+            <div class="img"></div>
+        </div>
+        <div class="grid-container__item">
+            <p><b>brightness(0 | 1 | 0.5 | 2)</b></p>
+            <div class="img"></div>
+        </div>
+        <div class="grid-container__item">
+            <p><b>contrast(number or %)</b></p>
+            <div class="img"></div>
+        </div>
+        <div class="grid-container__item">
+            <p><b>drop-shadow(10px 10px 10px 0px #000)</b></p>
+            <div class="img"></div>
+        </div>
+        <div class="grid-container__item">
+            <p><b>grayscale(%)</b></p>
+            <div class="img"></div>
+        </div>
+        <div class="grid-container__item">
+            <p><b>hue-rotate(deg)</b></p>
+            <div class="img"></div>
+        </div>
+        <div class="grid-container__item">
+            <p><b>invert(%)</b></p>
+            <div class="img"></div>
+        </div>
+        <div class="grid-container__item">
+            <p><b>opacity(0 - 1)</b></p>
+            <div class="img"></div>
+        </div>
+        <div class="grid-container__item">
+            <p><b>saturate(%)</b></p>
+            <div class="img"></div>
+        </div>
+        <div class="grid-container__item">
+            <p><b>Sepia(%)</b></p>
+            <div class="img"></div>
+        </div>
+        <div class="grid-container__item">
+            <p><b>Ejemplo</b></p>
+            <div class="img"></div>
+            <div class="prueba">
+                <div class="gota"></div>
+                <div class="gota"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+*{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1{
+    box-sizing: border-box;
+    font-size: 2em;
+    text-align: center;
+    background-color: aquamarine;
+    border: 5px solid #00f;
+    box-shadow: 0px 10px 10px 0px #000;
+    position: sticky;
+    top: 10px;
+}
+
+h3{
+    font-size: 2em;
+}
+div{
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 20px;
+    width: 45%;
+}
+.caja1{
+    background-color: #ddd;
+}
+.caja2{
+    background-color: #bbb;
+}
+
+@media only screen and (max-width: 800px){
+    div{
+        display: block;
+        width: 100%;
+    }
+}

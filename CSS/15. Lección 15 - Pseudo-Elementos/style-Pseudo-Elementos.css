@@ -1,0 +1,71 @@
+*{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1{
+    font-size: 2em;
+    background-color: lightblue;
+    border: 5px solid blue;
+    box-shadow: 0px 10px 10px 0px black;
+    position: sticky;
+    top: 0px;
+    text-align: center;
+    margin-bottom: 1em;
+    opacity: 0.8;
+}
+
+div{
+    margin: 10px 0px;
+}
+
+.first-line__example::first-line{
+    color: blue;
+}
+
+.first-letter__example::first-letter{
+    font-size: 2em;
+    color: blue;
+}
+
+form{
+    margin: auto;
+    width: 50%;
+    background-color: gray;
+    padding: 20px;
+}
+input{
+    width: 100%;
+}
+input::placeholder{
+    background-color: yellow;
+    color: red;
+}
+
+.selection__p{
+    margin: auto;
+    padding: 20px;
+    background-color: gray;
+    width: 50%;
+}
+
+.selection__p::selection{
+    background-color: yellow;
+    color: red;
+}
+
+.after-before__p{
+    margin: auto;
+    padding: 20px;
+    background-color: gray;
+    width: 50%;
+}
+
+.after-before__p::before{
+    content: "Este es un texto agregado con propiedad before.";
+    color: #fff;
+}
+.after-before__p::after{
+    content: "Este es un texto agregado con propiedad after.";
+    color: blue;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 47 - (Grid) Justify Items y Align Items</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Justify_Items_Align_Items.css">
+</head>
+<body>
+    <h1>Lección 47 - (Grid) Justify Items y Align Items</h1>
+    <p>
+        <b>Definición: </b> Ambas propiedades modifican la ubicación de los grid-items en la grilla, basicamente permite mover los grid-items, 
+        en el eje x o eje y, Ojo mueve los grid items. <br>
+        <b>judtify-items: </b> Esta propiedad mueve los grid-items o celdas en el eje horizontal del grid-container. Podemos ubicarlos en la 
+        parte izquierda o derecha o en el centro del grid-container. <br>
+        <b>align-items: </b> Esta propiedad mueve los grid-items o celdas en el eje vertical del grid-container. Podemos ubicarlos en la 
+        parte superior o inferior o en el centro del grid-container.
+    </p>
+    <p><b>Estas propiedades como modifican a los grid-items, deben ir en el grid-container</b></p>
+    <h2>Ejemplo</h2>
+    <div class="flex-container">
+        <div class="flex-item">
+            <h3>Justify-Items</h3>
+            <div class="grid-container grid-main">
+                <div class="grid-container grid-area">
+                    <p>justify-items: stretch, este es le valor por defecto de los flex-items o celdas de la grilla</p>
+                    <div class="grid-container grid-container-div justify-stretch">
+                        <div class="grid-item">1</div>
+                        <div class="grid-item">2</div>
+                        <div class="grid-item">3</div>
+                        <div class="grid-item">4</div>
+                    </div>
+                </div>
+                <div class="grid-container grid-area">
+                    <p>justify-items: start o flex-start</p>
+                    <div class="grid-container grid-container-div justify-start">
+                        <div class="grid-item">1</div>
+                        <div class="grid-item">2</div>
+                        <div class="grid-item">3</div>
+                        <div class="grid-item">4</div>
+                    </div>
+                </div>
+                <div class="grid-container grid-area">
+                    <p>justify-items: center</p>
+                    <div class="grid-container grid-container-div justify-center">
+                        <div class="grid-item">1</div>
+                        <div class="grid-item">2</div>
+                        <div class="grid-item">3</div>
+                        <div class="grid-item">4</div>
+                    </div>
+                </div>
+                <div class="grid-container grid-area">
+                    <p>justify-items: end o flex-end</p>
+                    <div class="grid-container grid-container-div justify-end">
+                        <div class="grid-item">1</div>
+                        <div class="grid-item">2</div>
+                        <div class="grid-item">3</div>
+                        <div class="grid-item">4</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex-item">
+            <h3>Align-Items</h3>
+            <div class="grid-container grid-main">
+                <div class="grid-container grid-area">
+                    <p>align-items: stretch, este es le valor por defecto de los flex-items o celdas de la grilla</p>
+                    <div class="grid-container grid-container-div align-stretch">
+                        <div class="grid-item">1</div>
+                        <div class="grid-item">2</div>
+                        <div class="grid-item">3</div>
+                        <div class="grid-item">4</div>
+                    </div>
+                </div>
+                <div class="grid-container grid-area">
+                    <p>align-items: flex-start</p>
+                    <div class="grid-container grid-container-div align-start">
+                        <div class="grid-item">1</div>
+                        <div class="grid-item">2</div>
+                        <div class="grid-item">3</div>
+                        <div class="grid-item">4</div>
+                    </div>
+                </div>
+                <div class="grid-container grid-area">
+                    <p>align-items: center</p>
+                    <div class="grid-container grid-container-div align-center">
+                        <div class="grid-item">1</div>
+                        <div class="grid-item">2</div>
+                        <div class="grid-item">3</div>
+                        <div class="grid-item">4</div>
+                    </div>
+                </div>
+                <div class="grid-container grid-area">
+                    <p>align-items: flex-end</p>
+                    <div class="grid-container grid-container-div align-end">
+                        <div class="grid-item">1</div>
+                        <div class="grid-item">2</div>
+                        <div class="grid-item">3</div>
+                        <div class="grid-item">4</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

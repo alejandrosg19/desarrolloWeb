@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 5 - Arrays Bucles y Funciones</title>
+    <link rel="stylesheet" type="text/CSS" href="style-arrays_bucles.css">
+    <script src="script-arrays_bucles.js"></script>
+</head>
+<body>
+    <h1>Lección 5 - Arrays Bucles y Funciones</h1>
+    <p>
+        <b>Arrays: </b>Conjunto de elementos que estan dentro de un objeto, el elemento 1 del array tiene la posición 0, el elemento 2 tiene la posicion 1
+    </p>
+    <img src="img/Array.png" alt="">
+    <p>
+        <b>Array Asociativo: </b> Es lo mismo que un array con la diferencia de que, se le acciona un key y un valor a cada elemento, es decir,
+        la posicion de los elementos ya no esta definida por numero si no por llaves o o keys que nosotros mismos asignamos.
+    </p>
+    <img src="img/arrayAsociativo.png" alt="">
+    <p>
+        <b>Bucles: </b>Ciclos repetitivos que se repiten constantemente de acuerdo a una condición. <br>
+        <b>Tipos de Bucles</b>
+    </p>
+    <ul>
+        <li>
+            <b>while:</b> <br>
+            <img src="img/while.png" alt=""> <br>
+            <p>Resultado de variable: 5</p>
+        </li>
+        <li>
+            <b>do while: </b> <br>
+            <img src="img/doWhile.png" alt=""> <br>
+            <p>Resultador de variable: 10</p>
+        </li>
+        <li>
+            <b>for</b> <br>
+            <img src="img/for.png" alt=""> <br>
+            <p>Resultado de la variable: 14</p>
+        </li>
+        <li>
+            <b>for in: </b>Es un tipo de for que se usa generalmente para recorrer arrays, simplemnte la variable toma el valor de las posiciones
+            de cada uno de los elementos del array.<br>
+            <img src="img/forIn.png" alt="">
+        </li>
+        <li>
+            <b>for of: </b>Funciona de la misma manera que el for in, la diferencia es que en vez de tomar las posiciones de cada uno de los 
+                elementos del array, toma directamente el valor en cada posición.<br>
+            <img src="img/forOf.png" alt="">
+        </li>
+    </ul>
+    <p><b>Sentencias importantes en los bucles:</b></p>
+    <ul>
+        <li>
+            <b>break; </b>Rompe el ciclo de cualquier bucle <br>
+            <img src="img/break.png" alt="">
+        </li>
+        <li>
+            <b>continue; </b> Es una sentencia que permite saltarnos una iteración del bucle.<br>
+            <img src="img/continue.png" alt=""> <br>
+            <p>
+                Primero que todo el ciclo for esta funcionando de manera descendente y el valor de la variable termina con: 5. Esto sucede ya que
+                le estamo dando un continue a y que no cuente los valores en los que la variable3 es par. es decir, colo cuenta los numeros importantes 
+                que hay desde 10 a 0 = 5
+            </p>
+        </li>
+        <li>
+            <b>Setencia label</b> label es el nombre que se le puede asinar a un for.<br>
+            <img src="img/label.png" alt=""> <br>
+            <p>
+                En el siguiente ejemplo observamos que sobre el primer for hay un valor "forInicial:" es el nombre que se le asigno a dicho for 
+                esto con el objetivo de que cuando el recorrido de los bucles se encuentre en el segundo for y dentro de este se encuentra el valor de 
+                "alejandro" se rompa el bucle mayor por esta razon solo se imprimen en consola los nombres de "kevin, mateo, santiago". Si lo 
+                ubiesemos colocado el break; se saldria del primer bucle pero no del segundo, por lo que tendriamos un resultado diferente que seria:
+                "kevin, mateo, santiago, yamis"
+            </p>
+        </li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 19 - Classlist</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Classlist.css">
+    
+</head>
+<body>
+    <h1>Lección 19 - Classlist</h1>
+    <p>
+        <b>Definición: </b>Es un metodo que permite agregar clases, remover clases, verificar si un elemento posee o no una clase, etc <br>
+        <b>Metodos:</b>
+    </p>
+    <ul>
+        <li><b>classList.add():</b> Agrega una clase al elemento</li>
+        <li><b>classList.remove():</b> Remueve una clase del elemento</li>
+        <li>
+            <b>classList.item(num): </b>Recibe un numero que corresponde a la clase del elemento que queremos obtener,por ejemplo si un elemento tiene
+            4 clases al darle un classList.item(2) nos devolverla el nombre de la clase 2 que tiene dicho elemento.
+        </li>
+        <li>
+            <b>classList.contains(): </b>Valida si un elemento posee una clase o no, devuelve True en caso de que si.
+        </li>
+        <li>
+            <b>classList.toggle(): </b>Valida  si un elemento posee una clase, en caso de tener la clase la elimina y en caso de no la agrega.
+        </li>
+        <li>
+            <b>classList.replace(clase1, clase2): </b>Remplaza una clase por otra, en caso de no estar devuelve false.
+        </li>
+    </ul>
+    <h3 class="titulo addd remove item">Elemento de prueba</h3>
+    <script src="script-Classlist.js"></script>
+</body>
+</html>

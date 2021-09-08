@@ -1,0 +1,40 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+h1{
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 2em;
+    background-color: aquamarine;
+    border: 5px solid #00f;
+    box-shadow: 0px 10px 10px 0px #000;
+    position: sticky;
+    top: 0px;
+}
+
+.flex-container-sin-flex-flow{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+.flex-container-flex-flow{
+    display: flex;
+    flex-flow: row-reverse wrap;
+}
+
+.flex-item{
+    align-items: center;
+    margin: 10px;
+    background-color: #00f;
+    width: 320px;
+    height: 100px;
+}
+
+.orange{
+    background-color: #f40;
+}
+.green{
+    background-color: #0f0;
+}

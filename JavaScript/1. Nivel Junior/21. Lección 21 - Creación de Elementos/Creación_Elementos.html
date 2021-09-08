@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 21 - Creación de Elementos</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Creacion_Elementos.css">
+</head>
+<body>
+    <h1>Lección 21 - Creación de Elementos</h1>
+    <p>
+        <b>Definición: </b> Permite crear elementos html dentro de elementos ya definidos <br>
+        <b>Metodos:</b>
+    </p>
+    <ul>
+        <li>
+            <b>document.createElements("elemento HTML")</b> Crea un elemento HTML definido dentro de los parentesis. Es bueno usarlo para cuando es 
+            un solo elemento el que se quiere agregar.
+        </li>
+        <li><b>document.createTextNode("texto")</b> Crea un texto dentro del elemento</li>
+        <li>
+            <b>document.createDocumentFragment("elemento HTML")</b> Es una manera optima de crear un fragmento HTML con varios elementos dentro
+            sin necesidad de utilizar createElements() y hacer uso de muchos recursos
+        </li>
+        <li>
+            <b>elemento.appendChild("Elemento HTML")</b> Permite agregar a un elemento contenido HTML
+        </li>
+    </ul>
+    <div class="contenedor"></div>
+    <script src="script-Creacion_Elementos.js"></script>
+
+    <h3>Codigo:</h3>
+    <img src="1.png" alt="">
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 40 - Grid Gap</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Grid_Gap.css">
+</head>
+<body>
+    <h1>Lección 40 - Grid Gap</h1>
+    <p>
+        <b>Definición: </b> Es una propiedad en permite darle una especie de margin entre las celdas de la grilla pero entre el borde del contenedor.
+        se puede establecer dicha propiedad a filas y columnas de la siguiente manera grid-gap: 10px; o grid-gap: 19px 20px, siendo el primer campo para 
+        rows y el segundo para columns, o si quiere de manera separada: 
+    </p>
+    <ul>
+        <li><b>grid-column-gap:</b> Espacio entre columnas de las celdas de la grilla</li>
+        <li><b>grid-row-gap:</b> Espacio entre filas de las celdas de la grilla</li>
+    </ul>
+    <p><b>Cabe destacar que esta propiedad debe ir siempre en el grid-container</b></p>
+    <h2>Ejemplo:</h2>
+    <p>grid-gap: 10px</p>
+    <div class="grid-container container1">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+    <p>grid-column-gap: 10px</p>
+    <div class="grid-container container2">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+    <p>grid-row-gap: 10px</p>
+    <div class="grid-container container3">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+</body>
+</html>

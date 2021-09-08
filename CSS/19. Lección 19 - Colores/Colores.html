@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 19 - Colores</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Colores.css">
+</head>
+<body>
+    <h1>Lección 19 - Colores</h1>
+    <p>A continuación observaremos las distintas formas de aplicar colores a los elementos</p>
+    <h2>Formas de aplicar colores:</h2>
+    <div class="color-name">
+        <p><b>name:</b> Una de las formas de poder aplicar un color es dar el nombre del color directamente. Ejemplo</p>
+        <div class="color-name__div">
+            color: red;
+            background-color: yellow;
+        </div>
+    </div>
+    <div class="color-rgb">
+        <p><b>rgb</b> Significa Red, Green, Blue y lo que hace es mezclar estos tres tipos de colores para dar una gran variedad de colores y como se basa 
+            en estos tres colores, al momento de nosotros aplicar un color a alguna propiedad con RGB, se deben llenar tres campos que corresponden a 
+            la cantidad de cada uno de los tres colores que se necesita para llegar al color que queremos. 0 indica no aplicar nada de ese color y 255 Significa
+            aplicar todo de ese color. rgb(0,4,10); Ejemplo
+        </p>
+        <div class="color-rgb__div">
+            Color rojo -> color: rgb(255,0,0); <br>
+            Color de fondo verde-> background-color: rgb(0,255,0);
+        </div>
+    </div>
+    <div class="color-rgba">
+        <p><b>rgba</b> Es lo mismo que el rgb, la unica diferencia es que posee un cuarto parametro que es el "a" que signfica alpha y corresponde 
+            a la opacidad del color rgba(255,0,0,.5). Ejemplo:
+        </p>
+        <div class="color-rgba__div">
+            Color rojo -> color: rgb(0,0,255,.3); <br>
+            Color de fondo amarillo-> background-color: rgb(255,255,.6);
+        </div>
+    </div>
+    <div class="color-hexadecimal">
+        <p><b>hexadecimal</b> Es un sistema de numeración de 16 unidades, que funciona similar al rgb pero con letras y numeros,
+            si por ejemplo queremos el color blanco podremos escribirlo de dos formas "#fff" en donde cada f significa 255 de los tres colores
+            o "#ffffff" en donde cada 2 f corresponde a uno de los tres colores, es decir, las primeras dos ff son del rojo, las siguientes dos ff
+            corresponden al ver y las ultimas al azul. Cabe destacar que tambien se puede color cuatro numeros "#ffff" para representar el rgba o con
+            8 numeros "#ffffffff". color: #f00; Ejemplo:
+        </p>
+        <p class="color-hexadecimal__title">Con tres y seis valores</p>
+        <div class="color-hexadecimal__div1">
+            Color rojo -> color: #f00; o #ff0000<br>
+            Color de fondo verde-> background-color: #0f0 o #00ff00;
+        </div>
+        <p class="color-hexadecimal__title">Con 4 y ocho valores</p>
+        <div class="color-hexadecimal__div2">
+            Color rojo -> color: #f003; <br>
+            Color de fondo amarillo-> background-color: #ffff0060;
+        </div>s
+        <p class="color-hexadecimal__title">Explicación hexadecimal y colores</p>
+        <div class="color-hexadecimal__img">
+            <img src="1.png" alt="colors">
+        </div>
+    </div>
+    <div  class="link-colores">
+        <p><a href="https://htmlcolorcodes.com/es/selector-de-color/" target="_blank">click aqui</a> para ver codigo de todos los colores</p>
+    </div>
+</body>
+</html>

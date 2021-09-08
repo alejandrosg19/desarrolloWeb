@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 56 - Transition</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Transition.css">
+</head>
+<body>
+    <h1>Lección 56 - Transition</h1>
+    <p>
+        <b>Definición: </b> Es una propiedad que nos permite hacer transiciones dentro de los elementos, es decir, mostrar el progreso de un cambio,
+        por ejemplo, cuando queremos transicionar un elemento de un color a otro, pues podremos observar el progreso de dicho cambio. Las transiciones 
+        se aplican a cualquier cambio de un elemento. Cabe destacar que las transiciones se aplican cuando cambios de estado por ejemplo cuando se hace 
+        uso de :hover, ademas hay que tener en cuenta que la propiedad debe estar tanto en el elemento como el elemento y su pseudo-clase :hover. 
+        <br>
+        <b>Propiedades de Transition:</b> <br>
+        <ul>
+            <li>
+                <b>transition-property: </b> Esta propiedad recibe el nombre de la propiedad del elemento a la que queremos aplicar
+                la transicion, por ejemplo: background -> significa que aplicaremos la transicion al background del  elemento, tambien podemos darle
+                all -> para aplicar Transicion a todos las propiedades del elemento. Cabe destacar que se aplicarn las transiciones cuando hay un
+                cambio en la propiedad, por ejemplo, cuando cambiamos el color del fondo del elemento en el :hover.
+             </li>
+             <li>
+                 <b>transition-duration: </b>En esta propiedad definimos la cantidad de tiempo que queremos que dure la transicion de un estado a otro.
+                 Ejemplo: transition-duration: 1s;
+             </li>
+             <li>
+                 <b>transition-delay: </b>Esta propiedad sirve para darle un retraso en el cambio de estado, es decir, si queremos que cuando pasemos
+                 el mouse por encima de un elemento que contiene la pseudo-clase :hover y cambia de color el fondo, podemos hacer que cuando pasemos
+                 el mouse no se vea la transición si no hasta despues de que mantengamos el mouse 2 o 3 segundos encima del elemento.
+             </li>
+             <li>
+                 <b>transition-timing-function: </b>Esta propidad hace referencia a la aceleración del cambio de la propiedad, posee diferentes valores
+                 y en todos los valores se cumple el tiempo definido en transition-duration, sin embargo depenediendo del valor de transition-timing-function
+                 una posee una aceleración mas rapida que a otra.
+             </li>
+        </ul>
+        Cabe destacar que si tenemos queremos aplicar propiedades de transistion a dos propiedades de un elemento podemos hacerlo de la siguiente manera: <br>
+        transition-property: background, left; <br>
+        transition-duration: 2s, 3s; <br>
+        De esta manera estamos aplicando transición a las propiedades background y left, a la primera propiedad le estamos dando un duración en la
+        transición de 2s y a la segunda una duración de 3s  
+    </p>
+    <div class="grid-container">
+        <div class="grid-container-item transition-1">
+            <p><b>transition-property:</b></p>
+            <div class="grid-item"></div>
+        </div>
+        <div class="grid-container-item transition-2">
+            <p><b>transition-duration:</b></p>
+            <div class="grid-item"></div>
+        </div>
+        <div class="grid-container-item transition-3">
+            <p><b>transition-delay</b></p>
+            <div class="grid-item"></div>
+        </div>
+        <div class="grid-container-item transition-4">
+            <p><b>transition-timing-function</b></p>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+        </div>
+    </div>
+</body>
+</html>

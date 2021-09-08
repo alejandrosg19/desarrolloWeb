@@ -1,0 +1,16 @@
+* {
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+}
+
+.contact-form {
+    font-size: 25px;
+}
+
+.contact-form__h2 {
+    font-size: 2em; /*Tamaño de la letra*/
+    /*font-family: Georgia; /*Tipo de letra*/
+    font-family: 'Sigmar One', cursive; /*Se pona una tipografia seguido de otra, en tal caso de que la primera no exista, toma la segunda*/
+    line-height: 1.9; /*Define el tamaño que va a ocupar la letra, si  definimo line-height: 1; decimos que 0.5 es para arriba y 0.5 es para abajo*/
+    font-weight: normal;
+}

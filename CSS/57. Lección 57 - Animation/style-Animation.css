@@ -1,0 +1,119 @@
+*{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background: radial-gradient(circle, #fff, #777);
+}
+h1{
+    box-sizing: border-box;
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+    background-color: #07f;
+    border: 10px solid #03f;
+    position: sticky;
+    top: 5px
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    "propiedad1 propiedad1 propiedad1 propiedad1"
+    "propiedad2 propiedad2 propiedad3 propiedad3";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+.grid-container-item{
+    border: 5px solid #000;
+    background: #444;
+    position: relative;
+}
+.grid-container-item p{
+    text-align: center;
+    font-size: 2em;
+    color: #fff
+}
+.grid-item{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 900;
+    background: #999;
+    position: relative;
+    animation-name: desplazarse;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    
+}
+
+.div-1{
+    grid-area: propiedad1;
+}
+.div-1 > .grid-item:first-child{
+    animation-timing-function: ease;
+}
+.div-1 > .grid-item:nth-child(2){
+    animation-timing-function: ease-in;
+}
+.div-1 > .grid-item:nth-child(3){
+    animation-timing-function: ease-out;
+}
+.div-1 > .grid-item:nth-child(4){
+    animation-timing-function: ease-in-out;
+}
+
+.div-2{
+    grid-area: propiedad2;
+}
+.div-2 > .grid-item:first-child{
+    animation-direction: normal;
+}
+.div-2 > .grid-item:nth-child(2){
+    animation-direction: reverse;
+}
+.div-2 > .grid-item:nth-child(3){
+    animation-direction: alternate;
+}
+.div-2 > .grid-item:nth-child(4){
+    animation-direction: alternate-reverse;
+}
+
+.div-3{
+    grid-area: propiedad3;
+}
+.div-3 > .grid-item{
+    animation-direction: alternate;
+    animation-iteration-count: 3;
+}
+.div-3 >.grid-item:first-child{
+    animation-fill-mode: none;
+}
+.div-3 >.grid-item:nth-child(2){
+    animation-fill-mode: backwards;
+}
+.div-3 >.grid-item:nth-child(3){
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes desplazarse {
+    0% {
+        left: 0;
+        background: #07f;
+    }
+    
+    50% {
+        background: #099;
+    }
+
+    100% {
+        left: 90%;
+        background: #ff0;
+    }
+}

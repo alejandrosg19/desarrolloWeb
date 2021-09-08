@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 43 - Grid Implicito y Grid Explicito</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Grid_Implicito_Explicito.css">
+</head>
+<body>
+    <h1>Lección 43 - Grid Implicito y Grid Explicito</h1>
+    <p>
+        <b>Definición: </b> Cuando hablamos de Grid Explicito, hablamos de la grilla que fue creada a partir de las propiedades grid-template, es decir
+        es la grilla que hemos definido a partir de las columnas y filas, grid-template-columns y grid-template-rows respectivamente. Ahora bien,
+        para estos grid cells existen propiedades que ya hemos visto, pero que sucede si un elemento se sale de la grilla? ha esto le llamamos 
+        Grid Implicito, elmentos que no fueros definidos dentro de la grilla pero que forman parte del grid-container. Esto sucede cuando agregamos
+        mas elementos y definimos menos celdas para dichos elementos, o cuando hacemos uso de grid-column y grid-row, para modificar el tamaño de una celda
+        y estos a su vez mueven los demas elementos haciendo que se salgan dela grilla definida, cuando sucede nosotros podemos modificar el comportamiento
+        de dichos elementos a traves de ciertas propiedades. Cabe reslatar que cuando hay elementos fuera de la grilla definida, estos por defecto se 
+        ubican en una fila de la grilla que no esta definida y no es una nueva columna, sin embargo esto lo podemos cambiar para que los elementos sobrantes
+        se ubiquen en una nueva columna.
+    </p>
+    <p>
+        Propiedades que afectan a los elementos fuera de la grilla:
+    </p>
+    <ul>
+        <li>
+            <b>grid-auto-rows:</b> permite modificar el alto del tamaño de la nueva fila que se creo con los elementos sobrantes. Ejemplo:
+            grid-auto-rows: 150px; independientemente de los elementos que esten en la nueva fila, estos van a tomar un altura de 150px y ancho
+            igual a las columnas ya definidas, utilizamos esta propiedad cuando los elementos se ubican en una nueva fila y no es una nueva columna 
+            de la grilla.
+        </li>
+        <li>
+            <b>grid-auto-columns:</b> Permite modificar el ancho del tamaño de la nueva columna que se creo con los elementos sobrantes. Ejemplo:
+            grid-auto-columns 150px; independientemente de los elementos que esten en la nueva columa, estos van a tomar un ancho de 150px y alto
+            igual a las filas ya definidas, utilizamos esta propiedad cuando los elementos se ubican en una nueva columns y no es una nueva fila 
+            de la grilla. 
+        </li>
+        <li>
+            <b>grid-auto-flow</b>Es una propiedad que permite establecer en donde queremos que se agreguen los elementos de sobra de la grilla,
+            si queremos que esten en una fila nuevo deberemos colocar, grid-auto-flow: row; aunque este ya sea el valor por defecto, pero si deseamos
+            colocarlo en una columna debera ser, grid-auto-flow: column;
+        </li>
+        <li>
+            <b>grid-auto-flow: dense;</b> dense es una propiedad de grid-auto-flow, la cual verifica si existen espacios dentro de la grilla que
+            no estan siendo ocupados por ningun celda, y ubica en ese espacio la celda con el tamaño adecuado.
+        </li>
+    </ul>
+    <p><b>Cabe destacar que estas propiedades se aplican al grid-container que contenga la grilla explicita y los elementos que se salen de esta</b></p>
+    <div class="imagen">
+        <img src="1.png">
+    </div>
+    <h2>Ejemplo:</h2>
+    <p>
+        Las celdas de color amarillo son los elementos de Grid Intrinseco que no estan dentro de la grilla oficial <br>
+        <b>La grilla utilizada es:</b><br>
+        .grid-container__div-ejemplo{<br>
+            grid-template-columns: repeat(3, 1fr)<br>
+            grid-template-rows: repeat(3, 1fr)<br>
+        }
+    </p>
+    <div class="grid-container">
+        <div class="grid-container__div">
+            <p> .div1{ grid-auto-flow: row; <br> grid-auto-rows: 200px;}</p>
+            <div class="grid-container__div-ejemplo div1">
+                <div class="grid-item">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+                <div class="grid-item">7</div>
+                <div class="grid-item">8</div>
+                <div class="grid-item">9</div>
+                <div class="grid-item">10</div>
+            </div>
+        </div>
+        <div class="grid-container__div">
+            <p>.div2{ grid-auto-flow: column; <br> grid-auto-columns: 200px;</p>
+                <div class="grid-container__div-ejemplo div2">
+                    <div class="grid-item">1</div>
+                    <div class="grid-item">2</div>
+                    <div class="grid-item">3</div>
+                    <div class="grid-item">4</div>
+                    <div class="grid-item">5</div>
+                    <div class="grid-item">6</div>
+                    <div class="grid-item">7</div>
+                    <div class="grid-item">8</div>
+                    <div class="grid-item">9</div>
+                    <div class="grid-item">10</div>
+                </div>
+        </div>
+        <div class="grid-container__div">
+            <p>Espacios en la grilla en la cuarta caja veremos el verdadero uso de grid-auto-flow: dense</p>
+            <div class="grid-container__div-ejemplo div3">
+                <div class="grid-item">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+                <div class="grid-item">7</div>
+                <div class="grid-item">8</div>
+                <div class="grid-item">9</div>
+                <div class="grid-item">10</div>
+            </div>
+        </div>
+        <div class="grid-container__div">
+            <p>
+                grid-auto-flow: dense <br> Como observamos movimos la caja 2 a una posicion especifica, dejando un espacio y aplicando, pero cuando 
+                aplicamos la propiedad de grid-aut-flow: dense; vemos como se cubre ese espacio con una celda que tenga ese mismo tamaño</p>
+            <div class="grid-container__div-ejemplo div4">
+                <div class="grid-item">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+                <div class="grid-item">7</div>
+                <div class="grid-item">8</div>
+                <div class="grid-item">9</div>
+                <div class="grid-item">10</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

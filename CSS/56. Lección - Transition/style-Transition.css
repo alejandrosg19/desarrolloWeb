@@ -1,0 +1,80 @@
+*{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background: radial-gradient(circle, #fff, #999);
+}
+h1{
+    box-sizing: border-box;
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+    background-color: #09f;
+    border: 10px solid #05f;
+    position: sticky;
+    top: 5px;
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 300px 600px;
+    grid-gap: 10px;
+}
+.grid-container-item{
+    background: #86f;
+    padding: 30px;
+}
+.grid-container-item p{
+    text-align: center;
+}
+.grid-item{
+    background: #025;
+    height: 100px;
+    width: 100px;
+    left: 0;
+}
+.grid-item:hover{
+    background: lightgreen;
+}
+
+.transition-1 > .grid-item{
+    transition-property: background;
+}
+.transition-2 > .grid-item{
+    transition-property: background;
+    transition-duration: 2s;
+}
+.transition-3 > .grid-item{
+    transition-property: background;
+    transition-duration: 2s;
+    transition-delay: 2s;
+}
+
+.grid-container-item:nth-child(4){
+    grid-column: 1 / span 3;
+}
+.transition-4 > .grid-item{
+    transition-property: background, left;
+    transition-duration: 3s, 3s;
+    margin: 10px;
+    position: relative;
+}
+.transition-4:hover > .grid-item{
+    left: 80%;
+    background: #fff;
+}
+.transition-4 > .grid-item:first-child{
+    transition-timing-function: linear;
+}
+.transition-4 > .grid-item:nth-child(2){
+    transition-timing-function: ease;
+}
+.transition-4 > .grid-item:nth-child(3){
+    transition-timing-function: ease-in;
+}
+.transition-4 > .grid-item:nth-child(4){
+    transition-timing-function: ease-in-out;
+}

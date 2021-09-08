@@ -1,0 +1,76 @@
+*{
+    font-size: 20px;
+    font-weight:300;
+    font-family: 'Times New Roman';
+}
+
+.padding1{
+    padding: 10px;
+}
+.padding2{
+    padding: 10px 15px;
+}
+.padding3{
+    padding: 10px 20px 30px 40px;
+}
+img{
+    height: 200px;
+}
+
+.margin1{
+    margin: 10px;
+}
+.margin2{
+    margin: 10px 15px;
+}
+.margin3{
+    margin: 10px 20px 30px 40px;
+}
+img{
+    height: 200px;
+}
+
+.propiedades{
+    padding: 50px;
+    background-color: teal;
+    display: inline-block;
+    height: 100px;
+    width: 500px;
+    text-align: center; /*Alinea el texto horizontalmente al centro*/
+    box-sizing: border-box; /*El margin y el padding entran en el contenido de la caja, es decir, la caja siempre va a hacer del tamaño que definimos*/
+    /*box-sizing: content-box; La caja toma su tamaño asignado y aese tamaño le suma el padding y el margin asignados */
+    border-radius: 10%; /*Redondea los bordes de la caja*/
+}
+
+li{
+    background-color: red;
+    display: inline-block;
+    margin: 5px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+.solid
+{
+    /*Propiedad border permite darle estilo al borde de una caja, el primer elemento corresponde al tamaño del borde, el segundo le da un tipo de estilo 
+    al borde y el tercero define el color del borde*/
+    border: 10px solid grey ; 
+}
+.dashed{
+    border: 10px dashed grey;
+}
+.double{
+    border: 10px double grey
+}
+.groove{
+    border: 10px groove grey
+}
+.ridge{
+    border: 10px ridge grey
+}
+.inset {
+    border: 10px inset grey
+}
+.outset{
+    border: 10px outset grey;
+}

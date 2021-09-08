@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 15 - Pseudo-Elementos</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Pseudo-Elementos.css">
+</head>
+<body>
+    <h1>Lección 15 - Pseudo-Elementos</h1>
+    <p>
+        <b>Definición:</b> Es la manera en que podemos aplicar propiedades a elementos que conforman otros elementos, es decir, 
+        dentro de un texto(elemento) podemos aplicar propiedades a la primera linea de ese texto o a la primera letra, todas estos son los Pseudo-Elementos
+    </p>
+    <h2>Tipos de Pseudo-Elementos</h2>
+    <div class="first-line">
+        <h3>::first-line</h3>
+        <p>
+            Solo funciona en elementos de bloque, es decir en los block y en los inline-block en los inline no funciona, la manera de escribirlo
+            es la siguiente se coloca la clase del contenedor padre seguido de dos veces dos puntos y luego del Pseudo-Elemento .container::first-line.
+            Este Pseudo-Elemento permite aplicarle una propiedad a la primera linea del centenido de una caja indepndientemente del tamaña que esta tenga
+            si hace mas ancho o corta siempre va a editar solo la primera linea. Cabe destacar que este Pseudo-Elemento no se puede a aplicar 
+            a elementos inline solo a alementos en block Ejemplo:
+        </p>
+        <p class="first-line__example">
+            Editando solo la primera linea de un texto Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quasi repudiandae, 
+            sequi dolorum iure culpa quo tenetur enim sed impedit eum accusamus amet optio veritatis qui odit eius a? Ratione.
+            ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quasi repudiandae, 
+            sequi dolorum iure culpa quo tenetur enim sed impedit eum accusamus amet optio veritatis qui odit eius a? Ratione.
+            ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quasi repudiandae, 
+            sequi dolorum iure culpa quo tenetur enim sed impedit eum accusamus amet optio veritatis qui odit eius a? Ratione.
+        </p>
+    </div>
+    <div class="first-letter">
+        <h3>::first-letter</h3>
+        <p>Hace lo mismo que el first-line pero a la primera letra del contenido que esta dentro de una caja
+        </p>
+        <p class="first-letter__example">
+            Editando solo la primera letra de un texto Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quasi repudiandae, 
+            sequi dolorum iure culpa quo tenetur enim sed impedit eum accusamus amet optio veritatis qui odit eius a? Ratione.
+            ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quasi repudiandae, 
+            sequi dolorum iure culpa quo tenetur enim sed impedit eum accusamus amet optio veritatis qui odit eius a? Ratione.
+            ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quasi repudiandae, 
+            sequi dolorum iure culpa quo tenetur enim sed impedit eum accusamus amet optio veritatis qui odit eius a? Ratione.
+        </p>
+    </div>
+    <div class="placeholder">
+        <h3>::placeholder</h3>
+        <p>
+            Permite darle propiedades al placeholder de un input, hay algunos input como los de texto es lo que se puede predifinir
+            un valor que le de idea al usuario de que es lo que deberia colocar en el input, eso se conoce como placeholder, de modo
+            que el usuario tiene idea de que color y cuanto va a colocar algo, el texto de placeholder se borra, dejando solo el texto
+            que el usuario ingresa
+        </p>
+        <form action="">
+            <input type="text" name="name" id="name" placeholder="Por favor escriba su nombre: Santiago Gonzalez">
+        </form>
+    </div>
+    <div class="selection">
+        <h3>::placeholder</h3>
+        <p>Permite aplicar propiedades al texto que seleccionamos con el mouse</p>
+        <p class="selection__p">
+            Por favor seleccionado alguna palabra o frase de este texto para observar las propiedades aplicadas al selection de este parrafo
+        </p>
+    </div>
+    <div class="after-before">
+        <h3>::after y ::before</h3>
+        <p> Estas propiedades no hacen parte del DOM. Esta propiedad lo que hace es crear un hijo del Pseudo-Elemento al que le estamos aplicando propiedades, 
+            estamos creando un Pseudo-Elemento. Necesita propiedad content y ademas son elementos en inline. Un ejemplo practico es cuando 
+            tenemos un texto pequeño y queremos agregar palabras o frases antes o despues, esto lo hacemos con after y before. Ahora bien, porque razon 
+            se dice que no hace parte del DOM porque si agregamos texto a un elemento con estas propiedades en el DOM no vamos a poder seleccionar 
+            dicho texto. Por Ejemplo
+        </p>
+        <p class="after-before__p">
+            <b>Este texto esta dentro del DOM</b> 
+        </p>
+    </div>
+</body>
+</html>

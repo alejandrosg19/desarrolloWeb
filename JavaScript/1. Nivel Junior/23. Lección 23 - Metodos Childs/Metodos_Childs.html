@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 23 - Metodos de Childs</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Metodos_Childs.css">
+</head>
+<body>
+    <h1>Lección 23 - Metodos de Childs</h1>
+    <p>
+        <b>Definición: </b>Estos metodos son aplicados sobre los elementos hijos de los elementos padre <br>
+        <b>Metodos:</b>
+    </p>
+    <ul>
+        <li>
+            <b>elementoPadre.replaceChild("nuevo elemnto", "viejo elemento"): </b> remplaza un elemento hijo por otro elenentro dentro 
+            del elemento padre.
+        </li>
+        <li>
+            <b>elementoPadre.removeChild(): </b> Elimina un elemento hijo, recibe como tal elemento luego de obtenerlo con querySelector()
+            o algun otro metodo.
+        </li>
+        <li><b>elementoPadre.hasChildNodes(): </b>Metodo que devuelve True si un elemento posee hijos.</li>
+    </ul>
+    <div class="contenedor">
+        <h2 class="h2">H2 antiguo</h2>
+        <p class="p">Parrafo antiguo</p>
+        <p class="remove_p">Parrafo a eliminar</p>
+    </div>
+    <script src="script-Metodos_Childs.js"></script>    
+    <br>
+    <h3>Codigo:</h3>
+    <img src="1.png" alt="">
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 41 - Grid Row - Grid Column</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Grid_Row-Grid_Column.css">
+</head>
+<body>
+    <h1>Lección 41 - Grid Row - Grid Column</h1>
+    <p>
+        <b>Definición: </b> Es una propiedad que permite darle un tamaño especifico en terminos de la lineas de las celdas a una de las celdas o
+        a varias, es decir, si tenemos una grilla de 3x3 siendo las primeras lineas los bordes del grid-container, se sabe que la primera celda, hiria desde
+        la primera linea en fila hasta la segunda linea en fila, al igual en las columnas, la primera celda va de la primera linea en columna, hasta
+        la segunda, dicho esto pues a una celda se le puede dar un tamaño que vaya desde la primera linea de la fila hasta la tercera, lo que va a provocar
+        que las demas celdas se muevan. Por ejemplo, si a la primera celda le damos un grid-column 1/3, le estamos diciendo que dicha celda, va desde 
+        la primera en columnas hasta la tercera linea columna, al hacer esto movera las demas celdas. Cabe destacar que grid-column: 3/5; es un
+        abreviación de usar grid-column-start: 1; grid-column-end: 3; funcionan de la misma manera.
+    </p>
+    <p><b>grid-row: 1/4;</b></p>
+    <ul>
+        <li>grid-row-star: 1</li>
+        <li>grid-row-end: 4</li>
+    </ul>
+    <p><b>grid-column: 1/3;</b></p>
+    <ul>
+        <li>grid-column-star: 1</li>
+        <li>grid-column-end: 3</li>
+    </ul>
+    <p>Existe otra forma similar de definir el tamaño de una celda y es haciendo uso de span, ejemplo, grid-column 1/ span 3, con esto 
+        estamos diciendo que a partir de la linea de columna 1, tome 3 columnas, a diferencia del anterior en donde especificamos de que
+        a que linea a que linea queremos que vaya el espacio de la celda, con este solo especificamos donde queremos que inicie y la cantidad
+        columnas o filas que queremos que tome.
+    </p>
+    <p><b>Estas propiedades son aplicadas siempre al grid-item</b></p>
+    <h2>Ejemplo:</h2>
+    <p>Las propiedades estan siendo aplicadas solo a la primera celda y en el ultimo caso a la primera y segunda celda</p>
+    <div class="grid-container">
+        <div class="grid-container__base">
+            <p>grid-column: 1/3; = grid-column-start: 1; grid-column-end: 3;</p>
+            <div class="grid-container__Ejemplo">
+                <div class="grid-item grid1">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+                <div class="grid-item">7</div>
+                <div class="grid-item">8</div>
+                <div class="grid-item">9</div>
+            </div>
+        </div>
+        <div class="grid-container__base">
+            <p>grid-row: 1/ span 2</p>
+            <div class="grid-container__Ejemplo">
+                <div class="grid-item grid2">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+                <div class="grid-item">7</div>
+                <div class="grid-item">8</div>
+                <div class="grid-item">9</div>
+            </div>
+        </div>
+        <div class="grid-container__base">
+            <p>grid-column: 1/3; - grid-row: 1/3</p>
+            <div class="grid-container__Ejemplo">
+                <div class="grid-item grid3">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+                <div class="grid-item">7</div>
+                <div class="grid-item">8</div>
+                <div class="grid-item">9</div>
+            </div>
+        </div>
+        <div class="grid-container__base">
+            <p>primera celda: grid-row: 1/3; <br> segunda celda: grid-column 2/4;</p>
+            <div class="grid-container__Ejemplo nth">
+                <div class="grid-item grid4">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+                <div class="grid-item">7</div>
+                <div class="grid-item">8</div>
+                <div class="grid-item">9</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

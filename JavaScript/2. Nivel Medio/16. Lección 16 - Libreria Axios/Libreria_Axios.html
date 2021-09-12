@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 15 - Libreria Axios</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Libreria_Axios.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <h1>Lección 15 - Libreria Axios</h1>
+    <p>
+        <b>Definición: </b>Axios es una libreria que posee un remplazo mas moderno de fetch, si vamos a utilizar muchas peticiones lo mejor es que 
+        usemos Axios. Esta libreria tambien esta basada en promesas y hace uso de la tecnologia XMLHTTPRequest <br>
+        <b>Ventajas:</b>
+        <ul>
+            <li>La información devuelta ya no viene encriptada como en fetch, por lo que no es necesario realizar dos veces el .then()</li>
+            <li>Para definir el metodo de la petición no es neesario asignarle unas configuraciones, si no simplemente luego del axios.get
+                axios.post, etc.
+            </li>
+            <li>Al igual que fetch, si no se define el metodo este tomara GET</li>
+            <li>Otra gran ventaja del axios es que no es necesario asignarle el content-type, ya que este lo define automaticamente</li>
+        </ul>
+    </p>
+    <h3>Codigo</h3>
+    <img src="1.png" alt="">
+    <script src="script-Libreria_Axios.js"></script>
+</body>
+</html>

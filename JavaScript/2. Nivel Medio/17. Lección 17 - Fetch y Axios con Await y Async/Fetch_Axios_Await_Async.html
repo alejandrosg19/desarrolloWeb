@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 17 - Fetch y Axios con Async y Await</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Fetch_Axios_Await_Async.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Lección 17 - Fetch y Axios con Async y Await</h1>
+        <div class="animated">
+            <div class="animated__div">
+                <h2>CSS</h2>
+            </div>
+        </div>
+    </div>
+    <div class="container_example">
+        <div class="container-peticiones">
+            <button class="button_fetch">Obtener resultado con Fetch</button>
+            <button class="button_axios">Obtener resultado con Axios</button>
+        </div>
+        <div class="container-resultado">
+            <div class="container-resultado__fetch"></div>
+            <div class="container-resultado__axios"></div>
+        </div>
+    </div>
+    <div class="codigo">
+        <p><b>Fetch sin Await y Async: </b> El codigo esta correcto sin embargo el resultado es UDEFINED, debido a que estamos llamando a la función y esta no espera
+            a que se consulte la petición, por eso la importancia de async y await</p>
+        <div class="codigo-fetch1">
+            <p>Codigo Fetch</p>
+            <img src="1.png" alt="">
+            <p>resultado</p>
+            <img src="2.png" alt="">
+        </div>
+        <p><b>Fetch con Await y Async</b></p>
+        <img src="3.png" alt="">
+        <p><b>Axios con Await y Async</b></p>
+        <img src="4.png" alt="">
+    </div>
+    <script src="script-Fetch_Axios_Await_Async.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 15 - Fetch</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Fetch.css">
+</head>
+<body>
+    <h1>Lección 15 - Fetch</h1>
+    <p>
+        <b>Definición:</b> Es un objeto que permite hacer lo mismo que Ajax de una mejor forma, tiene mas eficacia, es lo mas moderno, lo que mas se usa
+        y remplazo a Ajax. Cabe destacar que este objeto esta basado en promesas, cuando trabajamos con Fetch siempre nos devuelve una promesa
+        encapsulada. Es decir, cuando realizamos una petición y obtenemos una respuesta, lo que recibimos es una promesa encapsulada, esto quiere
+        decir que no tenemos acceso a los datos, por lo que tenemos que hacer uso de algunos metodos, que nos permiten convertir los datos en alguno
+        tipo de dato valido. Otra cosa importante a destacar de fetch es que si no se le define el metodo de la petición (GET, POST, etc) este
+        tomara por defecto el metodo GET.<br>
+        <b>Metodos:</b>
+    </p>
+    <ul>
+        <li><b>text()</b> Devuelve la respuesta de la petición en string</li>
+        <li><b>json()</b> Devuelve la respuesta de la petición en json</li>
+        <li><b>blob()</b> Crea una URL de algun elemento para que pueda ser visualizado. (Imageb, PDF, Video, etc)</li>
+    
+    </ul>
+    <h3>Codigo:</h3>
+    <img class="imagen" src="codigo.png" alt="">
+    <h3>Resultado:</h3>
+    <img src="2.png" alt="">
+    <script src="script-Fetch.js"></script>
+    
+</body>
+</html>

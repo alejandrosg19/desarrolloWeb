@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 1 - Prototipos</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Prototipos.css">
+    <script src="script-Prototipos.js"></script>
+</head>
+<body>
+    <h1>Lección 1 - Prototipos</h1>
+    <p>
+        <b>Definición: </b>Los prototipos son como interfaces que son heredadas por todos los objetos de JavaScript. Es decir que todo elemento
+        de JS hereda de algún prototipo. Cuando creamos una variable de algun tipo de datos, decimos que dicha variable, posee dos prototipos,
+        el prototipo que corresponde al tiṕo de variable que se haya creada, string, num, double, etc, y el prototipo __proto__. Ahora bien
+        las funciones poseen una propiedad que es .prototype con la que podemos acceder al prototipo del que hereda, cabe destacar que las funciones
+        poseen el prototipo __proto__ pero tambien poseen otros prototipos que pueden ser creados por nosotros.
+        <b>Caracteristicas de los prototipos:</b>
+    </p>
+    <ul>
+        <li>El prototipo definido y creado por nosotros es mutable</li>
+        <li>Los prototipos son objetos, poseen atributos y funciones</li>
+        <li>Tienen existencia fisica en la memoria, tiene insidencia en la memoria</li>
+    </ul>
+    <h3>Codigo;</h3>
+    <div class="img">
+        <div>
+            <img src="1.png" alt="">
+        </div>
+        <div>   
+            <img src="2.png" alt="">
+        </div>
+    </div>
+    <h3>Resultado:</h3>
+    <img src="3.png" alt="">
+</body>
+</html>

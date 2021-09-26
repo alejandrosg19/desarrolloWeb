@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 12 - Geolocalization</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Geolocalization.css">
+</head>
+<body>
+    <h1>Lección 12 - Geolocalization</h1>
+    <p>
+        <b>Definición: </b> Permite acceder a los datos de la posición actual y hace uso del objeto navigator que permite 
+        acceder a varios objetos, Geolocalization, camara, microfono, etc. <br>
+        <b>Metodos:</b>
+    </p>
+    <ul>
+        <li>
+            <b>getCurrenPosition()</b> Obtiene todos los datos de la posición actual <br>
+            <b>Parametros( position, errorr, options)</b>
+            <ul>
+                <li><b>position: </b> Es una función que tiene como parametro un objeto ge posición que tiene diferentes datos sobre la localización</li>
+                <li><b>error: </b> Es otra función que es llamada en casa que haya un error</li>
+                <li>
+                    <b>options: </b> Objeto que podemos pasar con varios parametros que dan opciones al objeto de Geolocalization
+                    <ul>
+                        <li>maximumAge: Hace referencia a cuanto tiempo deseas guardar en cache los datos de dicha posición, es decir
+                            definimos el tiempo que queremos que pase para que se borre el cache con estos datos y cuando volvamos a invocar
+                            getCurrenPosition(), nos devuelva la posición actual y no la de hace un tiempo guardada en cache.
+                        </li>
+                        <li>timeout: Hace referencia a cuanto tiempo quieres que tarde para que devuelva dicha información.</li>
+                        <li>enableHightAccuracy: Es una opción que activa la alta presición en la localización</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><b>watchPosition()</b> Si hay cambios en la posición muestra los datos de dicho cambio, basicamente vigila la posición del elemento</li>
+        <li><b>clearWatch()</b> Elimina el watchPosition</li>
+    </ul>
+    <script src="script-Geolocalization.js"></script>
+    <h3>Codigo:</h3>
+    <img src="1.png" alt="">
+</body>
+</html>

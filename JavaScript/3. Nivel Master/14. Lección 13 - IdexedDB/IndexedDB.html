@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 14 - IndexedDB</title>
+    <link rel="stylesheet" type="text/CSS" href="style-IndexedDB.css">
+    <script src="script-IndexedDB.js"></script>
+</head>
+<body>
+    <h1>Lección 14 - IndexedDB</h1>
+    <p>
+        <b>Definición: </b> Es una base de datos idexada que almacena información en el navegador de forma similar al localstorage <br>
+        <b>Caracteristicas: </b> 
+    </p>
+    <ul>
+        <li>Es una base de datos NoSQL o no relacional.</li>
+        <li>Es orientada a objetos</li>
+        <li>Es asincrona</li>
+        <li>Trabaja con eventos del DOM</li>
+    </ul>
+    <p><b>Metodos</b></p>
+    <ul>
+        <li>
+            <b>open("Nombre", version)</b> Abre una base de datos, si existe la abrimos, si no, la crea. En el segundo parametro colocamos la version de la db, que puede 
+            ser 1. <br>
+            <b>Eventos:</b>
+            <ul>
+                <li><b>upgradeneeded: </b>Evento que se activa cuando la db no esta creada, en este evento es donde debemos crear las tablas de la db.</li>
+                <li><b>success: </b>Evento que nos devuelve que la creación o apertura de la db fue con exito</li>
+                <li><b>success: </b>Evento que se activa cuando hubo un error en la creación o apertura de la db</li>
+            </ul>
+        </li>
+        <li>
+            <b>createObjectStore()</b> Crea una almacen de objetos(tabla) dentro de la base de datos.
+        </li>
+        <li>
+            <b>transaction("tabla", "modo")</b> Habilita cualquier operación que se quiera realizar con la db, agregar, actualizar, consultar o eliminar datos. Recibe dos parametros
+            el primero corresponde al nombre del almacen de objetos(tabla) en la que queremos realizar la operación, el segundo parametro corresponde al modo: "readwrite": leer y escribir
+            o "readonly" solamente se puede leer. <br>
+            <b>Metodos:</b>
+            <ul>
+                <li>
+                    <b>obj_transaction.objectStore("nombre de tabla")</b> Luego de lo anterior es necesario especificar el almacen de objetos en el que vamos a realizar operaciones,
+                    para eso, del objeto de transaction creado accedemos a objectStore() y pasamos el nombre del almacen de objetos(tabla)
+                </li>
+                <li>
+                    <b>obj_transaction.openCursor()</b> Devuelve un cursor iterable sobre los datos de la db <br>
+                    <b>Metodos</b>
+                    <ul>
+                        <li><b>result.continue()</b> Pasa a la siguiente iteración del cursor</li>
+                    </ul>
+                    <b>Eventos:</b>
+                    <ul>
+                        <li><b>success</b> Evento que se activa si el cursor se creo o es correcto.</li>
+                    </ul>
+                </li>
+                <li>
+                    <b>obj_transaction.put(objeto, key)</b> Es un metodo para modificar un objeto de la db, cabe destacar que si no existe lo crea. Recibe dos parametros:
+                    el primero corresponde al objeto con sus actualizaciones y el segundo parametro es la key del objeto que queremos modificar
+                </li>
+                <li>
+                    <b>obj_transaction.delete(key)</b> Es un metodo para eliminar un objeto de la db. Recibe un unico parametro que corresponde a la key de objeto que queremos
+                    eliminar.
+                </li>
+            </ul>
+            <b>Eventos:</b>
+            <ul>
+                <li><b>complete: </b>Evento que se activa cuando la transacción se a completado, sea creación, modificación, obtencion o eliminación de un dato en la db</li>
+            </ul>
+        </li>
+    </ul>
+    <h3>Codigo</h3>
+    <img src="1.png" alt="">
+    <img src="2.png" alt="">
+</body>
+</html>

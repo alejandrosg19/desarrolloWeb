@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 10 - Drag y Drop</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Drag_and_Drop.css">
+</head>
+<body>
+    <h1>Lección 10 - Drag y Drop</h1>
+    <p>
+        <b>Definición: </b> Es una Api para arrastrar y soltar elementos dinamicamente en html
+    </p>
+    <p><b>Eventos del objeto a mover:</b></p>
+    <ul>
+        <li><b>dragstart</b> Evento de agarrar el elemento, el elemento se debe agarrar del centro</li>
+        <li><b>drag</b> Evento de desplazar el elemento</li>
+        <li><b>dragend</b> Evento de soltar el elemento</li>
+    </ul>
+    <p><b>Eventos del objeto zona que recibe el objeto a mover:</b></p>
+    <ul>
+        <li><b>dragenter</b> Evento de cuando el objeto entra el contenedor</li>
+        <li><b>dragover</b> Evento de cuando el objeto se esta moviendo dentro del contenedor</li>
+        <li>
+            <b>drop</b> Evento de cuando se suelta el objeto en el contenedor, para que funcione es necesario 
+            agregar en la funcion el e.prevenDefault(); al evento de dragover
+        </li>
+        <li><b>dragleave</b> Evento de cuando el objeto se va de dentro del contenedor</li>
+    </ul>
+    <p><b>propiedad dataTranser</b> Objeto que transmite información entre las partes del objeto a mover y el contenedor que recibe</p>
+    <ul>
+        <li><b>e.dataTranser.getData("nombre de la variable")</b> Devuelve el valor de la variable contenida en dataTransfer</li>
+        <li>
+            <b>e.dataTranser.setData("nombre de la variable", "valor -> e.target.className")</b> Carga una variable en dataTransfer 
+            con el nombre y valor asignados
+        </li>
+    </ul>
+    <div class="circulo"></div>
+    <div class="cuadrado"></div>
+    <script src="script-Drag_and_Drop.js"></script>
+    <h3>Codigo:</h3>
+    <img src="1.png" alt="">
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 13 - FileReader</title>
+    <link rel="stylesheet" type="text/CSS" href="style-FileReader.css">
+</head>
+<body>
+    <h1>Lección 13 - FileReader</h1>
+    <p>
+        <b>Definición: </b> FileReader es un objeto de JavaScrip que trabaja con la letura de archivos. <br>
+    </p>
+    <p><b>Metodos del Objeto</b></p>
+    <ul>
+        <li>
+            <b>ReadAsText() </b>Lee el archivo y lo convierte en texto, el metodo no devuelve nada, cabe destacar que tiene que ser impreso
+            desde el evento load, por medio del objeto que recibe la funcion del evento.
+        </li>
+        <li>
+            <b>readAsDataURL() </b>Lee una URL, que puede ser contenida por un archivo
+        </li>
+    </ul>
+    <p><b>Eventos del Objeto</b></p>
+    <ul>
+        <li>
+            <b>load: </b> Devuelve información de si el archivo se cargo correctamente. Para imprimir el resultado de leer el archivo,
+            este evento recibe un parametro e, y el resultado se encuentra en: e.currentTarget.result
+        </li>
+    </ul>
+    <div class="ejemplo">
+        <input type="file" id="archivo">
+        <img src="" alt="" id="imagen">
+    </div>
+    <h3>Codigo</h3>
+    <img src="1.png" alt="">
+    <script src="script-FileReader.js"></script>
+</body>
+</html>

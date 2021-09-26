@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 2 - Modo Estricto</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Modo_Estricto.css">
+    <script src="script-Modo_Estricto.js"></script>
+</head>
+<body>
+    <h1>Lección 2 - Modo Estricto</h1>
+    <p>
+        <b>Definición:</b> Es un modo que puede ser activado por el desarrollador el cual permite que el codigo este mejor organizado
+        <b>Caracteristicas: </b>
+    </p>
+    <ul>
+        <li>Convierte errores de JavaScript en excepciones</li>
+        <li>Mejora la optimización de los errores y consigue mejores tiempos de ejecución</li>
+        <li>Evita sintaxis usadas anteriores a ES6</li>
+        <li>No permite que el desarrollador realice una "mala sintaxis"</li>
+    </ul>
+    <p><b>Errores que no admite:</b></p>
+    <ul>
+        <li>Variables no declaradas</li>
+        <li>
+            defineProperty, es un metodo que permite agregar a un objeto una nueva propiedad, este metodo tiene un valor que le podemos
+            asignar que es, writeable: true, el cual hace que la propiedad creada no pueda ser modificada.
+        </li>
+        <li>preventExtensiones, es un metodo que no deja agregar mas propiedades a objeto, sin el "use strict", no dejar agregar mas propiedades
+            pero no arroja ningun error, con el "use strict" activado nos arroja error.
+        </li>
+        <li>
+            Propieddes en String, sin "use strict", no nos salta ningun error aunque no sea permittido, con "use strict" si.
+        </li>
+        <li>
+            No permite que hayan dos parametros con el mismo nombre en una función, ejemplo "function prueba(texto, texto){}"
+        </li>
+        <li>
+            No permite nombrar una variable con palabras reservadas.
+        </li>
+        <li>
+            This ya no se permite en funciones.
+        </li>
+        <li>
+            arguments y eval no pueden ser nombres de variables.
+        </li>
+    </ul>
+    <h3>Codigo:</h3>
+    <img src="1.png" alt="">
+    <h3>Resultado</h3>
+    <img src="2.png" alt="">
+</body>
+</html>

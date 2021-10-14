@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 21 - Objeto Navigator</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Objeto_Navigator.css">
+</head>
+<body>
+    <script src="script-Objeto_Navigator.js"></script>
+    <h1>Lección 21 - Objeto Navigator</h1>
+    <p>
+        <b>Definición:</b> Api del navegador
+        <b>Propiedades</b>
+        <ul>
+            <li><b>navigator.appCodeName</b> Devuelve el nombre del navegador.</li>
+            <li><b>navigator.appName</b> Devuelve el nombre oficial del navegador.</li> 
+            <li><b>navigator.appVersion</b> Devuelve la versión del navegador.</li> 
+            <li><b>navigator.connection</b> Devuelve si el navegador esta conectado o no.</li> 
+            <li><b>navigator.geolocation</b> Devuelve el objeto location que nos devuelve la posicion de donde estanos accediendo al navegador.</li> 
+            <li><b>navigator.hardwareConcunrrency</b> Devuelve la cantidad de nucleos del procesador logico que hay disponibles.</li> 
+            <li><b>navigator.language</b> Devuelve el lenguaje del navegador</li> 
+            <li><b>navigator.language</b> Devuelve un array con los lenguajes que el usuario entiende o comprende</li> 
+            <li><b>navigator.mimeTypes</b> Encabezados que se pueden enviar</li> 
+            <li><b>navigator.onLine</b> Devuelve si estamos conectados o no a internet</li> 
+            <li><b>navigator.userAgent</b> Devuelve información del navegador</li> 
+            <li><b>navigator.cookieEnabled</b> Devuelve un booleano de si las cookies estan activadas o no</li> 
+            <li><b>navigator.permissions</b> Devuelve un objeto permissions que nos permite acceder a cada unos los permisos del navegador (microfono, camara, notificaciones, ventanas emergentec, etc)</li> 
+            <li><b>navigator.platform</b> Devuelve el tipo de disposito en el que estamos accediendo: MAC, WINDOWS, LINUX</li> 
+            <li><b>navigator.plugins</b> Devuelve un array de plugins, que corresponde a los plugins instalados en el navegador</li> 
+            <li><b>navigator.ServiceWorker</b> Es un worker que trabaja en paralelo pero que trabaja de manera distinta en la que trabaja los web workers</li> 
+        </ul>
+        <b>Metodos:</b>
+        <ul>
+            <li><b>navigator.getUserMedia()</b> Solicita permiso para acceder a la camara y audio del dispositivo</li>
+            <li><b>navigator.registerContentHandler()</b> Permite a los web sites registrarse como posibles controladores de un tipo MIME determinado.</li>
+            <li><b>navigator.registerProtocolHandler()</b> Permite a los web sites registrarse como posibles controladores de un protocolo determinado.</li>
+            <li><b>navigator.requestMediaKeySystemAccesss()</b> Devuelve una promesa para un objeto MediaKeySystemAccess.</li>
+            <li><b>navigator.javaEnabled()</b> Nos devuelve si el navegador tiene Java habilitado o no.</li>
+            <li><b>navigator.sendBeacon()</b> Se usa para transferir de forma asincrona conjuntos pequeños de datos HTTP de usuario al servidor.</li>
+            <li><b>navigator.vibrate()</b> Causa vibración en el dispositivo que lo soporta.</li>
+        </ul>
+    </p>
+    <h3>Codigo:</h3>
+    <img src="1.png" alt="">
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 27 - Cookies</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Cookies.css">
+</head>
+<body>
+    <h1>Lección 27 - Cookies</h1>
+    <p>
+        <b>Definición:</b> Son datos que gurda la pagina en el navegador del usuario. Cabe destacar que tiene un limite de 4kilobytes <br>
+        <ul>
+            <li><b>Creación de cookie</b> document.cookie = "clave=valor"</li>
+            <li><b>Llamar a todas la cookies</b> document.cookie</li>
+            <li>
+                <b>Opciones</b>
+                <ol>
+                    <li><b>expires</b> fecha de cuando va a expirar la cookie, si no la definimos expira al cerrar la sesion</li>
+                    <li><b>path</b> En donde se va a almacenar la cookie</li>
+                    <li><b>max-age</b> Cuanto tiempo quieres que dure la cookie</li>
+                </ol>
+            </li>
+            <li>
+                <b>Ejemplo:</b> documen.cookie = "nombre=santiago;expires=Mon 26 Apr 2022 12:00:00 UTC;path=/;max-age=10000"
+            </li>
+            <li>
+                <b>Modificar cookie</b> Para modificar una cookie basta con renombrarla, es decir, que si creamos una cookie: 
+                document.cookie = "user=Santiago;max_age=200000" para modificar es simplmente: document.cookie = "user=Alejandro;max_age=200000"
+            </li>
+            <li>
+                <b>Eliminar cookie</b> Para eliminar una cookie basta con renombrar el max_age=0, ya que este indica el tiempo en que estara activa la cookie
+                document.cookie = "user=Santiago;max_age=0";
+            </li>
+        </ul>
+    </p>
+    <div class="bg-modal">
+        <div class="modal">
+            <h3>¿Aceptas las Cookies?</h3>
+            <button class="acept">SI</button>
+            <button class="deny">NO</button>
+        </div>
+    </div>
+    <script src="script-Cookies.js"></script>
+</body>
+</html>

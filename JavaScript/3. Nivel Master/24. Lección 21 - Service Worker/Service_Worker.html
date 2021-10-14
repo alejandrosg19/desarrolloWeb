@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 24 - Service Worker</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Service_Worker.css">
+</head>
+<body>
+    <h1>Lección 24 - Service Worker</h1>
+    <p>
+        <b>Definición: </b> Es un archivo JavasScript que intercepta todas las peticiones de un servidor, el navegador en vez de realizar un petición 
+        directa al servidor web, primero pasa por el service worker, de igual manera cuando obtenemos una respuesta de servidor web, hacia el navegador del 
+        usuario esta tambien pasa por el service worker. <br>
+        <b>Caracteristicas: </b> 
+        <ul>
+            <li>Los service worker corren en el almacenamiento local del usuraio</li>
+            <li>Para acceder a los eventos y propiedades del serviceWorker dentro del archivo js, se usa self en vez de this.</li>
+            <li>El service worker tiene dos estapas, estapa de instalación y etapa activo, y solo se instala una vez</li>
+        </ul>
+        <b>Eventos</b>
+        <ul>
+            <li>self.addEventListener('install', e =>{}): Se activa cuando el service worker se esta instalando</li>
+            <li>self.addEventListener('activate', e =>{}): Se activa cuando el service worker esta activo</li>
+            <li>self.addEventListener('error', e =>{}): Se activa cuando en el proceso de instalació activación ocurre un error.</li>
+            <li>
+                self.addEventListener('fetch', e =>{}): Se activa cada vez que el usuario recarga la pagina, debido a que este evento escucha cada vez 
+                que el service worker intercepta una petición, por lo que cada vez que se recargue la pagina, osea que se realice una petición al servidor
+                web y este responda pasara por el service worker y activara este evento.
+            </li>
+            <li>self.addEventListener('message', ()=>{}): Se activa cuando desde el js normal envian un mensaje la service worker</li>
+        </ul>
+        <b>Metodos</b>
+        <ul>
+            <li>navigator.serviceWorker.ready.then(res => {res.active.postMessage()}): Valida si el service worker ya cargo</li>
+            <li>navigator.serviceWorker.postMessage('holaaa'): Envia un mensaje del js principal al service worker, esete debe ir dentro de la respuesta 
+                de la promesa de navigator.serviceWorker.ready.then(res => {})
+            </li>
+            <li>self.source.postMessage('holaaa'): Envia un mensaje del service worker al js principal</li>
+        </ul>
+        <b>Registrar Service Worker:</b> navigator.serviceWorker.register('sw.js');
+    </p>
+    <img src="1.png" alt="">
+    <h3>Codigo JavaScript:</h3>
+    <img src="2.png" alt="">
+    <h3>Codigo Service Worker:</h3>
+    <img src="3.png" alt="">
+
+    <script src="script-Service_Worker.js"></script>
+</body>
+</html>

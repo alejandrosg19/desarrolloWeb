@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 23 - Cache</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Cache.css">
+</head>
+<body>
+    <h1>Lección 23 - Cache</h1>
+    <p>
+        <b>Definición: </b>El cache es una memoria a corto plazo que posee el usuario dentro del naveador, que lo que hace es alamenar información 
+        para que no se solicite muchas veces. Si por ejempl0, todo el tiempo que recarguemos la pagina nosotros vamos a cargar los mis mos archivos,
+        podemos alacenarlos en cache. Cabe destacar que el cache se trabaja con promesas. <br>
+        <b>Apertura de cache: </b> caches.open("nombre del objeto cache").then(cache => {cache.add()}); <br>
+        <b>Metodos:</b>
+        <ul>
+            <li>cache.add("nombre del archivo que queremos almacenar en cache")</li> 
+            <li>cache.addAll(['index.html','style.css']): Recibe una lista de archivos a guardar</li>
+            <li>
+                cache.match('index.html').then(value =>{res =>{}}): Consulta un archivo con ese nombre en el cache y devuelve una promesa con el primer elemento 
+                que coincida con el nombre que le pasamos.
+            </li>
+            <li>
+                cache.matchAll('index.html').then(value =>{res => {}}): Trae todos los archivos que coincidan con ese nombre en el cache y devuelve una promesa 
+                que contiene un array de los archivos devueltos con ese mismo nombre.
+            </li>
+            <li>cache.delete('index.html'): Elimina el primer archivo que encuentre con el nombre que le pasamos.</li>
+            <li>cache.keys().then(res =>{}): Devuelve toda la data del cache</li>
+        </ul>
+    </p>
+    <h3>Codigo</h3>
+    <img src="1.png" alt="">
+    <script src="script-Cache.js"></script>
+</body>
+</html>

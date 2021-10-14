@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 15 - Intersection Oberser</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Intersection_Observer.css">
+</head>
+<body>
+    <h1>Lección 15 - Intersection Observer</h1>
+    <p>
+        <b>Definición: </b>La API Observador de Intersección provee una vía asíncrona para observar cambios en la intersección 
+        de un elemento con el viewport, es decir que, es un objeto que vigilia si un elemento se en cuentra en el viewport <br>
+        <b>Objeto: </b> El objeto se crea de la siguiente manera: const observer = new IntersectionObserver(callback, obtions);
+        cabe destacar que el callback siempre recibe un arreglo, el segundo parametro corresponde a las opciones<br>
+        <b>Opciones:</b>
+        <ul>
+            <li><b>root: </b>Elemento de referencia</li>
+            <li><b>rootMargin: </b>margin que se aplicara en el viewpart para informar cuando se esta viendo un elemento</li>
+        </ul>
+        <b>Metodos: </b>
+        <ul>
+            <li><b>obj_observer.observe(objeto): </b> Recibe un elemento el cual queremos que sea observado.</li>
+        </ul>
+        <b>Tener en cuenta: </b> Cada vez que uno de los elementos que se escogieron paa observar para por el viewport, se activa el callbacl o funcion
+        con que se creo el observer
+    </p>
+    <div class="caja caja1"><span>caja 1</span></div>
+    <div class="caja caja2"><span>caja 2</span></div>
+    <div class="caja caja3"><span>caja 3</span></div>
+    <div class="caja caja4"><span>caja 4</span></div>
+    <div class="caja caja5"><span>caja 5</span></div>
+    <div class="caja caja6"><span>caja 6</span></div>
+    <div class="caja caja7"><span>caja 7</span></div>
+    <div class="caja caja8"><span>caja 8</span></div>
+    <div class="caja caja9"><span>caja 9</span></div>
+    <script src="script-Intersection_Observer.js"></script>
+
+    <img src="1.png" alt="">
+</body>
+</html>

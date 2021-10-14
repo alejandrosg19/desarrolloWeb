@@ -1,0 +1,45 @@
+*{
+    font-size: 20px;
+    font-family: sans-serif;
+}
+body{
+    background: radial-gradient(circle, #fff, #666);
+}
+h1{
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+    background: #09f;
+    border: 10px solid #06f;
+    box-shadow: 0px 0px 10px #000;
+    position: sticky;
+    top: 10px
+}
+
+.caja{
+    height: 600px;
+    width: 300px;
+    display: flex;
+    background: #48e;
+    margin: 20px auto;
+    color: #fff;
+    font-size: 26px;
+    border: 4px dashed #248;
+}
+
+.caja span{
+    margin: auto;
+}
+
+.caja2{
+    background: #e48;
+    border: 4px dashed #824;
+}
+.caja3{
+    background: #4e8;
+    border: 4px dashed #284;
+}
+.caja4{
+    background: #777;
+    border: 4px dashed #444;
+}

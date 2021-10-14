@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 17 - Web Workers</title>
+    <link rel="stylesheet" href="style-Web_Workers.css">
+</head>
+<body>
+    <h1>Lección 17 - Web Workers</h1>
+    <p>
+        <b>Definción: </b> El evento loop es como el sistema encargado de ejecutar diversos eventos realizados por el usuario, clicks en botones,
+        selecionar texto, cargar un archivo, etc. El problema con esto es que el event loop solo puede encargase de un unico evento a la vez, es decir,
+        no puede cargar un archivo y mientras sucede esto, ir rellenando in input. Para esto llegaron los web workers, quienes permiten ejecutar scripts
+        en hilos de segundo pano. <br>
+        Cabe destacar que el web worker tiene sus limitaciones no puede ejecutar tanto codigo como el script principal, tampoco puede colocar eventos,
+        si no solo se encarga de funciones especificas y sencillas.
+        <p>Creación Worker</p> <br>
+        const worker = new Worker('nombre del script.js'), Recibe como parametro el nombre del script que se ejecutara en segundo plano <br>
+        <b>Tipos de Webs Workers</b>
+        <ul>
+            <li><b>Dedicated Worker</b></li>
+            <li><b>Shared Worker</b></li>
+            <li><b>Service Worker</b></li>
+            <li><b>Abstract Worker</b></li>
+        </ul>
+        <b>Metodos:</b>
+        <ul>
+            <li><p>postMessage(): </p>Envia mensajes entre el script principal y el Web Worker</li>
+            <li><p>terminate(): </p>Termina el worker</li>
+        </ul>
+        Dedicated Worker y Shared Worker van de la mano al igual que Service Worker y Abstract Worker. <br> <br>
+        <b>A continuación un ejemplo al ejecutar un worker, en el siguiente ejemplo se ejcutara un bucle al presionar el boton, por favor intente
+            ingresar información en los inputs, se dara cuenta que en uno no podra y en el otro si, esto es porque en el primero, tendra que esperar
+            a que termine el bucle y en el segundo no, porque la tarea se ejecuto en un worker.
+        </b>
+    </p>
+    <div class="noWorker">
+        <p></p>
+        <input type="text" placeholder="Ingrese cualquier cosa">
+        <button class="noWorker-button">No Worker</button>
+    </div>
+    <div class="worker">
+        <p></p>
+        <input type="text" placeholder="Ingrese cualquier cosa">
+        <button class="worker-button">Si Worker</button>
+    </div>
+    <script src="script-Web_Workers.js"></script>
+    <h3>Codigo Script Principal:</h3>
+    <img src="1.png" alt="">
+    <h3>Codigo Script Worker:</h3>
+    <img src="2.png" alt="">
+</body>
+</html>

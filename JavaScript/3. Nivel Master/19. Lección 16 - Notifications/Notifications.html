@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 16 - Notifications</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Notifications.css">
+
+</head>
+<body>
+    <h1>Lección 16 - Notifications</h1>
+    <p>
+        <b>Definición: </b> Es una API que permite mostrar algunas notificaciones en el navegador. <br>
+        <p>Solicitar permiso de notificaciones:</p> ES obligatorio solicitarle al usuario del navegador si nos permite enviarle notificaciones
+        para eso usamos lo siguiente: Notification.requestPermission(callback) <br>
+        <b>Metodos a ejecutar dentro del callback</b>
+        <ul>
+            <li><b>Notification.permission == "granted"</b> Nos devuelve true si el permiso fue aceptado</li>
+        </ul>
+        <b>Nueva Notificación: </b> new Notification('Mensaje a notificar')
+    </p>
+    <script src="script-Notifications.js"></script>
+    <h3>Codigo:</h3>
+    <img src="1.png" alt="">
+</body>
+</html>

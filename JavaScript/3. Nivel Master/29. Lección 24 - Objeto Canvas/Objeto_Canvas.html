@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 24 - Objeto Canvas</title>
+    <link rel="stylesheet" type="text/CSS" href="style-Objeto_Canvas.css">
+</head>
+<body>
+    <h1>Lección 24 - Objeto Canvas</h1>
+    <p>
+        <b>Definición: </b> Es una API con la que podemos crear graficos, graficas estadisticas. Trae por defecto un width de 300px y 
+        y un height de 150px <br>
+        <b>Metodos:</b> Estos metodos no se aplicna directamente al canvas si no al contexto. <br>
+        Cabe destacar que en el canvas primero se le dan los estilos antes de dibujarlo.
+        <ul>
+            <li>
+                <b>strokeRect(PosicionX,PosicionY,widtn,heigth):</b> Permite dibujar un rectangulo y recibe 4 parametros, los dos primeros,
+                corresponden a la ubicación en eje x y eje y del contexto del canvas en que se trazara el la figura, luego los otros dos valores
+                corresponden al ancho y alto de la figura. Cabe destacar que el dibujo se pinta de izquierda a derecha y de arriba a abajo.
+            </li>
+            <li>
+                <b>fillRect(PosicionX,PosicionY,widtn,heigth):</b> Dibuja un rectangulo pero rellenandolo de un color
+            </li>
+            <li><b>strokeStyle = "#fff"</b> Permite cambiar de color la figura.</li>
+            <li><b>fillStyle = "#fff"</b> Permite cambiar el color del relleno de la figura</li>
+            <li><b>lineWidth = "6 </b> Cambia el ancho de las lineas de la figura.</li>
+            <li><b>lineTo(CordenadaX, CordenadaY)</b> Crea un punto, si creamos dos puntos y le damos stroke() dibuja una linea con esos dos puntos</li>
+            <li><b>moveTo</b></li>
+            <li><b>closePath()</b> Sirve para dar por terminado la alineación de puntos lineTo</li>
+            <li><b>beginPath()</b> Inicia una nueva traza de puntos.</li>
+        </ul>
+    </p>
+    <div class="container">
+        <canvas id="canvas" width="500" height="500"></canvas>
+        <div>
+            <h3>Codigo Explicación</h3>
+            <img src="1.png" alt="">
+        </div>
+    </div>
+    <h3>Ejercicio Practico</h3>
+    <div class="container">
+        <div class="editor">
+            <canvas id="canvas-ejercicio" width="500" height="500"></canvas>
+            <div>
+                <input type="color" id="color" name="">
+                <input type="range" id="lw" name="" min="1" max="10" id="1w">
+            </div>
+        </div>
+        <div>
+            <h3>Codigo Explicación</h3>
+            <img src="2.png" alt="">
+        </div>
+    </div>
+    <script src="script-Objeto_Canvas.js"></script>
+</body>
+</html>

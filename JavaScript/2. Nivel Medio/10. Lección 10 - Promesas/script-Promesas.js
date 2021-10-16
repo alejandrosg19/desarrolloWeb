@@ -51,11 +51,11 @@ const obtenerInstagram = (id)=>{
 
 const id = 4;
 
-obtenerPersona(id).then((persona)=>{
+obtenerPersona(id).then((persona)=>{ //then de primerea promesa 
     console.log(persona.nombre) 
-    return obtenerInstagram(id);
-}).then((instagram)=>{
+    return obtenerInstagram(id); //retorna otra promesa que ya tiene su then.
+}).then((instagram)=>{ //then de segunda promesa.
     console.log(instagram)
-}).catch((e)=>{
+}).catch((e)=>{ //error de cualquier promesa se alamacena aca.
     console.log("ERROR: " + e);
 })

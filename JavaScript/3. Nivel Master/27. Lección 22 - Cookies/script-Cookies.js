@@ -13,7 +13,7 @@ const crearCookie = (name, dias) =>{
 crearCookie("usuario=Santiago", "4");
 
 const obtenerCookie = cookieName =>{
-    let cookies = document.cookie;
+    let cookies = document.cookie; //obtenemos keyCooki=valueCOokie;keyCOokie=valueCOokie
     cookies = cookies.split(";");
     for(let i=0; i<cookies.length; i++){
         let cookie = cookies[i].trim();
@@ -22,6 +22,8 @@ const obtenerCookie = cookieName =>{
     return "No hay cookie con esa key"; //Si no retorna en el if es porque niguna cookie recorrida en el for tiene ese nombre
 }
 
+
+//Ejercicio
 if(obtenerCookie("acceptCookie") !== 'SI'){
     const modal = document.querySelector('.bg-modal');
     const buttonAcept = document.querySelector('.acept');

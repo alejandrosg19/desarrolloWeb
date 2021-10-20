@@ -49,6 +49,7 @@ const leerObjetos = () => {
     document.querySelector(".nombres").innerHTML = ""
     cursor.addEventListener("success", ()=>{
         if(cursor.result){
+            console.log(cursor.result.value)
             let elemento = nombresHTML(cursor.result.key, cursor.result.value)
             fragment.appendChild(elemento)
             cursor.result.continue()
